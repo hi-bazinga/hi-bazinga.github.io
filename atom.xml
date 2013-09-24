@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Little strokes fell great oaks]]></subtitle>
   <link href="http://blog.zxczone.com/atom.xml" rel="self"/>
   <link href="http://blog.zxczone.com"/>
-  <updated>2013-09-24T16:46:45.481Z</updated>
+  <updated>2013-09-24T17:06:38.809Z</updated>
   <id>http://blog.zxczone.com/</id>
   <author>
     <name><![CDATA[Jason Zhao]]></name>
@@ -16,7 +16,7 @@
     <link href="http://blog.zxczone.com/2013/09/16/scheduling-problem/"/>
     <id>http://blog.zxczone.com/2013/09/16/scheduling-problem/</id>
     <published>2013-09-16T14:16:11.000Z</published>
-    <updated>2013-09-24T13:00:43.000Z</updated>
+    <updated>2013-09-24T17:06:24.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>There is no silver bullet in algorithm design.</p>
 </blockquote>
@@ -50,6 +50,8 @@
 ① T1,T2： <span class="number">5</span><span class="variable">*2</span>+(<span class="number">5</span>+<span class="number">3</span>)<span class="variable">*1</span>=<span class="number">18</span>
 ② T2,T1： <span class="number">3</span><span class="variable">*1</span>+(<span class="number">3</span>+<span class="number">5</span>)<span class="variable">*2</span>=<span class="number">19</span>
 所以选择方案①</code></pre>
+<a id="more"></a>
+
 <h3><strong>问题分析</strong></h3>
 <p>如果所有任务只有一个时间属性，没有权重的区分，那么显而易见，按任务时间t从小到大排序可以使<strong><em>完成时间</em></strong>之和最小。然后，现在要考虑带权重的情况，不能再简单地按优先级或任务时间进行排序，而要寻找一种兼顾权重和任务时间的排序条件。</p>
 <p>我们现在来考虑这两种排序条件：</p>

@@ -11,7 +11,33 @@
 没有一种算法能普适于所有的计算问题。常见的算法有：
 
 divide and comquer（归并排序等）
-randomized algorithms（基于随机pivot的快速排序、Randomized S">
+randomized algorithms（基于随机pivot的快速排序、Randomized Selection算法、Hash函数的设计等）
+greedy algorithms（Dijkstra算法等）
+dynamic programming（Sequence Alignment问题、背包问题、Floyd-Warshall、最长递增子序列LIS等）
+
+贪心算法
+什么是贪心算法？简单地说，就是在算法执行的每一步都“目光短浅”地选择当下最好的方案，而不考虑整体效果的优劣。贪心算法与分治算法相比有以下一些特点：
+
+算法易于构造和实现
+易于计算时间复杂度（不同于分治法的Master Method）
+难以证明其正确性，大多数情况下贪心算法并不正确（分治法可以用归纳法证明）
+
+证明贪心算法的正确性，一般有两种方式：
+
+greedy stays ahead（类似归纳法，即证明贪心算法的每一步完成后当前解决方案是最佳的）
+exchange argument（下面证明Scheduling问题的最优解将会用到这种方法）
+
+Scheduling问题
+假设一台单核计算机要完成若干个任务，每个任务有两个属性，一个是完成任务所需要的时间t，另一个是任务的权重w（优先级），时间与权重都用正整数定义。现在要求设计计算一种完成任务的先后顺序，使得所有任务的带权完成时间之和最小。注：任务的带权完成时间 = 任务权重w * 任务完成时的时间（包含之前的等待时间）
+举个例子：
+          权重   任务时间
+ T1       2        5
+ T2       1        3
+
+两种顺序方案的加权完成时间之和：
+① T1,T2： 5*2+(5+3)*1=18
+② T2,T1： 3*1+(3+5)*2=19
+所以选择方案①">
   
   
   <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
@@ -94,6 +120,8 @@ randomized algorithms（基于随机pivot的快速排序、Randomized S">
 ① T1,T2： <span class="number">5</span><span class="variable">*2</span>+(<span class="number">5</span>+<span class="number">3</span>)<span class="variable">*1</span>=<span class="number">18</span>
 ② T2,T1： <span class="number">3</span><span class="variable">*1</span>+(<span class="number">3</span>+<span class="number">5</span>)<span class="variable">*2</span>=<span class="number">19</span>
 所以选择方案①</code></pre>
+<a id="more"></a>
+
 <h3><strong>问题分析</strong></h3>
 <p>如果所有任务只有一个时间属性，没有权重的区分，那么显而易见，按任务时间t从小到大排序可以使<strong><em>完成时间</em></strong>之和最小。然后，现在要考虑带权重的情况，不能再简单地按优先级或任务时间进行排序，而要寻找一种兼顾权重和任务时间的排序条件。</p>
 <p>我们现在来考虑这两种排序条件：</p>
@@ -226,9 +254,9 @@ randomized algorithms（基于随机pivot的快速排序、Randomized S">
   <h3 class="title">Categories</h3>
   <ul class="entry">
   
-    <li><a href="/categories/学习思考/">学习思考</a><small>7</small></li>
-  
     <li><a href="/categories/心情随笔/">心情随笔</a><small>3</small></li>
+  
+    <li><a href="/categories/学习思考/">学习思考</a><small>7</small></li>
   
     <li><a href="/categories/生活点滴/">生活点滴</a><small>1</small></li>
   
@@ -241,19 +269,19 @@ randomized algorithms（基于随机pivot的快速排序、Randomized S">
   <h3 class="title">Tags</h3>
   <ul class="entry">
   
-    <a href="/tags/blog,wordpress/"><li>blog,wordpress<small>1</small></li></a>
-  
     <a href="/tags/webapp/"><li>webapp<small>2</small></li></a>
   
-    <a href="/tags/南京/"><li>南京<small>1</small></li></a>
+    <a href="/tags/blog,wordpress/"><li>blog,wordpress<small>1</small></li></a>
   
-    <a href="/tags/octopress,blog/"><li>octopress,blog<small>1</small></li></a>
+    <a href="/tags/Octopress,Workflow/"><li>Octopress,Workflow<small>1</small></li></a>
   
     <a href="/tags/octopress/"><li>octopress<small>1</small></li></a>
   
     <a href="/tags/Algorithm/"><li>Algorithm<small>1</small></li></a>
   
-    <a href="/tags/Octopress,Workflow/"><li>Octopress,Workflow<small>1</small></li></a>
+    <a href="/tags/南京/"><li>南京<small>1</small></li></a>
+  
+    <a href="/tags/octopress,blog/"><li>octopress,blog<small>1</small></li></a>
   
   </ul>
 </div>
