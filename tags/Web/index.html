@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Web,CSS | Z.X.C</title>
+  <title>Web | Z.X.C</title>
   <meta name="author" content="Jason Zhao">
   
   
@@ -39,7 +39,7 @@
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper">
-<h2 class="archive-title tag">Web,CSS</h2>
+<h2 class="archive-title tag">Web</h2>
 
 
   
@@ -103,90 +103,18 @@
     <span class="rule"><span class="attribute">vertical-align</span>:<span class="value"> middle</span></span>; 
 <span class="rule">}</span></span>
 </pre></td></tr></table></figure>
-</li>
-<li><p><strong>inline-block</strong><br>添加一个额外的块元素，设置为内联对象，高度为100%。注：#parent需要定高。  </p>
-<figure class="highlight html"><figcaption><span>HTML</span></figcaption><table><tr><td class="gutter"><pre>1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"parent"</span>&gt;</span> 
-    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"vertically_center"</span>&gt;</span> 
-        <span class="tag">&lt;<span class="title">p</span>&gt;</span>I am vertically centered!<span class="tag">&lt;/<span class="title">p</span>&gt;</span> 
-    <span class="tag">&lt;/<span class="title">div</span>&gt;</span> 
-    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"extra"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span> 
-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-</pre></td></tr></table></figure>
-<figure class="highlight css"><figcaption><span>CSS</span></figcaption><table><tr><td class="gutter"><pre>1
-2
-3
-4
-5
-6
-7
-</pre></td><td class="code"><pre><span class="id">#vertically_center</span>, <span class="id">#extra</span> <span class="rules">{ 
-    <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>; <span class="comment">/*把元素转为行内块显示*/</span> 
-    <span class="rule"><span class="attribute">vertical-align</span>:<span class="value"> middle</span></span>; <span class="comment">/*垂直居中*/</span> 
-<span class="rule">}</span></span> 
-<span class="id">#extra</span> <span class="rules">{ 
-    <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">100</span>%</span></span>;  <span class="comment">/*设置线盒型为父元素的100%高度*/</span> 
-<span class="rule">}</span></span>
-</pre></td></tr></table></figure>
-</li>
-<li><p><strong>padding</strong><br>给元素设置相同的padding-top和padding-bottom值。注：元素不能定高。</p>
-</li>
-<li><p><strong>jQuery</strong></p>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-3
-4
-5
-6
-7
-</pre></td><td class="code"><pre>$(window).resize(<span class="function"><span class="keyword">function</span><span class="params">()</span>{</span> 
-    $(<span class="string">'.container'</span>).css({ 
-	    position:<span class="string">'absolute'</span>, 
-	    left: ($(window).width() - $(<span class="string">'.container'</span>).outerWidth())/<span class="number">2</span>, 
-	    top: ($(window).height() - $(<span class="string">'.container'</span>).outerHeight())/<span class="number">2</span> 
-	}); 
-});
-</pre></td></tr></table></figure>
 
 </li>
 </ol>
-<h3 id="-">水平居中</h3>
-<hr>
-<ol>
-<li><p><strong>margin : auto</strong><br> 注：元素需要定宽。</p>
-</li>
-<li><p><strong>绝对定位</strong><br> 类似垂直居中的绝对定位。</p>
-</li>
-<li><p><strong>text-align ：center</strong></p>
-</li>
-</ol>
-<h3 id="position-">position用法</h3>
-<hr>
-<ol>
-<li><p>relative<br> 基于对象margin的左上侧相对于自身的正常位置并进行偏移，其余元素不受影响。</p>
-</li>
-<li><p>absolute  </p>
-<ul>
-<li>若父对象设置了position属性且不是默认值,按此父对象定位，且忽略padding，此时，该对象脱离普通流，不占据空间。  </li>
-<li>若所有父对象均没有设置position属性，则按<strong>浏览器窗口</strong>定位。</li>
-</ul>
-</li>
-<li><p>fixed<br> 也可以认为是absolute的特殊情况，即总是以浏览器窗口进行定位，与background-attachment:fixed相似。</p>
-</li>
-<li><p>static<br> 默认值，按正常的文档流进行排列。</p>
-</li>
-</ol>
-<p><em>整理自 <a href="http://www.w3cplus.com/css/vertically-center-content-with-css" target="_blank">http://www.w3cplus.com/css/vertically-center-content-with-css</a></em></p>
 
       
     </div>
     <footer>
       
+        
+          <div class="alignleft readmore">
+            <a href="/2014/01/18/front-end-notes-css/#more" class="more-link">Read More</a>
+          </div>
         
         
       
@@ -246,7 +174,7 @@
   
     <a href="/tags/Algorithm/"><li>Algorithm<small>1</small></li></a>
   
-    <a href="/tags/Web,CSS/"><li>Web,CSS<small>1</small></li></a>
+    <a href="/tags/Web/"><li>Web<small>1</small></li></a>
   
   </ul>
 </div>

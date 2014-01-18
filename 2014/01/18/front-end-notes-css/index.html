@@ -11,7 +11,32 @@
 
 line-height设置元素的line-height与height相等。注：仅适用于单行文本或图片，可以用于button等小元素。
 
-绝对定位设置position为absolute（注意父元素的position不能为默认值，否则将以浏览器窗口进行定位），top为50%，固定高度，ma">
+绝对定位设置position为absolute（注意父元素的position不能为默认值，否则将以浏览器窗口进行定位），top为50%，固定高度，margin-top为高度的一半取负。注：不能自适应内容的高度，元素脱离文档流。
+
+模拟表格定义一个父元素，设置display属性为table，子元素display设置为table-cell，并且vertical-align为middle。注：父元素需要定高，能够自适应内容宽度，无法在IE6、IE7下使用。
+HTML1
+2
+3
+&lt;div id=&quot;container&quot;&gt; 
+    &lt;div id=&quot;content&quot;&gt;content&lt;/div&gt; 
+&lt;/div&gt;
+
+CSS1
+2
+3
+4
+5
+6
+7
+8
+#container { 
+    height: 300px; 
+    display: table;    /*以表格形式渲染*/ 
+} 
+#content { 
+    display:table-cell; 
+    vertical-align: middle; 
+}">
   
   
   <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
@@ -105,7 +130,12 @@ line-height设置元素的line-height与height相等。注：仅适用于单行�
     <span class="rule"><span class="attribute">vertical-align</span>:<span class="value"> middle</span></span>; 
 <span class="rule">}</span></span>
 </pre></td></tr></table></figure>
+
 </li>
+</ol>
+<a id="more"></a>
+
+<ol>
 <li><p><strong>inline-block</strong><br>添加一个额外的块元素，设置为内联对象，高度为100%。注：#parent需要定高。  </p>
 <figure class="highlight html"><figcaption><span>HTML</span></figcaption><table><tr><td class="gutter"><pre>1
 2
@@ -198,7 +228,7 @@ line-height设置元素的line-height与height相等。注：仅适用于单行�
         
   
   <div class="tags">
-    <a href="/tags/Web,CSS/">Web,CSS</a>
+    <a href="/tags/Web/">Web</a>
   </div>
 
         
@@ -258,7 +288,7 @@ line-height设置元素的line-height与height相等。注：仅适用于单行�
   
     <a href="/tags/Algorithm/"><li>Algorithm<small>1</small></li></a>
   
-    <a href="/tags/Web,CSS/"><li>Web,CSS<small>1</small></li></a>
+    <a href="/tags/Web/"><li>Web<small>1</small></li></a>
   
   </ul>
 </div>

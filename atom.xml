@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Little strokes fell great oaks]]></subtitle>
   <link href="http://blog.zxczone.com/atom.xml" rel="self"/>
   <link href="http://blog.zxczone.com"/>
-  <updated>2014-01-18T16:36:39.079Z</updated>
+  <updated>2014-01-18T16:42:59.859Z</updated>
   <id>http://blog.zxczone.com/</id>
   <author>
     <name><![CDATA[Jason Zhao]]></name>
@@ -16,7 +16,7 @@
     <link href="http://blog.zxczone.com/2014/01/18/front-end-notes-css/"/>
     <id>http://blog.zxczone.com/2014/01/18/front-end-notes-css/</id>
     <published>2014-01-18T11:00:06.000Z</published>
-    <updated>2014-01-18T16:23:10.000Z</updated>
+    <updated>2014-01-18T16:42:48.000Z</updated>
     <content type="html"><![CDATA[<h3 id="-">垂直居中</h3>
 <hr>
 <ol>
@@ -49,7 +49,12 @@
     <span class="rule"><span class="attribute">vertical-align</span>:<span class="value"> middle</span></span>; 
 <span class="rule">}</span></span>
 </pre></td></tr></table></figure>
+
 </li>
+</ol>
+<a id="more"></a>
+
+<ol>
 <li><p><strong>inline-block</strong><br>添加一个额外的块元素，设置为内联对象，高度为100%。注：#parent需要定高。  </p>
 <figure class="highlight html"><figcaption><span>HTML</span></figcaption><table><tr><td class="gutter"><pre>1
 2
@@ -129,7 +134,7 @@
 </ol>
 <p><em>整理自 <a href="http://www.w3cplus.com/css/vertically-center-content-with-css" target="_blank">http://www.w3cplus.com/css/vertically-center-content-with-css</a></em></p>
 ]]></content>
-    <category scheme="http://blog.zxczone.com/tags/Web,CSS/" term="Web,CSS"/>
+    <category scheme="http://blog.zxczone.com/tags/Web/" term="Web"/>
   </entry>
   <entry>
     <title type="html"><![CDATA[用贪心算法解决Scheduling问题]]></title>
