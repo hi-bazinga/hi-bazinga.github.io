@@ -3,13 +3,25 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2012 | Z.X.C</title>
+  <title>Web前端笔记 | Z.X.C</title>
   <meta name="author" content="Jason Zhao">
+  
+  <meta name="description" content="CSS
+
+垂直居中方法
+
+line-height
+设置元素的line-height与height相等
+注：仅适用于单行文本或图片，可以用于button等小元素
+
+
+绝对定位
+设置position为absolute（注意父容器的position不能为默认值，否则将以浏览器窗口进行定位），top为50%">
   
   
   <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
-  
+  <meta property="og:title" content="Web前端笔记"/>
   <meta property="og:site_name" content="Z.X.C"/>
 
   <link rel="alternate" href="/atom.xml" title="Z.X.C" type="application/atom+xml">
@@ -38,12 +50,7 @@
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-<h2 class="archive-title">2012</h2>
-
-
-  
-    <article class="post">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
     <div class="gallery">
   <div class="photoset">
@@ -61,76 +68,80 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2012-03-04T16:00:00.000Z">Mar 5 2012</time>
+        <time datetime="2014-01-18T11:00:06.000Z">Jan 18 2014</time>
       
       
   
-    <h1 class="title"><a href="/2012/03/05/gre-webapp/">GRE作文练习v1.0</a></h1>
+    <h1 class="title">Web前端笔记</h1>
   
 
     </header>
     <div class="entry">
       
-        <p>前段时间准备开始准备GRE作文，之前在网上看到一个GRE作文练习的网页，只有简单的几个table，很简陋，又看了下题库内容，issue 200+,argument 200+，显然是老G的了。这是不能容忍的，于是立刻就萌生了自己做一个的想法。
-
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft readmore">
-            <a href="/2012/03/05/gre-webapp/#more" class="more-link">Read More</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-  
-    <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
+        <h2 id="css">CSS</h2>
+<ul>
+<li><p><strong>垂直居中方法</strong></p>
+<ol>
+<li>line-height<ul>
+<li>设置元素的line-height与height相等</li>
+<li>注：仅适用于单行文本或图片，可以用于button等小元素</li>
+</ul>
+</li>
+<li>绝对定位<ul>
+<li>设置position为absolute<em>（注意父容器的position不能为默认值，否则将以浏览器窗口进行定位）</em>，top为50%，固定高度，margin-top为高度的一半取负。</li>
+<li>注：不能自适应内容的高度，元素脱离文档流。</li>
+</ul>
+</li>
+<li><p>模拟表格</p>
+<div id="container"> 
+ <div id="content">content</div> 
 </div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2012-02-26T16:00:00.000Z">Feb 27 2012</time>
-      
-      
-  
-    <h1 class="title"><a href="/2012/02/27/recent-days/">最近的生活</a></h1>
-  
 
-    </header>
-    <div class="entry">
-      
-        <p>今天终于把生物钟调过来了，不会再2点睡9点起了（有时还要更夸张些==）。</p>
-<p>至于前段时间为什么熬夜，我想是太急功近利了吧，脑袋里充斥着“没有熬夜解决不了的事情”的思想，于是夜深人静的时候coding越写越兴奋，但其实效率也并不高。主要还是对web前端设计做的太少，经验不足，以至于要把那些个条条框框安置在一个令人赏心悦目的位置上还得花费不少时间摸索。大作业什么的真是伤神又伤身，而院里的节奏恰恰是考前一个月开始，各种大作业潮水般涌来，少则一个两个，多则三个四个。譬如这个小学期，web、信息系统、Linux三个难度（综合考虑技术程度和耗时程度）都不小，对了，还有软件测试！差点忘了，如果以耗时程度为横轴，技术难度为纵轴，那测试应该第一象限的右下角，嗯，大家懂的。</p>
+<h1 id="container-">container {</h1>
+<p> height: 300px; 
+ display: table; /<em>让元素以表格形式渲染</em>/ 
+} </p>
+<h1 id="content-">content {</h1>
+<p> display:table-cell; /<em>让元素以表格的单元素格形式渲染</em>/ 
+ vertical-align: middle; /<em>使用元素的垂直对齐</em>/ 
+}   </p>
+</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li><strong>position用法</strong><ol>
+<li>relative
+ 基于对象margin的左上侧相对于自身的正常位置并进行偏移，其余元素不受影响。</li>
+<li>absolute<ul>
+<li>若父对象设置了position属性且不是默认值,按此父对象定位，且忽略padding，此时，该对象脱离普通流，不占据空间。</li>
+<li>若所有父对象均没有设置position属性，则按<strong>浏览器窗口</strong>定位。</li>
+</ul>
+</li>
+<li>fixed
+ 也可以认为是absolute的特殊情况，即总是以浏览器窗口进行定位，与background-attachment:fixed相似。</li>
+<li>static
+ 默认值，按正常的文档流进行排列。</li>
+</ol>
+</li>
+</ul>
 
       
     </div>
     <footer>
       
         
-          <div class="alignleft readmore">
-            <a href="/2012/02/27/recent-days/#more" class="more-link">Read More</a>
-          </div>
+  
+  <div class="categories">
+    
+  </div>
+
         
+  
+  <div class="tags">
+    
+  </div>
+
         
       
       <div class="clearfix"></div>
@@ -139,13 +150,12 @@
 </article>
 
 
-  
-
-  <nav id="pagination">
-  
-  
-  <div class="clearfix"></div>
-</nav>
+<section id="comment">
+  <h1 class="title">Comments</h1>
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
 </div></div>
     <aside id="sidebar" class="alignright">
 <div class="tag search">
@@ -215,7 +225,7 @@ var disqus_shortname = 'zxczone';
   var dsq = document.createElement('script');
   dsq.type = 'text/javascript';
   dsq.async = true;
-  dsq.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+  dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 }());
 </script>

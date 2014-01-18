@@ -42,6 +42,18 @@
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
   <div class="post-content">
     <header>
       
@@ -56,7 +68,8 @@
     </header>
     <div class="entry">
       
-        <p>前段时间准备开始准备GRE作文，之前在网上看到一个GRE作文练习的网页，只有简单的几个table，很简陋，又看了下题库内容，issue 200+,argument 200+，显然是老G的了。这是不能容忍的，于是立刻就萌生了自己做一个的想法。<br><a id="more"></a></p>
+        <p>前段时间准备开始准备GRE作文，之前在网上看到一个GRE作文练习的网页，只有简单的几个table，很简陋，又看了下题库内容，issue 200+,argument 200+，显然是老G的了。这是不能容忍的，于是立刻就萌生了自己做一个的想法。
+<a id="more"></a></p>
 <p>其实就功能来说做起来并不很难，就是一些准备工作花了不少时间。比如获取gre庞大的题库数据，并存入数据库。几百到题手动来添加绝对是一件无比痛苦的事，这种机械的重复性劳动不该由人来完成，交给计算机去做吧！最权威的数据无疑是GRE官网的<a href="https://www.ets.org/gre/revised_general/prepare/analytical_writing/issue/pool" target="_blank">Pool of Topics</a>了，这么规整的网页格式取得数据并不难，正则匹配并将数据组建成一条条sql语句执行即可。有了数据库接下来就都好办，粗糙地P了几张图（美工还是软肋啊），写几个必要的页面即可。当然了，web开发最头疼的还是兼容性问题，IE下网页面目全非是常有的事。所以还得小心翼翼地使用css，真希望IE6、7、8早消失，听说国外某个公司向IE用户收取额外的费用来填补兼容性维护的成本 ==！</p>
 <p>其实写着写着就想把它做一个写作交流平台来着，不过那样工作量有点大，最近也不轻松，于是草草结束了v1.0, 以后有时间再“自娱自乐”吧（对了，弹窗用了丑陋的alert，简单实用吧，毕竟目的是好好练习写作-_-）</p>
 <p>传送门：<a href="http://zxczone.com/gre/" target="_blank">GRE作文练习</a></p>
@@ -106,9 +119,9 @@
   <h3 class="title">Categories</h3>
   <ul class="entry">
   
-    <li><a href="/categories/心情随笔/">心情随笔</a><small>3</small></li>
-  
     <li><a href="/categories/学习思考/">学习思考</a><small>7</small></li>
+  
+    <li><a href="/categories/心情随笔/">心情随笔</a><small>3</small></li>
   
     <li><a href="/categories/生活点滴/">生活点滴</a><small>1</small></li>
   
@@ -121,19 +134,19 @@
   <h3 class="title">Tags</h3>
   <ul class="entry">
   
-    <a href="/tags/webapp/"><li>webapp<small>2</small></li></a>
-  
     <a href="/tags/blog,wordpress/"><li>blog,wordpress<small>1</small></li></a>
   
-    <a href="/tags/Octopress,Workflow/"><li>Octopress,Workflow<small>1</small></li></a>
-  
-    <a href="/tags/octopress/"><li>octopress<small>1</small></li></a>
-  
-    <a href="/tags/Algorithm/"><li>Algorithm<small>1</small></li></a>
+    <a href="/tags/webapp/"><li>webapp<small>2</small></li></a>
   
     <a href="/tags/南京/"><li>南京<small>1</small></li></a>
   
     <a href="/tags/octopress,blog/"><li>octopress,blog<small>1</small></li></a>
+  
+    <a href="/tags/octopress/"><li>octopress<small>1</small></li></a>
+  
+    <a href="/tags/Octopress,Workflow/"><li>Octopress,Workflow<small>1</small></li></a>
+  
+    <a href="/tags/Algorithm/"><li>Algorithm<small>1</small></li></a>
   
   </ul>
 </div>
@@ -143,7 +156,7 @@
   </div>
   <footer id="footer" class="inner"><div class="alignleft">
   
-  &copy; 2013 Jason Zhao
+  &copy; 2014 Jason Zhao
   
   <br />
   Powered by <a href="http://zespia.tw/hexo/">Hexo</a>

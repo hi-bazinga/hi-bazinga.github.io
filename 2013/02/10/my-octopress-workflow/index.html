@@ -43,6 +43,18 @@
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
   <div class="post-content">
     <header>
       
@@ -58,11 +70,14 @@
     <div class="entry">
       
         <p>以前用wordpress的时候，总是觉得写一篇博客挺麻烦，要登录后台在线写文章，还要提防着浏览器突然崩溃导致辛辛苦苦码的字全部付之东流的危险。当然也可以先用在本地写好文章再copy上去，但又觉得这种方式实在是缺乏美感，写博客的欲望也大大降低。换成Octopress以来，前面的问题似乎都解决了。不过，如果能进一步减少码字之前的准备工作，一键完成<code>rake new_post[]</code>，并用喜欢的编辑器 <a href="http://www.sublimetext.com" target="_blank">Sublime Text 2</a> 直接开始编辑，那就更好了。于是自己把git shell里的命令集写成一个批处理，很简单的几行，这样就不用每次打开shell手动切换目录并rake了。</p>
-<p>下面是操作流程，网速比较慢，所以只传了个分辨率低的。<br><a id="more"></a></p>
-<div class="video-container"><br>  <embed src="http://player.youku.com/player.php/sid/XNTEzNzcwNDI0/v.swf" allowFullScreen="true" quality="high"  align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed><br></div>
+<p>下面是操作流程，网速比较慢，所以只传了个分辨率低的。
+<a id="more"></a></p>
+<div class="video-container">
+  <embed src="http://player.youku.com/player.php/sid/XNTEzNzcwNDI0/v.swf" allowFullScreen="true" quality="high"  align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed> 
+</div>
 
 
-<figure class="highlight lang-sh"><figcaption><span>new.bat</span></figcaption><table><tr><td class="gutter"><pre>1
+<figure class="highlight sh"><figcaption><span>new.bat</span></figcaption><table><tr><td class="gutter"><pre>1
 2
 3
 </pre></td><td class="code"><pre><span class="variable">@echo</span> off
@@ -71,7 +86,7 @@ rake new_post[]
 </pre></td></tr></table></figure>
 
 <p>那怎样自动使用sublime打开新创建的post文件呢？也很简单，找到octopress根目录下的<code>Rakefile</code>文件，找到新建post的task，在末尾加上一句代码即可：</p>
-<figure class="highlight lang-ruby"><figcaption><span>Rakefile</span></figcaption><table><tr><td class="gutter"><pre>1
+<figure class="highlight ruby"><figcaption><span>Rakefile</span></figcaption><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -184,9 +199,9 @@ task <span class="symbol">:new_post</span>, <span class="symbol">:title</span> <
   <h3 class="title">Categories</h3>
   <ul class="entry">
   
-    <li><a href="/categories/心情随笔/">心情随笔</a><small>3</small></li>
-  
     <li><a href="/categories/学习思考/">学习思考</a><small>7</small></li>
+  
+    <li><a href="/categories/心情随笔/">心情随笔</a><small>3</small></li>
   
     <li><a href="/categories/生活点滴/">生活点滴</a><small>1</small></li>
   
@@ -199,19 +214,19 @@ task <span class="symbol">:new_post</span>, <span class="symbol">:title</span> <
   <h3 class="title">Tags</h3>
   <ul class="entry">
   
-    <a href="/tags/webapp/"><li>webapp<small>2</small></li></a>
-  
     <a href="/tags/blog,wordpress/"><li>blog,wordpress<small>1</small></li></a>
   
-    <a href="/tags/Octopress,Workflow/"><li>Octopress,Workflow<small>1</small></li></a>
-  
-    <a href="/tags/octopress/"><li>octopress<small>1</small></li></a>
-  
-    <a href="/tags/Algorithm/"><li>Algorithm<small>1</small></li></a>
+    <a href="/tags/webapp/"><li>webapp<small>2</small></li></a>
   
     <a href="/tags/南京/"><li>南京<small>1</small></li></a>
   
     <a href="/tags/octopress,blog/"><li>octopress,blog<small>1</small></li></a>
+  
+    <a href="/tags/octopress/"><li>octopress<small>1</small></li></a>
+  
+    <a href="/tags/Octopress,Workflow/"><li>Octopress,Workflow<small>1</small></li></a>
+  
+    <a href="/tags/Algorithm/"><li>Algorithm<small>1</small></li></a>
   
   </ul>
 </div>
@@ -221,7 +236,7 @@ task <span class="symbol">:new_post</span>, <span class="symbol">:title</span> <
   </div>
   <footer id="footer" class="inner"><div class="alignleft">
   
-  &copy; 2013 Jason Zhao
+  &copy; 2014 Jason Zhao
   
   <br />
   Powered by <a href="http://zespia.tw/hexo/">Hexo</a>
