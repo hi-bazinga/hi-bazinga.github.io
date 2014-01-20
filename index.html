@@ -57,6 +57,74 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2014-01-20T09:04:35.000Z">Jan 20 2014</time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/01/20/xor-swap-is-not-always-true/">异或交换的陷阱</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>今天在写快排算法时需要交换数组中两个位置的值，准备写一个swap方法，刚准备敲下<code>int tmp = ...</code>，突然想到可以用一种更cool的方法来做，很快敲下三行代码：</p>
+<pre><code>list[a] = list[a] ^ list[b];
+list[b] = list[a] ^ list[b];
+list[a] = list[a] ^ list[b];
+</code></pre><p>信心满满地Run，结果输出结果大跌眼镜：</p>
+<pre><code>...
+0
+0
+9975
+9977
+0
+9982
+0
+...
+</code></pre><p>list的很多元素值变为0，纠结了半天，一开始以为是quicksort方法里出了错，后来单独测试swap时终于发现了问题的关键所在！这里有个很隐蔽的陷阱，注意，这里交换的数组中的元素，而不是简单的两个变量。当<code>list[a]</code>和<code>list[b]</code>中的a和b相等时，问题就来了：</p>
+<pre><code>// 若a = b
+list[a] = list[a] ^ list[b];    //list[a] 和 list[b] 值相等，异或后为0，即 list[a] = 0
+list[b] = list[a] ^ list[b];    //因为a = b，此时等号右边的list[b] 就是 list[a]，它的值已经被赋值为0了！
+list[a] = list[a] ^ list[b];    //三条语句执行完，list[a]被赋值为0，这就是最终结果
+</code></pre><p>如果不是交换数组元素，而是普通的int变量，过程应该是这样的：</p>
+<pre><code>// 若a = b
+a = a ^ b    //a和b相等，异或后为0，即a = 0
+b = a ^ b    //此时b还是原来那个b，而a = 0，b = 0 ^ b，此时b不变，保持原值
+a = a ^ b    //a = 0 ^ b，a被赋值为b，此时a和b的值与原来相同，因为a = b，也相当于a和b交换
+</code></pre><p>既然交换数组元素在下标相等的情况下不能用异或，那加减行不行呢？答案同样是否定的，原理同异或。当然，如果一定要用这种不引进临时变量的交换方式，加个<code>if (a != b)</code>的判断就可以了。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2014-01-18T11:00:06.000Z">Jan 18 2014</time>
       
       
@@ -546,56 +614,6 @@
         
           <div class="alignleft readmore">
             <a href="/2012/02/27/recent-days/#more" class="more-link">Read More</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2011-12-13T16:00:00.000Z">Dec 14 2011</time>
-      
-      
-  
-    <h1 class="title"><a href="/2011/12/14/memorial-12-13/">又逢【12·13】祭</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p><img src="http://fmn.rrimg.com/fmn063/20111213/2145/b_large_AfQA_47ed00003a54125b.jpg" alt="南京"></p>
-<p>今天又是一年中一个特别的日子。这个我生活了许多年的城市，这一天总是显得分外伤感。</p>
-<p>南京，有人赞其王气，也有人贬其阴气、鬼气——城东中山陵、明孝陵，南面雨花台，西边大屠杀纪念馆，北面还有燕子矶。也许只有生活在其中的我们，才知道她 是那样的五味俱全。这里确是帝王之宅，但又不乏饮恨的志士和短命的王朝。今天提起南京，更多人只怕最先想起的，还是74年前血雨腥风的一笔和万千苦难的人民。南京曾经被杀得所剩无几，也被毁得所剩无几。这座城市的历史既辉煌又悲情，闻名遐迩的金字牌匾“金陵王气”，既是骄傲，也是悲哀。</p>
-
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft readmore">
-            <a href="/2011/12/14/memorial-12-13/#more" class="more-link">Read More</a>
           </div>
         
         

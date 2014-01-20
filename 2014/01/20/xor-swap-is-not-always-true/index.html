@@ -3,13 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2014 | Z.X.C</title>
+  <title>异或交换的陷阱 | Z.X.C</title>
   <meta name="author" content="Jason Zhao">
+  
+  <meta name="description" content="今天在写快排算法时需要交换数组中两个位置的值，准备写一个swap方法，刚准备敲下int tmp = ...，突然想到可以用一种更cool的方法来做，很快敲下三行代码：
+list[a] = list[a] ^ list[b];
+list[b] = list[a] ^ list[b];
+list[a] ">
   
   
   <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
-  
+  <meta property="og:title" content="异或交换的陷阱"/>
   <meta property="og:site_name" content="Z.X.C"/>
 
   <link rel="alternate" href="/atom.xml" title="Z.X.C" type="application/atom+xml">
@@ -38,12 +43,7 @@
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-<h2 class="archive-title">2014</h2>
-
-
-  
-    <article class="post">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
     <div class="gallery">
   <div class="photoset">
@@ -65,7 +65,7 @@
       
       
   
-    <h1 class="title"><a href="/2014/01/20/xor-swap-is-not-always-true/">异或交换的陷阱</a></h1>
+    <h1 class="title">异或交换的陷阱</h1>
   
 
     </header>
@@ -102,6 +102,17 @@ a = a ^ b    //a = 0 ^ b，a被赋值为b，此时a和b的值与原来相同，�
     <footer>
       
         
+  
+  <div class="categories">
+    
+  </div>
+
+        
+  
+  <div class="tags">
+    
+  </div>
+
         
       
       <div class="clearfix"></div>
@@ -110,95 +121,12 @@ a = a ^ b    //a = 0 ^ b，a被赋值为b，此时a和b的值与原来相同，�
 </article>
 
 
-  
-    <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
+<section id="comment">
+  <h1 class="title">Comments</h1>
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-01-18T11:00:06.000Z">Jan 18 2014</time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/01/18/front-end-notes-css/">Web前端笔记 - CSS篇</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <h3 id="-">垂直居中</h3>
-<hr>
-<ol>
-<li><p><strong>line-height</strong><br>设置元素的line-height与height相等。<br>注：仅适用于单行文本或图片，可以用于button等小元素。</p>
-</li>
-<li><p><strong>绝对定位</strong><br>设置position为absolute<em>（注意父元素的position不能为默认值，否则将以浏览器窗口进行定位）</em>，top为50%，固定高度，margin-top为高度的一半取负。<br>注：不能自适应内容的高度，元素脱离文档流。</p>
-</li>
-<li><p><strong>模拟表格</strong><br>定义一个父元素，设置display属性为table，子元素display设置为table-cell，并且vertical-align为middle。<br>注：父元素需要定高，能够自适应内容宽度，无法在IE6、IE7下使用。</p>
-<figure class="highlight html"><figcaption><span>HTML</span></figcaption><table><tr><td class="gutter"><pre>1
-2
-3
-</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"container"</span>&gt;</span> 
-    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"content"</span>&gt;</span>content<span class="tag">&lt;/<span class="title">div</span>&gt;</span> 
-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-</pre></td></tr></table></figure>
-<figure class="highlight css"><figcaption><span>CSS</span></figcaption><table><tr><td class="gutter"><pre>1
-2
-3
-4
-5
-6
-7
-8
-</pre></td><td class="code"><pre><span class="id">#container</span> <span class="rules">{ 
-    <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">300</span>px</span></span>; 
-    <span class="rule"><span class="attribute">display</span>:<span class="value"> table</span></span>;    <span class="comment">/*以表格形式渲染*/</span> 
-<span class="rule">}</span></span> 
-<span class="id">#content</span> <span class="rules">{ 
-    <span class="rule"><span class="attribute">display</span>:<span class="value">table-cell</span></span>; 
-    <span class="rule"><span class="attribute">vertical-align</span>:<span class="value"> middle</span></span>; 
-<span class="rule">}</span></span>
-</pre></td></tr></table></figure>
-
-</li>
-</ol>
-
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft readmore">
-            <a href="/2014/01/18/front-end-notes-css/#more" class="more-link">Read More</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-  
-
-  <nav id="pagination">
-  
-  
-  <div class="clearfix"></div>
-</nav>
+</section>
 </div></div>
     <aside id="sidebar" class="alignright">
 <div class="tag search">
@@ -270,7 +198,7 @@ var disqus_shortname = 'zxczone';
   var dsq = document.createElement('script');
   dsq.type = 'text/javascript';
   dsq.async = true;
-  dsq.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+  dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 }());
 </script>
