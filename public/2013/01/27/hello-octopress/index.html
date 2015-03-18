@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>正式进军Octopress | Z.X.C</title>
+  <meta name="author" content="Jason Zhao">
+  
+  <meta name="description" content="2013年才进入Octopress的菜鸟表示很惭愧，临近毕业，在学校一堆事情让自己也难以静下心来折腾些什么。在好好珍惜最后一个寒假的同时，也终于有空闲来完成自己早在一年多前就想做的事。
+2010年刚开始使用wordpress的时候，写博客的动力还是相当充足的。那时wordpress友好的后台管理界面和日臻完善的Manual Book让我保持着不断尝试新花样的好奇心。那种自己能够自由掌控前端布局、后端行为的方式确实很棒。
+可是渐渐地，每每打开wp-admin，看着形似word的编辑器，各种样式、颜色、段落等等工具挤在一起，显得繁琐而复杂，写作的欲望越来越低。直到后来，开始尝试使用Markdown写博客。之前就听说过，但并未真正去使用，以至于第一次用Markdown时就被它的轻盈、简洁所吸引。所以，Wordpress是时候该抛弃了，今天终于完成了这一重大变革！">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="正式进军Octopress"/>
+  <meta property="og:site_name" content="Z.X.C"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Z.X.C" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Z.X.C</a></h1>
+  <h2><a href="/">Little strokes fell great oaks</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="/about">About</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2013-01-26T16:00:00.000Z"><a href="/2013/01/27/hello-octopress/">2013-01-27</a></time>
+      
+      
+  
+    <h1 class="title">正式进军Octopress</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>2013年才进入Octopress的菜鸟表示很惭愧，临近毕业，在学校一堆事情让自己也难以静下心来折腾些什么。在好好珍惜最后一个寒假的同时，也终于有空闲来完成自己早在一年多前就想做的事。</p>
+<p>2010年刚开始使用wordpress的时候，写博客的动力还是相当充足的。那时wordpress友好的后台管理界面和日臻完善的Manual Book让我保持着不断尝试新花样的好奇心。那种自己能够自由掌控前端布局、后端行为的方式确实很棒。</p>
+<p>可是渐渐地，每每打开wp-admin，看着形似word的编辑器，各种样式、颜色、段落等等工具挤在一起，显得繁琐而复杂，写作的欲望越来越低。直到后来，开始尝试使用Markdown写博客。之前就听说过，但并未真正去使用，以至于第一次用Markdown时就被它的轻盈、简洁所吸引。所以，Wordpress是时候该抛弃了，今天终于完成了这一重大变革！</p>
+<a id="more"></a>
+<h2 id="搭建过程">搭建过程</h2><p>关于git的使用这里就不说了，从安装octopress开始</p>
+<h3 id="安装">安装</h3><figure class="highlight sh"><figcaption><span>Install octopress</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> http://github.com/imathis/octopress octopress</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> octopress</span><br><span class="line">ruby --version <span class="comment"># Should report Ruby 1.9.2</span></span><br><span class="line">gem install bundler</span><br><span class="line">bundle install </span><br><span class="line"></span><br><span class="line">   rake install  <span class="comment">#install default theme</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>Problems:    </p>
+<p>   You have already activated rake 10.0.3, but your Gemfile &gt;requires rake 0.9.6. Using bundle exec may solve this.<br>   这样的错误，原因是安装了rake 10.0.3，而Gemfile.lock里的需求信息是 rake 0.9.6<br>   解决方法：在Gemfile里添加 <code>gem &#39;rake&#39;,&#39;10.0.3&#39;</code> 后运行 <code>bundle update rake</code> 进行更新</p>
+</li>
+</ul>
+<h3 id="配置">配置</h3><p>将根目录下的_config.yml的编码改成UTF-8（可以用Notepad++），修改_config.yml，包括url、title、subtitle、author等等。</p>
+<ul>
+<li><p>Problems:</p>
+<p>  这里Jekyll有个小bug，在windows上会遇到编码问题。网上普遍的做法是<br>到Ruby的安装目次\lib\ruby\gems\1.9.1\gems\jekyll-0.11.2\lib\jekyll\找到convertible.rb这个文件，将Line 29中<br><code>self.content = File.read（File.join（base， name））</code> 改为<br><code>self.content = File.read（File.join（base， name）， :encoding =&gt; &quot;utf-8&quot;）</code></p>
+</li>
+</ul>
+<h3 id="写文章">写文章</h3><p>Octopress的文章以Markdown格式保存在 source_posts 中（注意文件名格式），写新文章可以用：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rake new_post[<span class="string">"title"</span>]</span><br></pre></td></tr></table></figure>
+<h3 id="生成页面并预览">生成页面并预览</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rake generate	<span class="comment">#  Generates posts and pages into the public directory</span></span><br><span class="line"></span><br><span class="line">rake preview	<span class="comment"># Watches, and mounts a webserver at http://localhost:4000</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>problems：<br>  如果source文件夹中有些文件包含中文，比如_posts里的文章内容，或者自定义页面时加入了中文（“recent posts” 改为 “最新文章”等），此时会报诸如： <code>Liquid Exception: invalid byte sequence in UTF-8 in post</code> 之类的错误。花了一个多小时在网上寻找解决方法，尝试了3、4种，最后只有一种有效：在执行 <code>rake generate</code> 之前先设置控制台使之支持UTF-8格式，即运行 <code>chcp 65001</code>，再在标题栏右键-&gt;属性-&gt;字体-&gt;选择“Lucida Console”即可。</li>
+</ul>
+<h3 id="部署">部署</h3><p>第一次部署时要在Github上创建一个username.github.com的repo，username要和github的username一致。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">rake setup_github_pages  <span class="comment">#在Octopress目录下配置octopress与github的连接</span></span><br><span class="line"></span><br><span class="line">git@github.com:username/username.github.com.git  <span class="comment">#按照提示填入地址</span></span><br><span class="line"></span><br><span class="line">rake deploy		<span class="comment"># 将_deploy文件夹清空，将public中的内容复制到_deploy并部署到github</span></span><br></pre></td></tr></table></figure>
+<h3 id="迁移文章和评论">迁移文章和评论</h3><ol>
+<li>wordpress控制台有个导出功能，将导出的xml放到<code>source/_post</code>中</li>
+<li>下载<a href="https://github.com/odinyu/odinyu.github.com/blob/source/md.rb" target="_blank" rel="external">mb.rb</a></li>
+<li>运行：</li>
+</ol>
+<figure class="highlight sh"><figcaption><span>导出wordpress文章</span><a href="http://hopes4.me/blog/migrate-from-wordpress-to-octopress/" target="_blank" rel="external">引用</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> octopress/<span class="built_in">source</span>/_post</span><br><span class="line">ruby md.rb wordpress.xml</span><br><span class="line"></span><br><span class="line"><span class="comment">#如果提示少包，则依次安装如：</span></span><br><span class="line">gem install hpricot --platform=mswin32	<span class="comment">#这个要加特殊参数</span></span><br><span class="line">gem install ya2yaml</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/学习笔记/">学习笔记</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/Octopress/">Octopress</a>
+  </div>
+
+        
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a><a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a><a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["weixin","sqq","tsina","renren","linkedin","fbook","twi","douban","youdao"],"viewText":"分享到：","viewSize":"24"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">留言</h1>
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:blog.zxczone.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/Algorithms/">Algorithms</a><small>1</small></li>
+  
+    <li><a href="/categories/学习思考/">学习思考</a><small>3</small></li>
+  
+    <li><a href="/categories/学习笔记/">学习笔记</a><small>3</small></li>
+  
+    <li><a href="/categories/心情随笔/">心情随笔</a><small>1</small></li>
+  
+    <li><a href="/categories/生活点滴/">生活点滴</a><small>2</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">标签</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/Algorithms/">Algorithms</a><small>1</small></li>
+  
+    <li><a href="/tags/CSS/">CSS</a><small>1</small></li>
+  
+    <li><a href="/tags/EMC/">EMC</a><small>1</small></li>
+  
+    <li><a href="/tags/Octopress/">Octopress</a><small>3</small></li>
+  
+    <li><a href="/tags/Web/">Web</a><small>1</small></li>
+  
+    <li><a href="/tags/trick/">trick</a><small>1</small></li>
+  
+    <li><a href="/tags/实习/">实习</a><small>1</small></li>
+  
+    <li><a href="/tags/随笔/">随笔</a><small>1</small></li>
+  
+    <li><a href="/tags/面试/">面试</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2015 Jason Zhao
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/jquery-1.9.1.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<script type="text/javascript">
+var disqus_shortname = 'zxczone';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

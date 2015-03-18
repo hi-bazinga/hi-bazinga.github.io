@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>用贪心算法解决Scheduling问题 | Z.X.C</title>
+  <meta name="author" content="Jason Zhao">
+  
+  <meta name="description" content="There is no silver bullet in algorithm design.
+
+没有一种算法能普适于所有的计算问题。常见的算法有：
+
+divide and comquer（归并排序等）
+randomized algorithms（基于随机pivot的快速排序、Randomized Selection算法、Hash函数的设计等）
+greedy algorithms（Dijkstra算法等）
+dynamic programming（Sequence Alignment问题、背包问题、Floyd-Warshall、最长递增子序列LIS等）
+
+贪心算法什么是贪心算法？简单地说，就是在算法执行的每一步都“目光短浅”地选择当下最好的方案，而不考虑整体效果的优劣。贪心算法与分治算法相比有以下一些特点：">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="用贪心算法解决Scheduling问题"/>
+  <meta property="og:site_name" content="Z.X.C"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Z.X.C" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Z.X.C</a></h1>
+  <h2><a href="/">Little strokes fell great oaks</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="/about">About</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2013-09-16T14:16:11.000Z"><a href="/2013/09/16/scheduling-problem/">2013-09-16</a></time>
+      
+      
+  
+    <h1 class="title">用贪心算法解决Scheduling问题</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <blockquote>
+<p>There is no silver bullet in algorithm design.</p>
+</blockquote>
+<p>没有一种算法能普适于所有的计算问题。常见的算法有：</p>
+<ul>
+<li><strong>divide and comquer</strong>（归并排序等）</li>
+<li><strong>randomized algorithms</strong>（基于随机pivot的快速排序、Randomized Selection算法、Hash函数的设计等）</li>
+<li><strong>greedy algorithms</strong>（Dijkstra算法等）</li>
+<li><strong>dynamic programming</strong>（Sequence Alignment问题、背包问题、Floyd-Warshall、最长递增子序列LIS等）</li>
+</ul>
+<h2 id="贪心算法">贪心算法</h2><p>什么是贪心算法？简单地说，就是在算法执行的每一步都“目光短浅”地选择当下最好的方案，而不考虑整体效果的优劣。<br>贪心算法与分治算法相比有以下一些特点：</p>
+<a id="more"></a>
+<ul>
+<li>算法易于构造和实现</li>
+<li>易于计算时间复杂度（不同于分治法的Master Method）</li>
+<li>难以证明其正确性，大多数情况下贪心算法并不正确（分治法可以用归纳法证明）</li>
+</ul>
+<p>证明贪心算法的正确性，一般有两种方式：</p>
+<ol>
+<li><strong>greedy stays ahead</strong>（类似归纳法，即证明贪心算法的每一步完成后当前解决方案是最佳的）</li>
+<li><strong>exchange argument</strong>（下面证明Scheduling问题的最优解将会用到这种方法）</li>
+</ol>
+<h2 id="Scheduling问题">Scheduling问题</h2><p>假设一台单核计算机要完成若干个任务，每个任务有两个属性，一个是完成任务所需要的时间t，另一个是任务的权重w（优先级），时间与权重都用正整数定义。现在要求设计计算一种完成任务的先后顺序，使得所有任务的带权完成时间之和最小。<code>注：任务的带权完成时间 = 任务权重w * 任务完成时的时间（包含之前的等待时间）</code></p>
+<pre><code>举个例子：
+          权重   任务时间
+ T1       2        5
+ T2       1        3
+
+两种顺序方案的加权完成时间之和：
+① T1,T2： 5<span class="keyword">*</span>2+(5+3)<span class="keyword">*</span>1=18
+② T2,T1： 3<span class="keyword">*</span>1+(3+5)<span class="keyword">*</span>2=19
+所以选择方案①
+</code></pre><h3 id="问题分析"><strong>问题分析</strong></h3><p>如果所有任务只有一个时间属性，没有权重的区分，那么显而易见，按任务时间t从小到大排序可以使<strong><em>完成时间</em></strong>之和最小。然后，现在要考虑带权重的情况，不能再简单地按优先级或任务时间进行排序，而要寻找一种兼顾权重和任务时间的排序条件。</p>
+<p>我们现在来考虑这两种排序条件：</p>
+<ol>
+<li>w - t (权重与任务时间的差值)</li>
+<li>w / t (权重与任务时间的比值)</li>
+</ol>
+<h3 id="使用w/t排序的正确性证明"><strong>使用w/t排序的正确性证明</strong></h3><p>设任务序列 <code>Seq=T1,T2,T3...Tn</code> 按照w/t的比值大小从高到低排序，此时加权完成时间之和为C-sum。<br>假设存在某种与序列Seq不同的排序方式 Seq* ，使得C-sum* &lt; C-sum。<br>因为<code>W1/t1 &gt; w2/t2 &gt; w3/t3 ... &gt; wn/tn</code>,所以 Seq* 中必然存在某两个相邻的任务Ti、Tj使得<strong>wi / ti &lt; wj / tj</strong>：<br><code>T1,T2,T3...Ti-1,Ti,Tj,Tj+1...Tn-1,Tn</code><br>此时我们运用<strong>exchange</strong>思想，将Ti与Tj交换位置，<strong>可以发现<code>T1...Ti-1</code>以及<code>Tj+1...Tn</code>的加权完成时间之和不变</strong>，所以，我们只要考察Ti和Tj这两个任务加权完成时间在交换前后的变化情况即可。<code>Ti,Tj</code>变成<code>Tj,Ti</code>后，Ti的加权完成时间增加了tj*wi，而Tj的加权完成时间减少了ti*wj,所以总的加权完成时间C-sum* = C-sum + tj * wi - ti * wj。又因为wi / ti &lt; wj / tj,即tj * wi &lt; ti * wj，即C-sum* &gt; C-sum ，与假设矛盾！</p>
+<h2 id="练习"><strong>练习</strong></h2><p><a href="https://class.coursera.org/algo2-002/lecture/index" target="_blank" rel="external">Algorithms: Design and Analysis, Part 2</a> 这门课给了一个小练习：</p>
+<p>In this programming problem and the next you’ll code up the greedy algorithms from lecture for minimizing the weighted sum of completion times.. Download the text file <a href="http://spark-public.s3.amazonaws.com/algo2/datasets/jobs.txt" target="_blank" rel="external">here</a>. This file describes a set of jobs with positive and integral weights and lengths. It has the format<br>[number_of_jobs]<br>[job_1_weight] [job_1_length]<br>[job_2_weight] [job_2_length]<br>…<br>For example, the third line of the file is “74 59”, indicating that the second job has weight 74 and length 59. You should NOT assume that edge weights or lengths are distinct.</p>
+<p>Q1. Your task in this problem is to run the greedy algorithm that schedules jobs in decreasing order of the difference (weight - length). Recall from lecture that this algorithm is not always optimal. IMPORTANT: if two jobs have equal difference (weight - length), you should schedule the job with higher weight first. Beware: if you break ties in a different way, you are likely to get the wrong answer. You should report the sum of weighted completion times of the resulting schedule —- a positive integer —- in the box below.</p>
+<p>Q2. For this problem, use the same data set as in the previous problem. Your task now is to run the greedy algorithm that schedules jobs (optimally) in decreasing order of the ratio (weight/length). In this algorithm, it does not matter how you break ties. You should report the sum of weighted completion times of the resulting schedule —- a positive integer —- in the box below.</p>
+<p>Python实现：</p>
+<figure class="highlight"><figcaption><span>Scheduling.py</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;def diff_compare(j1,j2):&#10;    return (j1[0] - j1[1]) &#62; (j2[0] - j2[1]) or \&#10;        ((j1[0] - j1[1]) == (j2[0] - j2[1]) and j1[0] &#62; j2[0])&#10;&#10;def ratio_compare(j1,j2):&#10;    return j1[0] * j2[1] &#62; j1[1] * j2[0]&#10;&#10;def quickSort(jobs):&#10;    if len(jobs) &#60;= 1:&#10;        return jobs&#10;    i = 1&#10;    for j in range(1,len(jobs)):&#10;        if diff_compare(jobs[j],jobs[0]):   #use ratio_compare() to solve Q2&#10;            jobs[j],jobs[i] = jobs[i],jobs[j]&#10;            i += 1               &#10;    jobs[i-1],jobs[0] = jobs[0],jobs[i-1]&#10;    return quickSort(jobs[0:i-1]) + [jobs[i-1]] + quickSort(jobs[i:])&#10;&#10;f = open(&#39;jobs.txt&#39;)&#10;num_of_jobs = int(f.readline())&#10;&#10;jobs = []&#10;for line in f:&#10;    jobs.append(map(int,line.split(&#39; &#39;)))&#10;&#10;jobs = quickSort(jobs)&#10;&#10;sum_time = 0L&#10;time = 0L&#10;for i in range(0,num_of_jobs):&#10;    time += jobs[i][1]&#10;    sum_time += jobs[i][0] * time&#10;&#10;print sum_time</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/Algorithms/">Algorithms</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/Algorithms/">Algorithms</a>
+  </div>
+
+        
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a><a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a><a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["weixin","sqq","tsina","renren","linkedin","fbook","twi","douban","youdao"],"viewText":"分享到：","viewSize":"24"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">留言</h1>
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:blog.zxczone.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/Algorithms/">Algorithms</a><small>1</small></li>
+  
+    <li><a href="/categories/学习思考/">学习思考</a><small>3</small></li>
+  
+    <li><a href="/categories/学习笔记/">学习笔记</a><small>3</small></li>
+  
+    <li><a href="/categories/心情随笔/">心情随笔</a><small>1</small></li>
+  
+    <li><a href="/categories/生活点滴/">生活点滴</a><small>2</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">标签</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/Algorithms/">Algorithms</a><small>1</small></li>
+  
+    <li><a href="/tags/CSS/">CSS</a><small>1</small></li>
+  
+    <li><a href="/tags/EMC/">EMC</a><small>1</small></li>
+  
+    <li><a href="/tags/Octopress/">Octopress</a><small>3</small></li>
+  
+    <li><a href="/tags/Web/">Web</a><small>1</small></li>
+  
+    <li><a href="/tags/trick/">trick</a><small>1</small></li>
+  
+    <li><a href="/tags/实习/">实习</a><small>1</small></li>
+  
+    <li><a href="/tags/随笔/">随笔</a><small>1</small></li>
+  
+    <li><a href="/tags/面试/">面试</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2015 Jason Zhao
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/jquery-1.9.1.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<script type="text/javascript">
+var disqus_shortname = 'zxczone';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

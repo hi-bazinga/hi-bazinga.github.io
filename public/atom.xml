@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Z.X.C]]></title>
+  <subtitle><![CDATA[Little strokes fell great oaks]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://blog.zxczone.com/"/>
+  <updated>2015-03-18T10:49:43.000Z</updated>
+  <id>http://blog.zxczone.com/</id>
+  
+  <author>
+    <name><![CDATA[Jason Zhao]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[EMC Intern面试经历]]></title>
+    <link href="http://blog.zxczone.com/2014/01/25/emc-intership-interview/"/>
+    <id>http://blog.zxczone.com/2014/01/25/emc-intership-interview/</id>
+    <published>2014-01-25T08:32:45.000Z</published>
+    <updated>2015-03-18T10:49:43.000Z</updated>
+    <content type="html"><![CDATA[<p>23号上午9点半左右收到了EMC的offer，有一些意外，本以为硕士阶段的处女面会以悲剧收场，毕竟电面和现场面感觉都不太尽如人意。面完当天回来就买了三本书准备恶补，没想到EMC的效率这么高，两天后就给了我答复。既然是处女面，那我就来分享一下个人体会吧。</p>
+<h2 id="电面">电面</h2><p>我是两周前投出的简历，那时学校刚放假，回到家后在<em>应届生</em>上看到了EMC的招聘信息。正好之前中英文简历已经写好了，就给HR发了过去，申请了BRS部门的PDI。上周四上午9点多接到了电话，进行了大约半个多小时的电面。刚开始进行大约2、3分钟的自我介绍，主要讲了下自己掌握的技能和做过的项目，以及为什么申请这个职位。我记得当时在我介绍完时面试官说了一句“很好”，这也使得我后面的20多分钟陷入了无比尴尬的境地，因为后面的技术面实在是有点跟“好”不沾边。</p>
+<p>技术面范围很广，从后端到前端再到算法，每个方面会问4、5个问题。一开始都是比较常见的问题，也就是Java根类Object有哪些方法，以及用途，貌似网上搜一搜“Java面试题”都能搜到，可当时也差不多就想到toString()、equals()、wait()、getClass()这几个。后来又从wait()方法问到多线程，多线程我只是知道一些概念性的东西，实际经验比较匮乏，之前好像也就只写过一个简易的即时通讯工具，其中用到了多线程，还是C#的。Java的多线程就有点虚了，什么synchronized都只是知道，并不清楚具体应用的细节。由于这个职位的工作主要跟Web开发有关，所以后来又问了很多Spring、Hibernate的问题，主要还是考察对其应用和理解，问得比较细，那些比较虚的比如Spring的作用一般不太会问到。这些问题我答得都不好，有几乎一半都是以“不知道”、“不清楚”告终，看来还是得买本书回来系统地深入学习和研究。</p>
+<a id="more"></a>
+<p>接着就是前端了，一上来就问了JS的继承。之前我只是一直用jQuery，原生的JS很少写，继承也怎么用过，所以就直接回答了“没怎么写过，不太清楚”，面试官看我对这方面不熟就没再问了。接着是CSS的两个问题，一个是position的几种属性和区别，还有一个是实现垂直居中的方法。前一个勉勉强强还能应付个八九不离十，后一个平时偶尔会用到，但一般都是google后再照着模仿，项目写完也忘得差不多了，而且平时前端写得并不是很多，总之前端问完后感觉对方不是太满意。</p>
+<p>最后就到算法了，问得都是一些比较基础的内容，比如各种排序的复杂度和优劣势、贪心算法和动态规划的区别以及应用场景、最小生成树算法等等。由于半年前刚跟过stanford的<em>Algorithms: Design and Analysis</em>这门课，所以回答得都比较自如。</p>
+<p>整个电面持续了半个多小时，面完感觉有一半不知道或说不清楚，已经不抱什么希望。没想到最后面试官还给了我一次现场面的机会，当天下午收到HR的邮件，告知了时间地点，接下来，就是更不知所措的现场面了。</p>
+<h2 id="现场面">现场面</h2><p>现场面约在了本周二下午，中间正好有个周末可以给我稍微准备准备。基本知识就看平时了，思维能力也不是短期内能提高的，所以准备起来也就是手写点基本的算法，再找一找常见的面试问题准备一下，想一想思路就行。很快，周二就在眼前了。</p>
+<p>中午12点到的上海站，地铁4号线坐到海伦路转10号线到江湾体育场站下，出了1号地铁口向北走100米就是创智天地，交通甚是方便。由于面试约在14:00，还有一点半小时，在地铁站附近随便吃了点，然后坐在江湾体育场门前的长凳上准备英语自我介绍（本以为最后会有HR的英文面试，结果是我自作多情了）。大约在13:45左右进的大楼，一个貌似在公司做保洁工作的阿姨领我到一间很小的会议室，并让我在那里候着，还帮我打开了空调，顿时让我感到这里的人都很和善友好，紧张的心情也缓和了一些。</p>
+<p>大约十分钟后，来了两个面试官，看上去也都很年轻。坐定后向我要简历，我本以为简历他们都会带着，所以也没准备，只能笑着说忘了，他们俩对视了一眼，也没说什么。后来才知道由于当时电面我的那个人临时有事，本来是该他来面我，现在换了两个人过来，没看过我的简历。这里还是要提醒一下去公司面试的童鞋们，简历还是要备好的，以防出现临时情况。</p>
+<p>紧接着很快便切入正题，还是先从后端开始问。面试官没有准备提纲什么的，问题都很随机，所以考察的内容还是挺全面的。Java的基础肯定最重要，异常、多线程以及常见的一些核心类库都是重点，比如异常的分类以及异常处理机制等等。很多问题我都理解得不够深入，再往深了问就说不清楚了，如果确实不知道还是直说的好，免得答得驴头不对马嘴更不好。基础问完了就是问一些框架，跟电面一样，主要集中在Spring、Hibernate这些，还是有很多问题答不上来。（要恶补了！）</p>
+<p>后端问完会问些前端的知识，好像他们都默认来面试的对CSS、HTML很熟，所以一般这些都很少问，主要还是集中在JS上。跟电面一样，他们看我连继承都没怎么写过，就没再怎么问。（完全被鄙视了，当天回来就买了本《Javascript高级程序设计》恶补）</p>
+<p>此时前后端问得也差不多了，接下来就是算法了。就在这时当初电面我的面试官也进来了，三个人同时面我让我感到压力颇大！算法其实还是最担心的，平时有时间静下心慢慢想还好，现在让我在三个人面前快速反应并给出答案还是有点虚的！毕竟也没经历过几次面试，心理素质还没达到那种境界。不过还好，算法题并不是特别难，就是找出N个数中第K大的数，要求时间复杂度尽可能低。当时听完后脑袋中的第一反应就是排序，虽然知道这样肯定不是最优解，毕竟用快排至少也需要O(NLogN)时间，但为了体现思考的完整性，还是把代码写出来了，写的同时也想争取点额外的思考时间。面试官见我没有给出满意的答案，便又问，只找出第K个数需要把所有的数都排序吗？这时我想了一下，突然有思路了，只要把快排的例程修改一下即可。快排是找出一个pivot，遍历N个数以pivot为中心做一次分割，然后对分出的两段分别递归以上过程。如果只要寻找第K大的而不是全部排序，那么做完一次分割后只要在其中的一段去寻找即可。比如找出10个数中第6大的数，第一次分割后10个数被分为三组，小于pivot一组（假设3个），pivot本身，大于pivot一组（假设6个），这样在10个数中找出第6大的数就等同于在大于pivot一组中的6个中寻找第2（6-3-1）大的数，然后递归求解“找出6个数中第2大的数”。这样的平均时间复杂度是O(N)。平时算法训练得少，反应不够快，当时心里还想这种题大神们应该都是秒杀的吧，我还磨磨蹭蹭先写了个快排。</p>
+<p>接下来问的一些算法题就不那么轻易能想出来了。不过面试官们人都很nice，一步一步引导我去思考，去尝试解决问题，在他们的提示下最终也都能说个八九不离十。算法面后技术的内容也就差不多了，后面又聊了一些个人的情况，比如在学校做项目承担什么角色啊、平时都看一些什么书啊之类的。最后问我还有什么问题，我当时确实也没什么好问的，但又不能一点不问。于是就问了一下平时周末可不可以来公司，我的本意是如果我初来乍到肯定很多东西要学，想来公司看看书什么的，没想到面试官很爽快地说，没问题，公司玩的东西很多，什么桌球啊、乒乓球啊、Xbox啊都有，这边实习生也很多，可以一起玩。囧！</p>
+<h2 id="新的起点">新的起点</h2><p>面试在一种很轻松的氛围中结束，走出公司大楼后长舒了一口气。在回南京的高铁上脑海里一遍又一遍地回放着刚才面试的情景，越想越郁闷，毕竟有一半多的问题没答出来，于是当时暗暗下定决心回家恶补。没想到两天后就收到了offer。总之，回顾这次并不算顺利的面试经历，从看到招聘信息到投出简历，再到电面、现场面，再到最终拿到offer，想想这十几天发生的一切，确实有些感触。路终究是一步一步走出来的，这是一个新的起点，加油吧！</p>
+<p>最后，预祝最近一两个月要找实习的小伙伴们“马到成功”！</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>23号上午9点半左右收到了EMC的offer，有一些意外，本以为硕士阶段的处女面会以悲剧收场，毕竟电面和现场面感觉都不太尽如人意。面完当天回来就买了三本书准备恶补，没想到EMC的效率这么高，两天后就给了我答复。既然是处女面，那我就来分享一下个人体会吧。</p>
+<h2 id="电面">电面</h2><p>我是两周前投出的简历，那时学校刚放假，回到家后在<em>应届生</em>上看到了EMC的招聘信息。正好之前中英文简历已经写好了，就给HR发了过去，申请了BRS部门的PDI。上周四上午9点多接到了电话，进行了大约半个多小时的电面。刚开始进行大约2、3分钟的自我介绍，主要讲了下自己掌握的技能和做过的项目，以及为什么申请这个职位。我记得当时在我介绍完时面试官说了一句“很好”，这也使得我后面的20多分钟陷入了无比尴尬的境地，因为后面的技术面实在是有点跟“好”不沾边。</p>
+<p>技术面范围很广，从后端到前端再到算法，每个方面会问4、5个问题。一开始都是比较常见的问题，也就是Java根类Object有哪些方法，以及用途，貌似网上搜一搜“Java面试题”都能搜到，可当时也差不多就想到toString()、equals()、wait()、getClass()这几个。后来又从wait()方法问到多线程，多线程我只是知道一些概念性的东西，实际经验比较匮乏，之前好像也就只写过一个简易的即时通讯工具，其中用到了多线程，还是C#的。Java的多线程就有点虚了，什么synchronized都只是知道，并不清楚具体应用的细节。由于这个职位的工作主要跟Web开发有关，所以后来又问了很多Spring、Hibernate的问题，主要还是考察对其应用和理解，问得比较细，那些比较虚的比如Spring的作用一般不太会问到。这些问题我答得都不好，有几乎一半都是以“不知道”、“不清楚”告终，看来还是得买本书回来系统地深入学习和研究。</p>]]>
+    
+    </summary>
+    
+      <category term="EMC" scheme="http://blog.zxczone.com/tags/EMC/"/>
+    
+      <category term="实习" scheme="http://blog.zxczone.com/tags/%E5%AE%9E%E4%B9%A0/"/>
+    
+      <category term="面试" scheme="http://blog.zxczone.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+      <category term="生活点滴" scheme="http://blog.zxczone.com/categories/%E7%94%9F%E6%B4%BB%E7%82%B9%E6%BB%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[异或交换的陷阱]]></title>
+    <link href="http://blog.zxczone.com/2014/01/20/xor-swap-is-not-always-true/"/>
+    <id>http://blog.zxczone.com/2014/01/20/xor-swap-is-not-always-true/</id>
+    <published>2014-01-20T09:04:35.000Z</published>
+    <updated>2014-01-27T13:48:02.000Z</updated>
+    <content type="html"><![CDATA[<p>今天在写快排算法时需要交换数组中两个位置的值，准备写一个swap方法，刚准备敲下<code>int tmp = ...</code>，突然想到可以用一种更cool的方法来做，很快敲下三行代码：</p>
+<pre><code><span class="type">list</span>[a] = <span class="type">list</span>[a] ^ <span class="type">list</span>[b];
+<span class="type">list</span>[b] = <span class="type">list</span>[a] ^ <span class="type">list</span>[b];
+<span class="type">list</span>[a] = <span class="type">list</span>[a] ^ <span class="type">list</span>[b];
+</code></pre><p>信心满满地Run，结果输出结果大跌眼镜：</p>
+<pre><code><span class="keyword">...</span>
+<span class="number">0</span>
+<span class="number">0</span>
+<span class="number">9975</span>
+<span class="number">9977</span>
+<span class="number">0</span>
+<span class="number">9982</span>
+<span class="number">0</span>
+<span class="keyword">...</span>
+</code></pre><p>list的很多元素值变为0，纠结了半天，一开始以为是quicksort方法里出了错，后来单独测试swap时终于发现了问题的关键所在！这里有个很隐蔽的陷阱，注意，这里交换的数组中的元素，而不是简单的两个变量。当<code>list[a]</code>和<code>list[b]</code>中的a和b相等时，问题就来了：</p>
+<a id="more"></a>
+<pre><code><span class="comment">// 若a = b</span>
+<span class="built_in">list</span>[a] = <span class="built_in">list</span>[a] ^ <span class="built_in">list</span>[b];    <span class="comment">//list[a] 和 list[b] 值相等，异或后为0，即 list[a] = 0</span>
+<span class="built_in">list</span>[b] = <span class="built_in">list</span>[a] ^ <span class="built_in">list</span>[b];    <span class="comment">//因为a = b，此时等号右边的list[b] 就是 list[a]，它的值已经被赋值为0了！</span>
+<span class="built_in">list</span>[a] = <span class="built_in">list</span>[a] ^ <span class="built_in">list</span>[b];    <span class="comment">//三条语句执行完，list[a]被赋值为0，这就是最终结果</span>
+</code></pre><p>如果不是交换数组元素，而是普通的int变量，过程应该是这样的：</p>
+<pre><code><span class="comment">// 若a = b</span>
+<span class="tag">a</span> = <span class="tag">a</span> ^ <span class="tag">b</span>    <span class="comment">//a和b相等，异或后为0，即a = 0</span>
+<span class="tag">b</span> = <span class="tag">a</span> ^ <span class="tag">b</span>    <span class="comment">//此时b还是原来那个b，而a = 0，b = 0 ^ b，此时b不变，保持原值</span>
+<span class="tag">a</span> = <span class="tag">a</span> ^ <span class="tag">b</span>    <span class="comment">//a = 0 ^ b，a被赋值为b，此时a和b的值与原来相同，因为a = b，也相当于a和b交换</span>
+</code></pre><p>既然交换数组元素在下标相等的情况下不能用异或，那加减行不行呢？答案同样是否定的，原理同异或。当然，如果一定要用这种不引进临时变量的交换方式，加个<code>if (a != b)</code>的判断就可以了。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>今天在写快排算法时需要交换数组中两个位置的值，准备写一个swap方法，刚准备敲下<code>int tmp = ...</code>，突然想到可以用一种更cool的方法来做，很快敲下三行代码：</p>
+<pre><code><span class="type">list</span>[a] = <span class="type">list</span>[a] ^ <span class="type">list</span>[b];
+<span class="type">list</span>[b] = <span class="type">list</span>[a] ^ <span class="type">list</span>[b];
+<span class="type">list</span>[a] = <span class="type">list</span>[a] ^ <span class="type">list</span>[b];
+</code></pre><p>信心满满地Run，结果输出结果大跌眼镜：</p>
+<pre><code><span class="keyword">...</span>
+<span class="number">0</span>
+<span class="number">0</span>
+<span class="number">9975</span>
+<span class="number">9977</span>
+<span class="number">0</span>
+<span class="number">9982</span>
+<span class="number">0</span>
+<span class="keyword">...</span>
+</code></pre><p>list的很多元素值变为0，纠结了半天，一开始以为是quicksort方法里出了错，后来单独测试swap时终于发现了问题的关键所在！这里有个很隐蔽的陷阱，注意，这里交换的数组中的元素，而不是简单的两个变量。当<code>list[a]</code>和<code>list[b]</code>中的a和b相等时，问题就来了：</p>]]>
+    
+    </summary>
+    
+      <category term="trick" scheme="http://blog.zxczone.com/tags/trick/"/>
+    
+      <category term="学习笔记" scheme="http://blog.zxczone.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Web前端笔记 - CSS篇]]></title>
+    <link href="http://blog.zxczone.com/2014/01/18/front-end-notes-css/"/>
+    <id>http://blog.zxczone.com/2014/01/18/front-end-notes-css/</id>
+    <published>2014-01-18T11:00:06.000Z</published>
+    <updated>2014-01-27T13:48:20.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="垂直居中">垂直居中</h3><hr>
+<ol>
+<li><p><strong>line-height</strong><br>设置元素的line-height与height相等。<br>注：仅适用于单行文本或图片，可以用于button等小元素。</p>
+</li>
+<li><p><strong>绝对定位</strong><br>设置position为absolute<em>（注意父元素的position不能为默认值，否则将以浏览器窗口进行定位）</em>，top为50%，固定高度，margin-top为高度的一半取负。<br>注：不能自适应内容的高度，元素脱离文档流。</p>
+</li>
+</ol>
+<a id="more"></a>
+<ol>
+<li><p><strong>模拟表格</strong><br>定义一个父元素，设置display属性为table，子元素display设置为table-cell，并且vertical-align为middle。<br>注：父元素需要定高，能够自适应内容宽度，无法在IE6、IE7下使用。</p>
+<figure class="highlight html"><figcaption><span>HTML</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"container"</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"content"</span>&gt;</span>content<span class="tag">&lt;/<span class="title">div</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight"><figcaption><span>CSS</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">		#container &#123; </span><br><span class="line">		    height: 300px; </span><br><span class="line">		    display: table;    /*以表格形式渲染*/ </span><br><span class="line">		&#125; </span><br><span class="line">		#content &#123; </span><br><span class="line">		    display:table-cell; </span><br><span class="line">		    vertical-align: middle; </span><br><span class="line">		&#125;   </span><br><span class="line">	``` </span><br><span class="line"></span><br><span class="line">4.	**inline-block**  </span><br><span class="line">	添加一个额外的块元素，设置为内联对象，高度为100%。注：#parent需要定高。  </span><br><span class="line"></span><br><span class="line">	``` html HTML</span><br><span class="line">		&lt;div id="parent"&gt; </span><br><span class="line">		    &lt;div id="vertically_center"&gt; </span><br><span class="line">		        &lt;p&gt;I am vertically centered!&lt;/p&gt; </span><br><span class="line">		    &lt;/div&gt; </span><br><span class="line">		    &lt;div id="extra"&gt;&lt;/div&gt; </span><br><span class="line">		&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><figcaption><span>CSS</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="id">#vertically_center</span>, <span class="id">#extra</span> <span class="rules">&#123; </span><br><span class="line">    <span class="rule"><span class="attribute">display</span>:<span class="value"> inline-block</span></span>; <span class="comment">/*把元素转为行内块显示*/</span> </span><br><span class="line">    <span class="rule"><span class="attribute">vertical-align</span>:<span class="value"> middle</span></span>; <span class="comment">/*垂直居中*/</span> </span><br><span class="line"><span class="rule">&#125;</span></span> </span><br><span class="line"><span class="id">#extra</span> <span class="rules">&#123; </span><br><span class="line">    <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">100%</span></span></span>;  <span class="comment">/*设置线盒型为父元素的100%高度*/</span> </span><br><span class="line"><span class="rule">&#125;</span></span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>padding</strong><br>给元素设置相同的padding-top和padding-bottom值。注：元素不能定高。</p>
+</li>
+<li><p><strong>jQuery</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">window</span>).resize(<span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123; </span><br><span class="line">    $(<span class="string">'.container'</span>).css(&#123; </span><br><span class="line">	    position:<span class="string">'absolute'</span>, </span><br><span class="line">	    left: ($(<span class="built_in">window</span>).width() - $(<span class="string">'.container'</span>).outerWidth())/<span class="number">2</span>, </span><br><span class="line">	    top: ($(<span class="built_in">window</span>).height() - $(<span class="string">'.container'</span>).outerHeight())/<span class="number">2</span> </span><br><span class="line">	&#125;); </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="水平居中">水平居中</h3><hr>
+<ol>
+<li><p><strong>margin : auto</strong><br> 注：元素需要定宽。</p>
+</li>
+<li><p><strong>绝对定位</strong><br> 类似垂直居中的绝对定位。</p>
+</li>
+<li><p><strong>text-align ：center</strong></p>
+</li>
+</ol>
+<h3 id="position用法">position用法</h3><hr>
+<ol>
+<li><p>relative<br> 基于对象margin的左上侧相对于自身的正常位置并进行偏移，其余元素不受影响。</p>
+</li>
+<li><p>absolute  </p>
+<ul>
+<li>若父对象设置了position属性且不是默认值,按此父对象定位，且忽略padding，此时，该对象脱离普通流，不占据空间。  </li>
+<li>若所有父对象均没有设置position属性，则按<strong>浏览器窗口</strong>定位。</li>
+</ul>
+</li>
+<li><p>fixed<br> 也可以认为是absolute的特殊情况，即总是以浏览器窗口进行定位，与background-attachment:fixed相似。</p>
+</li>
+<li><p>static<br> 默认值，按正常的文档流进行排列。</p>
+</li>
+</ol>
+<p><em>整理自 <a href="http://www.w3cplus.com/css/vertically-center-content-with-css" target="_blank" rel="external">http://www.w3cplus.com/css/vertically-center-content-with-css</a></em></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="垂直居中">垂直居中</h3><hr>
+<ol>
+<li><p><strong>line-height</strong><br>设置元素的line-height与height相等。<br>注：仅适用于单行文本或图片，可以用于button等小元素。</p>
+</li>
+<li><p><strong>绝对定位</strong><br>设置position为absolute<em>（注意父元素的position不能为默认值，否则将以浏览器窗口进行定位）</em>，top为50%，固定高度，margin-top为高度的一半取负。<br>注：不能自适应内容的高度，元素脱离文档流。</p>
+</li>
+</ol>]]>
+    
+    </summary>
+    
+      <category term="CSS" scheme="http://blog.zxczone.com/tags/CSS/"/>
+    
+      <category term="Web" scheme="http://blog.zxczone.com/tags/Web/"/>
+    
+      <category term="学习笔记" scheme="http://blog.zxczone.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[用贪心算法解决Scheduling问题]]></title>
+    <link href="http://blog.zxczone.com/2013/09/16/scheduling-problem/"/>
+    <id>http://blog.zxczone.com/2013/09/16/scheduling-problem/</id>
+    <published>2013-09-16T14:16:11.000Z</published>
+    <updated>2014-01-27T13:49:48.000Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>There is no silver bullet in algorithm design.</p>
+</blockquote>
+<p>没有一种算法能普适于所有的计算问题。常见的算法有：</p>
+<ul>
+<li><strong>divide and comquer</strong>（归并排序等）</li>
+<li><strong>randomized algorithms</strong>（基于随机pivot的快速排序、Randomized Selection算法、Hash函数的设计等）</li>
+<li><strong>greedy algorithms</strong>（Dijkstra算法等）</li>
+<li><strong>dynamic programming</strong>（Sequence Alignment问题、背包问题、Floyd-Warshall、最长递增子序列LIS等）</li>
+</ul>
+<h2 id="贪心算法">贪心算法</h2><p>什么是贪心算法？简单地说，就是在算法执行的每一步都“目光短浅”地选择当下最好的方案，而不考虑整体效果的优劣。<br>贪心算法与分治算法相比有以下一些特点：</p>
+<a id="more"></a>
+<ul>
+<li>算法易于构造和实现</li>
+<li>易于计算时间复杂度（不同于分治法的Master Method）</li>
+<li>难以证明其正确性，大多数情况下贪心算法并不正确（分治法可以用归纳法证明）</li>
+</ul>
+<p>证明贪心算法的正确性，一般有两种方式：</p>
+<ol>
+<li><strong>greedy stays ahead</strong>（类似归纳法，即证明贪心算法的每一步完成后当前解决方案是最佳的）</li>
+<li><strong>exchange argument</strong>（下面证明Scheduling问题的最优解将会用到这种方法）</li>
+</ol>
+<h2 id="Scheduling问题">Scheduling问题</h2><p>假设一台单核计算机要完成若干个任务，每个任务有两个属性，一个是完成任务所需要的时间t，另一个是任务的权重w（优先级），时间与权重都用正整数定义。现在要求设计计算一种完成任务的先后顺序，使得所有任务的带权完成时间之和最小。<code>注：任务的带权完成时间 = 任务权重w * 任务完成时的时间（包含之前的等待时间）</code></p>
+<pre><code>举个例子：
+          权重   任务时间
+ T1       2        5
+ T2       1        3
+
+两种顺序方案的加权完成时间之和：
+① T1,T2： 5<span class="keyword">*</span>2+(5+3)<span class="keyword">*</span>1=18
+② T2,T1： 3<span class="keyword">*</span>1+(3+5)<span class="keyword">*</span>2=19
+所以选择方案①
+</code></pre><h3 id="问题分析"><strong>问题分析</strong></h3><p>如果所有任务只有一个时间属性，没有权重的区分，那么显而易见，按任务时间t从小到大排序可以使<strong><em>完成时间</em></strong>之和最小。然后，现在要考虑带权重的情况，不能再简单地按优先级或任务时间进行排序，而要寻找一种兼顾权重和任务时间的排序条件。</p>
+<p>我们现在来考虑这两种排序条件：</p>
+<ol>
+<li>w - t (权重与任务时间的差值)</li>
+<li>w / t (权重与任务时间的比值)</li>
+</ol>
+<h3 id="使用w/t排序的正确性证明"><strong>使用w/t排序的正确性证明</strong></h3><p>设任务序列 <code>Seq=T1,T2,T3...Tn</code> 按照w/t的比值大小从高到低排序，此时加权完成时间之和为C-sum。<br>假设存在某种与序列Seq不同的排序方式 Seq* ，使得C-sum* &lt; C-sum。<br>因为<code>W1/t1 &gt; w2/t2 &gt; w3/t3 ... &gt; wn/tn</code>,所以 Seq* 中必然存在某两个相邻的任务Ti、Tj使得<strong>wi / ti &lt; wj / tj</strong>：<br><code>T1,T2,T3...Ti-1,Ti,Tj,Tj+1...Tn-1,Tn</code><br>此时我们运用<strong>exchange</strong>思想，将Ti与Tj交换位置，<strong>可以发现<code>T1...Ti-1</code>以及<code>Tj+1...Tn</code>的加权完成时间之和不变</strong>，所以，我们只要考察Ti和Tj这两个任务加权完成时间在交换前后的变化情况即可。<code>Ti,Tj</code>变成<code>Tj,Ti</code>后，Ti的加权完成时间增加了tj*wi，而Tj的加权完成时间减少了ti*wj,所以总的加权完成时间C-sum* = C-sum + tj * wi - ti * wj。又因为wi / ti &lt; wj / tj,即tj * wi &lt; ti * wj，即C-sum* &gt; C-sum ，与假设矛盾！</p>
+<h2 id="练习"><strong>练习</strong></h2><p><a href="https://class.coursera.org/algo2-002/lecture/index" target="_blank" rel="external">Algorithms: Design and Analysis, Part 2</a> 这门课给了一个小练习：</p>
+<p>In this programming problem and the next you’ll code up the greedy algorithms from lecture for minimizing the weighted sum of completion times.. Download the text file <a href="http://spark-public.s3.amazonaws.com/algo2/datasets/jobs.txt" target="_blank" rel="external">here</a>. This file describes a set of jobs with positive and integral weights and lengths. It has the format<br>[number_of_jobs]<br>[job_1_weight] [job_1_length]<br>[job_2_weight] [job_2_length]<br>…<br>For example, the third line of the file is “74 59”, indicating that the second job has weight 74 and length 59. You should NOT assume that edge weights or lengths are distinct.</p>
+<p>Q1. Your task in this problem is to run the greedy algorithm that schedules jobs in decreasing order of the difference (weight - length). Recall from lecture that this algorithm is not always optimal. IMPORTANT: if two jobs have equal difference (weight - length), you should schedule the job with higher weight first. Beware: if you break ties in a different way, you are likely to get the wrong answer. You should report the sum of weighted completion times of the resulting schedule —- a positive integer —- in the box below.</p>
+<p>Q2. For this problem, use the same data set as in the previous problem. Your task now is to run the greedy algorithm that schedules jobs (optimally) in decreasing order of the ratio (weight/length). In this algorithm, it does not matter how you break ties. You should report the sum of weighted completion times of the resulting schedule —- a positive integer —- in the box below.</p>
+<p>Python实现：</p>
+<figure class="highlight"><figcaption><span>Scheduling.py</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;def diff_compare(j1,j2):&#10;    return (j1[0] - j1[1]) &#62; (j2[0] - j2[1]) or \&#10;        ((j1[0] - j1[1]) == (j2[0] - j2[1]) and j1[0] &#62; j2[0])&#10;&#10;def ratio_compare(j1,j2):&#10;    return j1[0] * j2[1] &#62; j1[1] * j2[0]&#10;&#10;def quickSort(jobs):&#10;    if len(jobs) &#60;= 1:&#10;        return jobs&#10;    i = 1&#10;    for j in range(1,len(jobs)):&#10;        if diff_compare(jobs[j],jobs[0]):   #use ratio_compare() to solve Q2&#10;            jobs[j],jobs[i] = jobs[i],jobs[j]&#10;            i += 1               &#10;    jobs[i-1],jobs[0] = jobs[0],jobs[i-1]&#10;    return quickSort(jobs[0:i-1]) + [jobs[i-1]] + quickSort(jobs[i:])&#10;&#10;f = open(&#39;jobs.txt&#39;)&#10;num_of_jobs = int(f.readline())&#10;&#10;jobs = []&#10;for line in f:&#10;    jobs.append(map(int,line.split(&#39; &#39;)))&#10;&#10;jobs = quickSort(jobs)&#10;&#10;sum_time = 0L&#10;time = 0L&#10;for i in range(0,num_of_jobs):&#10;    time += jobs[i][1]&#10;    sum_time += jobs[i][0] * time&#10;&#10;print sum_time</span><br></pre></td></tr></table></figure>
+]]></content>
+    <summary type="html">
+    <![CDATA[<blockquote>
+<p>There is no silver bullet in algorithm design.</p>
+</blockquote>
+<p>没有一种算法能普适于所有的计算问题。常见的算法有：</p>
+<ul>
+<li><strong>divide and comquer</strong>（归并排序等）</li>
+<li><strong>randomized algorithms</strong>（基于随机pivot的快速排序、Randomized Selection算法、Hash函数的设计等）</li>
+<li><strong>greedy algorithms</strong>（Dijkstra算法等）</li>
+<li><strong>dynamic programming</strong>（Sequence Alignment问题、背包问题、Floyd-Warshall、最长递增子序列LIS等）</li>
+</ul>
+<h2 id="贪心算法">贪心算法</h2><p>什么是贪心算法？简单地说，就是在算法执行的每一步都“目光短浅”地选择当下最好的方案，而不考虑整体效果的优劣。<br>贪心算法与分治算法相比有以下一些特点：</p>]]>
+    
+    </summary>
+    
+      <category term="Algorithms" scheme="http://blog.zxczone.com/tags/Algorithms/"/>
+    
+      <category term="Algorithms" scheme="http://blog.zxczone.com/categories/Algorithms/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[GRE 作文练习v1.1]]></title>
+    <link href="http://blog.zxczone.com/2013/03/11/gre-webapp-2/"/>
+    <id>http://blog.zxczone.com/2013/03/11/gre-webapp-2/</id>
+    <published>2013-03-11T04:12:00.000Z</published>
+    <updated>2014-01-20T12:21:42.000Z</updated>
+    <content type="html"><![CDATA[<p>一年前准备GRE的时候写了个GRE作文练习的网页，当时只用了一天草草地完成，后来一直没有怎么去改。之后迁移主机时导致<a href="http://blog.zxczone.com/2012/03/05/gre-webapp/" target="_blank" rel="external">日志</a>里的链接失效了，直到前些天有人给我留言让修复一下，我才下定决心再翻出原来的代码静下心来改一改。借这个周末的机会，<a href="http://zxczone.com/gre" target="_blank" rel="external">GRE 作文联系v1.1</a>完工了。<br>主要改变如下：</p>
+<ul>
+<li>增加了题库下载和作文下载功能，写完以后可以立刻保存为word文档存在本地。</li>
+<li>前端不再是纯JS，用了JQuery，毕竟要方便简洁一些。</li>
+<li>这次彻底摒弃了对IE6、7、8的维护，时代总要发展，希望IE6、7、8早日成为过去式。</li>
+<li>button不再使用图片做背景，提高加载速度。（以前使用也是考虑到IE对CSS3的支持性不够）</li>
+<li>优化了代码，增强了数据独立性。</li>
+</ul>
+<p>把代码部署到服务器的时候，自己也在想，如果是为了考试练习，最理想的还是模仿真实环境，用ETS官网上的 <a href="https://www.ets.org/gre/revised_general/prepare/powerprep2/" target="_blank" rel="external">POWERPREP II Software</a>最好不过。一个软件或应用最核心的当然是需求。单从这点来看，自己做这么个东西纯粹就是自娱自乐了。如果有人喜欢用那就请给我留言提些建议吧。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>一年前准备GRE的时候写了个GRE作文练习的网页，当时只用了一天草草地完成，后来一直没有怎么去改。之后迁移主机时导致<a href="http://blog.zxczone.com/2012/03/05/gre-webapp/" target="_blank" rel="e]]>
+    </summary>
+    
+      <category term="学习思考" scheme="http://blog.zxczone.com/categories/%E5%AD%A6%E4%B9%A0%E6%80%9D%E8%80%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[春游梅花山]]></title>
+    <link href="http://blog.zxczone.com/2013/03/02/plum-blossom/"/>
+    <id>http://blog.zxczone.com/2013/03/02/plum-blossom/</id>
+    <published>2013-03-01T16:00:00.000Z</published>
+    <updated>2014-01-22T04:07:20.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://zxclovewy.com/img/1/1.jpg" alt="一朵忽先发"></p>
+<a id="more"></a>
+ <div class="gallery"><br><img src="http://zxclovewy.com/img/1/2.jpg" alt=""><br><img src="http://zxclovewy.com/img/1/3.jpg" alt=""><br><img src="http://zxclovewy.com/img/1/4.jpg" alt=""><br><img src="http://zxclovewy.com/img/1/5.jpg" alt=""><br><img src="http://zxclovewy.com/img/1/6.jpg" alt=""><br><img src="http://zxclovewy.com/img/1/7.jpg" alt=""><br><img src="http://zxclovewy.com/img/1/8.jpg" alt=""><br><img src="http://zxclovewy.com/img/1/9.jpg" alt=""><br><img src="http://zxclovewy.com/img/1/10.jpg" alt=""><br><img src="http://zxclovewy.com/img/1/11.jpg" alt=""><br><img src="http://zxclovewy.com/img/1/12.jpg" alt=""><br><img src="http://zxclovewy.com/img/1/13.jpg" alt=""><br><img src="http://zxclovewy.com/img/1/14.jpg" alt=""><br><img src="http://zxclovewy.com/img/1/15.jpg" alt=""><br><img src="http://zxclovewy.com/img/1/16.jpg" alt=""><br><img src="http://zxclovewy.com/img/1/17.jpg" alt=""><br><img src="http://zxclovewy.com/img/1/18.jpg" alt=""><br><img src="http://zxclovewy.com/img/1/19.jpg" alt=""><br> </div>]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://zxclovewy.com/img/1/1.jpg" alt="一朵忽先发"></p>]]>
+    
+    </summary>
+    
+      <category term="生活点滴" scheme="http://blog.zxczone.com/categories/%E7%94%9F%E6%B4%BB%E7%82%B9%E6%BB%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[my octopress workflow]]></title>
+    <link href="http://blog.zxczone.com/2013/02/10/my-octopress-workflow/"/>
+    <id>http://blog.zxczone.com/2013/02/10/my-octopress-workflow/</id>
+    <published>2013-02-09T16:00:00.000Z</published>
+    <updated>2014-01-22T04:05:42.000Z</updated>
+    <content type="html"><![CDATA[<p>以前用wordpress的时候，总是觉得写一篇博客挺麻烦，要登录后台在线写文章，还要提防着浏览器突然崩溃导致辛辛苦苦码的字全部付之东流的危险。当然也可以先用在本地写好文章再copy上去，但又觉得这种方式实在是缺乏美感，写博客的欲望也大大降低。换成Octopress以来，前面的问题似乎都解决了。不过，如果能进一步减少码字之前的准备工作，一键完成<code>rake new_post[]</code>，并用喜欢的编辑器 <a href="http://www.sublimetext.com" target="_blank" rel="external">Sublime Text 2</a> 直接开始编辑，那就更好了。于是自己把git shell里的命令集写成一个批处理，很简单的几行，这样就不用每次打开shell手动切换目录并rake了。</p>
+<p>下面是操作流程，网速比较慢，所以只传了个分辨率低的。<br><a id="more"></a></p>
+<div class="video-container"><br>  <embed src="http://player.youku.com/player.php/sid/XNTEzNzcwNDI0/v.swf" allowfullscreen="true" quality="high" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash"><br></div>
+
+
+<figure class="highlight sh"><figcaption><span>new.bat</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="built_in">cd</span> /d E:/Github/blog</span><br><span class="line">rake new_post[]</span><br></pre></td></tr></table></figure>
+<p>那怎样自动使用sublime打开新创建的post文件呢？也很简单，找到octopress根目录下的<code>Rakefile</code>文件，找到新建post的task，在末尾加上一句代码即可：</p>
+<figure class="highlight ruby"><figcaption><span>Rakefile</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="comment"># usage rake new_post[my-new-post] or rake new_post['my new post'] or rake new_post (defaults to "new-post")</span></span><br><span class="line">desc <span class="string">"Begin a new post in <span class="subst">#&#123;source_dir&#125;</span>/<span class="subst">#&#123;posts_dir&#125;</span>"</span></span><br><span class="line">task <span class="symbol">:new_post</span>, <span class="symbol">:title</span> <span class="keyword">do</span> |t, args|</span><br><span class="line">  <span class="keyword">if</span> args.title</span><br><span class="line">    title = args.title</span><br><span class="line">  <span class="keyword">else</span></span><br><span class="line">    title = get_stdin(<span class="string">"Enter a title for your post: "</span>)</span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line">  raise <span class="string">"### You haven't set anything up yet. First run `rake install` to set up an Octopress theme."</span> <span class="keyword">unless</span> <span class="constant">File</span>.directory?(source_dir)</span><br><span class="line">  mkdir_p <span class="string">"<span class="subst">#&#123;source_dir&#125;</span>/<span class="subst">#&#123;posts_dir&#125;</span>"</span></span><br><span class="line">  filename = <span class="string">"<span class="subst">#&#123;source_dir&#125;</span>/<span class="subst">#&#123;posts_dir&#125;</span>/<span class="subst">#&#123;<span class="constant">Time</span>.now.strftime(<span class="string">'%Y-%m-%d'</span>)&#125;</span>-<span class="subst">#&#123;title.to_url&#125;</span>.<span class="subst">#&#123;new_post_ext&#125;</span>"</span></span><br><span class="line">  <span class="keyword">if</span> <span class="constant">File</span>.exist?(filename)</span><br><span class="line">    abort(<span class="string">"rake aborted!"</span>) <span class="keyword">if</span> ask(<span class="string">"<span class="subst">#&#123;filename&#125;</span> already exists. Do you want to overwrite?"</span>, [<span class="string">'y'</span>, <span class="string">'n'</span>]) == <span class="string">'n'</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line">  puts <span class="string">"Creating new post: <span class="subst">#&#123;filename&#125;</span>"</span></span><br><span class="line">  open(filename, <span class="string">'w'</span>) <span class="keyword">do</span> |post|</span><br><span class="line">    post.puts <span class="string">"---"</span></span><br><span class="line">    post.puts <span class="string">"layout: post"</span></span><br><span class="line">    post.puts <span class="string">"title: \"<span class="subst">#&#123;title.gsub(<span class="regexp">/&amp;/</span>,<span class="string">'&amp;amp;'</span>)&#125;</span>\""</span></span><br><span class="line">    post.puts <span class="string">"date: <span class="subst">#&#123;<span class="constant">Time</span>.now.strftime(<span class="string">'%Y-%m-%d %H:%M'</span>)&#125;</span>"</span></span><br><span class="line">    post.puts <span class="string">"comments: true"</span></span><br><span class="line">    post.puts <span class="string">"categories: "</span></span><br><span class="line">    post.puts <span class="string">"---"</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line">   system <span class="string">"start \"D:\Sublime Text 2\sublime_text.exe\" <span class="subst">#&#123;filename&#125;</span>"</span>		<span class="comment">#调用sublime打开新建的post，别忘了路径中含有空格要用`“”`</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">...</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>修改完Rakefile后，双击运行<code>new.bat</code>，按照提示输入文章title，sublime就能自动打开新创建的文件，这时就捋起袖子开始写文章吧！当然如果你写完文章后也不想每次都打开shell进行<code>rake　generate</code> 或 <code>rake preview</code> 甚至是 <code>rake deploy</code>,都可以用批处理一键实现。别忘了给bat文件在桌面创建快捷方式，再配上生动的图标~</p>
+<p>(p.s. 推荐一个下载图标的网站 <a href="http://sc.chinaz.com/tubiao/" target="_blank" rel="external">http://sc.chinaz.com/tubiao/</a>)</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>以前用wordpress的时候，总是觉得写一篇博客挺麻烦，要登录后台在线写文章，还要提防着浏览器突然崩溃导致辛辛苦苦码的字全部付之东流的危险。当然也可以先用在本地写好文章再copy上去，但又觉得这种方式实在是缺乏美感，写博客的欲望也大大降低。换成Octopress以来，前面的问题似乎都解决了。不过，如果能进一步减少码字之前的准备工作，一键完成<code>rake new_post[]</code>，并用喜欢的编辑器 <a href="http://www.sublimetext.com">Sublime Text 2</a> 直接开始编辑，那就更好了。于是自己把git shell里的命令集写成一个批处理，很简单的几行，这样就不用每次打开shell手动切换目录并rake了。</p>
+<p>下面是操作流程，网速比较慢，所以只传了个分辨率低的。<br>]]>
+    
+    </summary>
+    
+      <category term="Octopress" scheme="http://blog.zxczone.com/tags/Octopress/"/>
+    
+      <category term="学习思考" scheme="http://blog.zxczone.com/categories/%E5%AD%A6%E4%B9%A0%E6%80%9D%E8%80%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Octopress改头换面]]></title>
+    <link href="http://blog.zxczone.com/2013/01/28/octopress-customize/"/>
+    <id>http://blog.zxczone.com/2013/01/28/octopress-customize/</id>
+    <published>2013-01-27T16:00:00.000Z</published>
+    <updated>2014-01-20T12:20:12.000Z</updated>
+    <content type="html"><![CDATA[<p>用上了Octopress，自然要换换样式，默认的主题不错，就在这基础上稍微改改吧。在这其中遇到不少问题，挑几个来说一说。</p>
+<h3 id="Sass">Sass</h3><p>更改样式时最好不要直接改CSS，因为Octopress提供了强大的<a href="http://sass-lang.com/" target="_blank" rel="external">Sass</a>支持，所以，去<code>sass/custom</code>中去修改吧。关于Sass和Less谁更强大的问题，网上也是众说纷纭。官网首页第一句话很有意思：Sass让CSS焕发第二春（“Sass makes CSS fun again”）。</p>
+<p>这里贴几篇文章供参考：</p>
+<blockquote>
+<ul>
+<li><a href="http://cued.xunlei.com/log044" target="_blank" rel="external">Css预处理器实践之Sass、Less大比拼</a></li>
+<li><a href="http://www.qianduan.net/an-introduction-to-less-and-comparison-to-sass.html" target="_blank" rel="external">LESS介绍及其与Sass的差异</a></li>
+<li><a href="http://www.oschina.net/question/12_44255" target="_blank" rel="external">为您详细比较三个 CSS 预处理器（框架）：Sass、LESS 和 Stylus</a></li>
+</ul>
+</blockquote>
+<a id="more"></a>
+<h3 id="JQuery冲突">JQuery冲突</h3><p>本想用JQuery实现back-to-top,没想到把JQuery载入以后sidebar没法collapse了，google了一下发现Octopress引入的ender.js与JQuery发生了冲突。</p>
+<blockquote>
+<p><a href="http://ender.jit.su/" target="_blank" rel="external">Ender</a> is a full featured package manager for your browser.</p>
+</blockquote>
+<p>暂时就用纯JS写吧，只要能显示和隐藏就行。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onscroll = <span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123; </span><br><span class="line">    <span class="keyword">var</span> t = <span class="built_in">document</span>.documentElement.scrollTop || <span class="built_in">document</span>.body.scrollTop;  </span><br><span class="line">	<span class="built_in">document</span>.getElementById(<span class="string">"back-to-top"</span>).style.display= t&gt;<span class="number">400</span> ? <span class="string">"block"</span>:<span class="string">"none"</span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>是不是觉得右下角的back-to-top长得很眼熟？</p>
+<h3 id="Adblock谨慎使用">Adblock谨慎使用</h3><p>一切就绪，习惯性地用F12一下，看看有没有报错，果然有两个js悲剧了，一个是百度统计，另一个是disqus的count.js。想了半天不知道是什么原因，后来看了看另外几个网站，同样是这个问题。这应该就不是代码的问题了，换了IE访问，一切正常。目光移至Chrome右上角鲜红的Adblock，就是它了！今后调试网页千万别忘记把它disable掉。</p>
+<h3 id="保存主题">保存主题</h3><p>辛辛苦苦改了这么多，千万别忘了保存主题，因为安装新主题时sass和source中的文件都会变新主题替换掉。将sass和source中改过的文件保存在.theme文件夹下相应的旧主题中，替换掉旧的文件即可。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>用上了Octopress，自然要换换样式，默认的主题不错，就在这基础上稍微改改吧。在这其中遇到不少问题，挑几个来说一说。</p>
+<h3 id="Sass">Sass</h3><p>更改样式时最好不要直接改CSS，因为Octopress提供了强大的<a href="http://sass-lang.com/">Sass</a>支持，所以，去<code>sass/custom</code>中去修改吧。关于Sass和Less谁更强大的问题，网上也是众说纷纭。官网首页第一句话很有意思：Sass让CSS焕发第二春（“Sass makes CSS fun again”）。</p>
+<p>这里贴几篇文章供参考：</p>
+<blockquote>
+<ul>
+<li><a href="http://cued.xunlei.com/log044">Css预处理器实践之Sass、Less大比拼</a></li>
+<li><a href="http://www.qianduan.net/an-introduction-to-less-and-comparison-to-sass.html">LESS介绍及其与Sass的差异</a></li>
+<li><a href="http://www.oschina.net/question/12_44255">为您详细比较三个 CSS 预处理器（框架）：Sass、LESS 和 Stylus</a></li>
+</ul>
+</blockquote>]]>
+    
+    </summary>
+    
+      <category term="Octopress" scheme="http://blog.zxczone.com/tags/Octopress/"/>
+    
+      <category term="学习思考" scheme="http://blog.zxczone.com/categories/%E5%AD%A6%E4%B9%A0%E6%80%9D%E8%80%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[正式进军Octopress]]></title>
+    <link href="http://blog.zxczone.com/2013/01/27/hello-octopress/"/>
+    <id>http://blog.zxczone.com/2013/01/27/hello-octopress/</id>
+    <published>2013-01-26T16:00:00.000Z</published>
+    <updated>2014-01-20T12:25:40.000Z</updated>
+    <content type="html"><![CDATA[<p>2013年才进入Octopress的菜鸟表示很惭愧，临近毕业，在学校一堆事情让自己也难以静下心来折腾些什么。在好好珍惜最后一个寒假的同时，也终于有空闲来完成自己早在一年多前就想做的事。</p>
+<p>2010年刚开始使用wordpress的时候，写博客的动力还是相当充足的。那时wordpress友好的后台管理界面和日臻完善的Manual Book让我保持着不断尝试新花样的好奇心。那种自己能够自由掌控前端布局、后端行为的方式确实很棒。</p>
+<p>可是渐渐地，每每打开wp-admin，看着形似word的编辑器，各种样式、颜色、段落等等工具挤在一起，显得繁琐而复杂，写作的欲望越来越低。直到后来，开始尝试使用Markdown写博客。之前就听说过，但并未真正去使用，以至于第一次用Markdown时就被它的轻盈、简洁所吸引。所以，Wordpress是时候该抛弃了，今天终于完成了这一重大变革！</p>
+<a id="more"></a>
+<h2 id="搭建过程">搭建过程</h2><p>关于git的使用这里就不说了，从安装octopress开始</p>
+<h3 id="安装">安装</h3><figure class="highlight sh"><figcaption><span>Install octopress</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> http://github.com/imathis/octopress octopress</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> octopress</span><br><span class="line">ruby --version <span class="comment"># Should report Ruby 1.9.2</span></span><br><span class="line">gem install bundler</span><br><span class="line">bundle install </span><br><span class="line"></span><br><span class="line">   rake install  <span class="comment">#install default theme</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>Problems:    </p>
+<p>   You have already activated rake 10.0.3, but your Gemfile &gt;requires rake 0.9.6. Using bundle exec may solve this.<br>   这样的错误，原因是安装了rake 10.0.3，而Gemfile.lock里的需求信息是 rake 0.9.6<br>   解决方法：在Gemfile里添加 <code>gem &#39;rake&#39;,&#39;10.0.3&#39;</code> 后运行 <code>bundle update rake</code> 进行更新</p>
+</li>
+</ul>
+<h3 id="配置">配置</h3><p>将根目录下的_config.yml的编码改成UTF-8（可以用Notepad++），修改_config.yml，包括url、title、subtitle、author等等。</p>
+<ul>
+<li><p>Problems:</p>
+<p>  这里Jekyll有个小bug，在windows上会遇到编码问题。网上普遍的做法是<br>到Ruby的安装目次\lib\ruby\gems\1.9.1\gems\jekyll-0.11.2\lib\jekyll\找到convertible.rb这个文件，将Line 29中<br><code>self.content = File.read（File.join（base， name））</code> 改为<br><code>self.content = File.read（File.join（base， name）， :encoding =&gt; &quot;utf-8&quot;）</code></p>
+</li>
+</ul>
+<h3 id="写文章">写文章</h3><p>Octopress的文章以Markdown格式保存在 source_posts 中（注意文件名格式），写新文章可以用：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rake new_post[<span class="string">"title"</span>]</span><br></pre></td></tr></table></figure>
+<h3 id="生成页面并预览">生成页面并预览</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rake generate	<span class="comment">#  Generates posts and pages into the public directory</span></span><br><span class="line"></span><br><span class="line">rake preview	<span class="comment"># Watches, and mounts a webserver at http://localhost:4000</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>problems：<br>  如果source文件夹中有些文件包含中文，比如_posts里的文章内容，或者自定义页面时加入了中文（“recent posts” 改为 “最新文章”等），此时会报诸如： <code>Liquid Exception: invalid byte sequence in UTF-8 in post</code> 之类的错误。花了一个多小时在网上寻找解决方法，尝试了3、4种，最后只有一种有效：在执行 <code>rake generate</code> 之前先设置控制台使之支持UTF-8格式，即运行 <code>chcp 65001</code>，再在标题栏右键-&gt;属性-&gt;字体-&gt;选择“Lucida Console”即可。</li>
+</ul>
+<h3 id="部署">部署</h3><p>第一次部署时要在Github上创建一个username.github.com的repo，username要和github的username一致。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">rake setup_github_pages  <span class="comment">#在Octopress目录下配置octopress与github的连接</span></span><br><span class="line"></span><br><span class="line">git@github.com:username/username.github.com.git  <span class="comment">#按照提示填入地址</span></span><br><span class="line"></span><br><span class="line">rake deploy		<span class="comment"># 将_deploy文件夹清空，将public中的内容复制到_deploy并部署到github</span></span><br></pre></td></tr></table></figure>
+<h3 id="迁移文章和评论">迁移文章和评论</h3><ol>
+<li>wordpress控制台有个导出功能，将导出的xml放到<code>source/_post</code>中</li>
+<li>下载<a href="https://github.com/odinyu/odinyu.github.com/blob/source/md.rb" target="_blank" rel="external">mb.rb</a></li>
+<li>运行：</li>
+</ol>
+<figure class="highlight sh"><figcaption><span>导出wordpress文章</span><a href="http://hopes4.me/blog/migrate-from-wordpress-to-octopress/" target="_blank" rel="external">引用</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> octopress/<span class="built_in">source</span>/_post</span><br><span class="line">ruby md.rb wordpress.xml</span><br><span class="line"></span><br><span class="line"><span class="comment">#如果提示少包，则依次安装如：</span></span><br><span class="line">gem install hpricot --platform=mswin32	<span class="comment">#这个要加特殊参数</span></span><br><span class="line">gem install ya2yaml</span><br></pre></td></tr></table></figure>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>2013年才进入Octopress的菜鸟表示很惭愧，临近毕业，在学校一堆事情让自己也难以静下心来折腾些什么。在好好珍惜最后一个寒假的同时，也终于有空闲来完成自己早在一年多前就想做的事。</p>
+<p>2010年刚开始使用wordpress的时候，写博客的动力还是相当充足的。那时wordpress友好的后台管理界面和日臻完善的Manual Book让我保持着不断尝试新花样的好奇心。那种自己能够自由掌控前端布局、后端行为的方式确实很棒。</p>
+<p>可是渐渐地，每每打开wp-admin，看着形似word的编辑器，各种样式、颜色、段落等等工具挤在一起，显得繁琐而复杂，写作的欲望越来越低。直到后来，开始尝试使用Markdown写博客。之前就听说过，但并未真正去使用，以至于第一次用Markdown时就被它的轻盈、简洁所吸引。所以，Wordpress是时候该抛弃了，今天终于完成了这一重大变革！</p>]]>
+    
+    </summary>
+    
+      <category term="Octopress" scheme="http://blog.zxczone.com/tags/Octopress/"/>
+    
+      <category term="学习笔记" scheme="http://blog.zxczone.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://blog.zxczone.com/2012/03/05/gre-webapp/"/>
+    <id>http://blog.zxczone.com/2012/03/05/gre-webapp/</id>
+    <published>2012-03-04T16:00:00.000Z</published>
+    <updated>2014-01-20T12:17:52.000Z</updated>
+    <content type="html"><![CDATA[<hr>
+<p>title: GRE作文练习v1.0<br>categories: 学习思考<br>tags: </p>
+<pre><code><span class="bullet">- </span>webapp
+</code></pre><hr>
+<p>前段时间准备开始准备GRE作文，之前在网上看到一个GRE作文练习的网页，只有简单的几个table，很简陋，又看了下题库内容，issue 200+,argument 200+，显然是老G的了。这是不能容忍的，于是立刻就萌生了自己做一个的想法。</p>
+<p>其实就功能来说做起来并不很难，就是一些准备工作花了不少时间。比如获取gre庞大的题库数据，并存入数据库。几百到题手动来添加绝对是一件无比痛苦的事，这种机械的重复性劳动不该由人来完成，交给计算机去做吧！最权威的数据无疑是GRE官网的<a href="https://www.ets.org/gre/revised_general/prepare/analytical_writing/issue/pool" target="_blank" rel="external">Pool of Topics</a>了，这么规整的网页格式取得数据并不难，正则匹配并将数据组建成一条条sql语句执行即可。有了数据库接下来就都好办，粗糙地P了几张图（美工还是软肋啊），写几个必要的页面即可。当然了，web开发最头疼的还是兼容性问题，IE下网页面目全非是常有的事。所以还得小心翼翼地使用css，真希望IE6、7、8早消失，听说国外某个公司向IE用户收取额外的费用来填补兼容性维护的成本 ==！</p>
+<p>其实写着写着就想把它做一个写作交流平台来着，不过那样工作量有点大，最近也不轻松，于是草草结束了v1.0, 以后有时间再“自娱自乐”吧（对了，弹窗用了丑陋的alert，简单实用吧，毕竟目的是好好练习写作-_-）</p>
+<p>传送门：<a href="http://zxczone.com/gre/" target="_blank" rel="external">GRE作文练习</a></p>
+<p>还有一个多月考G了，可偏偏后面有大作业周和考试周，多管齐下真悲催。不过幸好还有你跟我一起奋斗，忙碌并快乐着~</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<hr>
+<p>title: GRE作文练习v1.0<br>categories: 学习思考<br>tags: </p>
+<pre><code><span class="bullet">- </span>webapp
+</code></pre><hr>
+<p>前段时间准备开始准备]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://blog.zxczone.com/2011/12/14/memorial-12-13/"/>
+    <id>http://blog.zxczone.com/2011/12/14/memorial-12-13/</id>
+    <published>2011-12-13T16:00:00.000Z</published>
+    <updated>2014-01-20T12:15:52.000Z</updated>
+    <content type="html"><![CDATA[<hr>
+<p>title: 又逢【12·13】祭<br>categories: 心情随笔<br>tags: </p>
+<pre><code><span class="bullet">- </span>随笔
+</code></pre><hr>
+<p><img src="http://fmn.rrimg.com/fmn063/20111213/2145/b_large_AfQA_47ed00003a54125b.jpg" alt="南京"></p>
+<p>今天又是一年中一个特别的日子。这个我生活了许多年的城市，这一天总是显得分外伤感。</p>
+<p>南京，有人赞其王气，也有人贬其阴气、鬼气——城东中山陵、明孝陵，南面雨花台，西边大屠杀纪念馆，北面还有燕子矶。也许只有生活在其中的我们，才知道她 是那样的五味俱全。这里确是帝王之宅，但又不乏饮恨的志士和短命的王朝。今天提起南京，更多人只怕最先想起的，还是74年前血雨腥风的一笔和万千苦难的人民。南京曾经被杀得所剩无几，也被毁得所剩无几。这座城市的历史既辉煌又悲情，闻名遐迩的金字牌匾“金陵王气”，既是骄傲，也是悲哀。</p>
+<a id="more"></a>
+<p>南京人始终陶醉于自己的文化魅力，为何而陶醉？朱自清称逛南京就像逛古董铺子，这里永远不缺摩挲和凭吊，但是历史的重负都被现实的恬淡涤荡干净了。金陵王 气本是政治特质，却在文学文化的土壤里走得更深更远。我认为南京在这一点上远胜过其他古城。不像北京那么炫耀，政治的羽翼在每个角落投下硕大的影子，历史 成了城市的标签；也不像西安，灰色的城墙围住了昨天，也困住了今天，历史又变成了城市的枷锁。今天的南京已经有了雪泥鸿爪的淡然。比方说，如今你若到夫子 庙边游荡，若不是刻意矫情，其实是很难发六朝之忧思的。秦淮河的霓虹大不如前，也难见画舫上妖娆的歌女，旧梦本就只属于仙人。但你若不再计较，绕下楼来， 随着熙攘人群隐没在河边街市中，会觉得贩卖各色商品的摊位、此起彼伏的叫卖、人头攒动的拥挤、甚至丝丝香滑的盐水鸭和名满中华的鸭血粉丝，这所有的世俗让 南京显得格外的真实，心底格外塌实，这是个活生生的城市，尽管有着历史的寂寥，有着诸多不如意，可她透出那种认真的平和亦让人感动。</p>
+<p>二战后南京的发展速度落后了下来，可无论苏南和上海人怎么嘲讽，南京就是宠辱不惊不紧不慢地走着自己的路子，尽管肚子里的牢骚比谁都多。可是这种悠闲，又毕竟和成都不同。南京人在自己的秩序里享受生活。</p>
+<p>十大名城里，南京被评为“最忧伤城市”，这可不是什么褒义的评述，南京的高楼不少，道路不窄，居民的幸福感更是不低。但是细想想，也许这个词也最精准。最 忧伤的城市，也并没有什么不好的。一个城市，能有明显的性格，就首先由不得人小觑。忧伤的力量，对心灵的震撼力说不定可以胜过刀冰火水。波德莱尔有部散文 诗集叫《巴黎的忧郁》。没有几个城市能担得起这个词，也没有几个城市能模仿得了她的神韵。</p>
+<p>又逢“12.13”祭，生活在南京这么久，心中难免再次感慨唏嘘一番。城西的莫愁湖，也许是一个无奈的劝诫。比缩在历史阴影里舔舐伤口更有用的，是抚定沧桑之痛，厚积薄发。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<hr>
+<p>title: 又逢【12·13】祭<br>categories: 心情随笔<br>tags: </p>
+<pre><code><span class="bullet">- </span>随笔
+</code></pre><hr>
+<p><img src="http://fmn.rrimg.com/fmn063/20111213/2145/b_large_AfQA_47ed00003a54125b.jpg" alt="南京"></p>
+<p>今天又是一年中一个特别的日子。这个我生活了许多年的城市，这一天总是显得分外伤感。</p>
+<p>南京，有人赞其王气，也有人贬其阴气、鬼气——城东中山陵、明孝陵，南面雨花台，西边大屠杀纪念馆，北面还有燕子矶。也许只有生活在其中的我们，才知道她 是那样的五味俱全。这里确是帝王之宅，但又不乏饮恨的志士和短命的王朝。今天提起南京，更多人只怕最先想起的，还是74年前血雨腥风的一笔和万千苦难的人民。南京曾经被杀得所剩无几，也被毁得所剩无几。这座城市的历史既辉煌又悲情，闻名遐迩的金字牌匾“金陵王气”，既是骄傲，也是悲哀。</p>]]>
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://blog.zxczone.com/2011/12/11/renren-webapp/"/>
+    <id>http://blog.zxczone.com/2011/12/11/renren-webapp/</id>
+    <published>2011-12-10T16:00:00.000Z</published>
+    <updated>2014-01-20T12:26:26.000Z</updated>
+    <content type="html"><![CDATA[<hr>
+<p>title: 人人应用初体验<br>categories: 学习思考<br>tags: </p>
+<pre><code>-<span class="ruby"> <span class="constant">Web</span>
+</span>-<span class="ruby"> 折腾</span>
+</code></pre><hr>
+<p>前几天时间心血来潮想做个人人应用玩一玩儿，就看了看开放平台的接口，还是挺丰富的~但是考虑到后面事情太多，没什么时间，所以没打算做个什么好玩的应用。</p>
+<p>本来有个不错的想法，但需要的时间太久、美工要求也比较高，就放弃了。那是一个关于“生命线”的应用，大致是这样：<br>获取每个人从第一条状态到最后一条状态的所有回复者的ID，按回复的时间按顺序划分为若干集合，找出每段时间内出现频率最高的那个ID，则这段时间这个人与自己交流的比较多。这样将所有集合分析完后，按时间顺序排列出来，形成一条“生命线”，这条线上按顺序依次出现一些人。</p>
+<a id="more"></a>
+<p>这样可以很直观地看出哪些人在哪段时间与自己关系比较亲密。当然，通过观察这条“线”，我们也能找出一些曾经在自己生命中出现过的关系亲密的同学、朋友甚至是恋人，而后来又渐渐冷漠疏远，在自己的生命中渐渐淡去。我想，每个人都有记载生命轨迹的那条线，那条可能会引起很多回忆的线。</p>
+<p>由于最近事情很多，加之对人人的api也不是很熟，要慢慢地看文档，索性就尝试做了一个小应用玩玩。简单描述就是将个人所有状态和日志以一定格式导出到word文档，加之一些字体、格式、背景修饰。为什么要做这个呢？很早以前看到女友电脑里有个“文章”的文件夹，里面都是她写的日志。也许可能觉得那样方便些，有时也能打出来装订成册（以前都写些散文随笔书评影评什么的，还比较有保存价值，至于一些吐槽文就算了），所以就萌生了这个想法，很简单，正好人人提供了接口，的确不用花太多时间（时间都花在美工上了汗）</p>
+<p>另外，租的虚拟主机可能比较差（年费几十块的好不到哪儿去吧==！），比较慢，需要点耐心，这功能其实很鸡肋，有需要的用一用就行了（不过我想90%的人都用不上吧~）。</p>
+<h2 id="进入应用"><a href="http://apps.renren.com/renreninfo" target="_blank" rel="external">进入应用</a></h2>]]></content>
+    <summary type="html">
+    <![CDATA[<hr>
+<p>title: 人人应用初体验<br>categories: 学习思考<br>tags: </p>
+<pre><code>-<span class="ruby"> <span class="constant">Web</span>
+</span>-<span class="ruby"> 折腾</span>
+</code></pre><hr>
+<p>前几天时间心血来潮想做个人人应用玩一玩儿，就看了看开放平台的接口，还是挺丰富的~但是考虑到后面事情太多，没什么时间，所以没打算做个什么好玩的应用。</p>
+<p>本来有个不错的想法，但需要的时间太久、美工要求也比较高，就放弃了。那是一个关于“生命线”的应用，大致是这样：<br>获取每个人从第一条状态到最后一条状态的所有回复者的ID，按回复的时间按顺序划分为若干集合，找出每段时间内出现频率最高的那个ID，则这段时间这个人与自己交流的比较多。这样将所有集合分析完后，按时间顺序排列出来，形成一条“生命线”，这条线上按顺序依次出现一些人。</p>]]>
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[最初的梦想]]></title>
+    <link href="http://blog.zxczone.com/2011/11/04/origin-dream/"/>
+    <id>http://blog.zxczone.com/2011/11/04/origin-dream/</id>
+    <published>2011-11-03T16:00:00.000Z</published>
+    <updated>2014-01-20T12:14:12.000Z</updated>
+    <content type="html"><![CDATA[<p>室友曾说，我们这个年龄的学生们碰到一起，无论开始讨论是什么，最终都会转到关于前途发展的终极话题上。想想也是，这个时候，临近本科毕业的年纪，出国？读研？工作？种种选择常常让心智还不够成熟的我们徘徊犹豫。当然很大一部分人可能心里早早地给自己定下了目标，并为之奋斗，却很少有人真正理性去思考过，我们的目的是什么，我们最终想要获得什么。当然，就连我自己，同样不知道。</p>
+<p>这个时代的年轻人，已经丧失了拿青春当赌注最基本的筹码，那就是最基本的生活保障。失败了将会一无所有，甚至维系自己和家人生存，这是现在的年轻人不敢去选择自己想做并想为之奋斗一生的主要障碍。有人开玩笑地调侃：投胎在中国，就等于一开始就选择了HARD模式。我不想去谈论那些种种危及生命的社会因素，就假设每个人都能好好地活下去，不喝毒奶粉不坐动车不被弹钢琴的人开车撞不被人贩子拐走等等。即使是这样，来自各方的压力仍然在试图抹杀我们内心仅存的那些信仰。每个人就像被批量生产出来的机器人，干着几乎一样的事情，谈论着几乎一样的话题。每个人看上去是不一样的个体，却仿佛被注入了同样的代码，运行着同样单调的程序。每天早出晚归，追求的却不是自己热爱的东西，却用这大好的青春去干自己不愿意或者说不情愿的事情。殊不知人的青春仅有一次，只有这短短的几年，如果不投入到自己热爱的生活中去，即使若干年后事业有成，但那时也再也不会有年轻时的血气方刚，略带苍老的面庞留下的只是春夏秋冬简单重复的痕迹。而快乐伤心也亦不再是自己所能决定，而是被世俗的琐事牵动着神经。那时的你，能理直气壮地给自己一个一生mark上一个“快乐”或是“幸福”的标签吗？</p>
+<a id="more"></a>
+<p>或许有人说，这种想法还太幼稚，这个社会就是功利的社会，不去追求那些所谓的“成功”，早晚有一天穷困潦倒。其实，虽然有这种想法，但实际上每日的生活却还是与之背道而驰。做着并不喜欢的事，还强颜欢笑，祈祷着这些“付出”最终能换来幸福和快乐。可是，何谓“幸福”和“快乐”？我始终不能清晰明确且理直气壮地回答这个问题。或许很多人跟我一样，并不想这样度过一生，但终究成为生活的傀儡。对于那些自以为很“现实”，很“明智”，很贴合这个社会潮流的人们，我想笑，却笑不出来。中国教育的“成功”之处，就在于它能够让人们去做那些貌似很伟大的事情，并且还做的踏踏实实认认真真，做完了还颇有成就感，并以此来作为评判人们高下的标准。他们都忘了，人之所以成为人，并不是为活着而活着，并不是像动物那样追求于吃饱喝足。为( )而生，中间这个词每个人都有自己的答案。可是，我想稍微有点追求的人都不会在这个括号中填上“活下去”这三个字吧。说是这么说，可现实呢？又有多少人能够不为活下去而生。王栋生老师有篇文章——《吃你的馒头去吧！》。文中说道，“只想到吃馒头的人，是知道不吃馒头会饿死，但是他并没有看到只吃馒头不读诗，是另外一种死法。心系馒头的人，根本不想读诗，他的内心也远不止是只想吃馒头，他下一个愿望是吃肉，终极目标是去做‘人上人’。在他们的人生中，永远没有诗，没有歌唱，只有馒头。” 老师的文字掷地有声，让我这个现在整日为追求馒头甚至是肉的俗人无地自容。如果把这些文字拿给高中生去看，也许会引起一些共鸣，但是对于头脑里已经被事业、前途、工资这些词语占据了的即将毕业的大学生，不知会不会引来一阵阵讥讽。前一阵子偶尔逛了逛小百合的JobAndWork版，除了铺天盖地的招聘信息以及有关工作的困惑抱怨等帖子挤满了眼球之外，里面那些充满铜臭味的文字着实让我感到恶心，尤其是“太幼稚了”、“现实点吧年轻人”这些字眼。我也不是为了抨击什么，只是感到由衷的悲哀。我很清楚现在人们的处境，如果不去追求那些，那么可能一辈子只能住租来的房子，买最便宜的衣服，出门挤最便宜的公交，但我真的不愿意为了金钱而放弃自己本应追求的东西。一个奇怪的现象不知大家发现没有，穷人忙于生计不会去考虑精神追求，生活富足的人也同样忙于事业忙于挣钱而忘记最初的理想。就像王栋生老师说的那样，心系馒头的人，根本不想读诗，得到了馒头他下一个愿望是吃肉，而最初吃饱了馒头再读诗的理想早早就被抛到脑后。这也是现代人陷入的怪圈，就好像想摘一朵美丽的鲜花送给恋人，摘了一朵后却发现了前方有一朵更美的，于是钻进花丛中扑向那一朵，结果发现远方还有更美的，这样欲望不断地膨胀，在花丛中越陷越深，而恋人却被彻底抛在脑后，忘记了最初始的目的。</p>
+<p>于是，我想起了自己的孩提时代，那个生命最初始的状态，纯粹、简单却快乐。Peter Pan拒绝长大，或许他早已看透了丑陋的成人世界。当然，我们都不是Peter Pan，只能随着岁月慢慢长大、成熟，并变老。很早以前我在一篇随笔里写过，人之所以怀旧，也许不见得是过去多么美好，而是因为现在的窘迫让我们妄想逃避。是的，妄想，仅仅是妄想，因为现实不会给我们后退的任何机会，只能硬着头皮向前，一直向前。我们也不能拥有像小王子那样种满玫瑰的612星球，终究得回到现实。但是，人和机器的区别就在于机器不会反抗，只会机械地去做交给它的任务。如果我们每天也只是这样，简单重复地完成任务，那么，只配称作“它”，而不是“他”。世俗的追逐可以占据我们的肉体，但是决不能霸占我们的灵魂。灵魂丢了，就不能称之为独立的人，而是生活的奴隶。</p>
+<p>如今，日渐习惯于鼓楼富有生活情调的校园氛围。费彝民楼楼下经常有很多4、5岁得孩子在玩耍，每每面对这样温馨美好的场景，心里总会有一股暖流在涌动。谁没有过童年？可是当如今的我们再也无法像他们那样露出天真无邪的笑容，再也无法用一双明亮而纯净的双眼观察这个世界时，是不是该扪心自问，我们最初的梦想，都忘了么？</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>室友曾说，我们这个年龄的学生们碰到一起，无论开始讨论是什么，最终都会转到关于前途发展的终极话题上。想想也是，这个时候，临近本科毕业的年纪，出国？读研？工作？种种选择常常让心智还不够成熟的我们徘徊犹豫。当然很大一部分人可能心里早早地给自己定下了目标，并为之奋斗，却很少有人真正理性去思考过，我们的目的是什么，我们最终想要获得什么。当然，就连我自己，同样不知道。</p>
+<p>这个时代的年轻人，已经丧失了拿青春当赌注最基本的筹码，那就是最基本的生活保障。失败了将会一无所有，甚至维系自己和家人生存，这是现在的年轻人不敢去选择自己想做并想为之奋斗一生的主要障碍。有人开玩笑地调侃：投胎在中国，就等于一开始就选择了HARD模式。我不想去谈论那些种种危及生命的社会因素，就假设每个人都能好好地活下去，不喝毒奶粉不坐动车不被弹钢琴的人开车撞不被人贩子拐走等等。即使是这样，来自各方的压力仍然在试图抹杀我们内心仅存的那些信仰。每个人就像被批量生产出来的机器人，干着几乎一样的事情，谈论着几乎一样的话题。每个人看上去是不一样的个体，却仿佛被注入了同样的代码，运行着同样单调的程序。每天早出晚归，追求的却不是自己热爱的东西，却用这大好的青春去干自己不愿意或者说不情愿的事情。殊不知人的青春仅有一次，只有这短短的几年，如果不投入到自己热爱的生活中去，即使若干年后事业有成，但那时也再也不会有年轻时的血气方刚，略带苍老的面庞留下的只是春夏秋冬简单重复的痕迹。而快乐伤心也亦不再是自己所能决定，而是被世俗的琐事牵动着神经。那时的你，能理直气壮地给自己一个一生mark上一个“快乐”或是“幸福”的标签吗？</p>]]>
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://blog.zxczone.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="心情随笔" scheme="http://blog.zxczone.com/categories/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://blog.zxczone.com/2011/09/23/host-alteration/"/>
+    <id>http://blog.zxczone.com/2011/09/23/host-alteration/</id>
+    <published>2011-09-22T16:00:00.000Z</published>
+    <updated>2014-01-22T04:10:22.000Z</updated>
+    <content type="html"><![CDATA[<hr>
+<p>categories: 学习思考<br>title: 主机搬家<br>tags:</p>
+<pre><code>-<span class="ruby"> blog
+</span>-<span class="ruby"> wordpress</span>
+</code></pre><hr>
+<p>昨天不知怎么搞得，原本一切正常的wordpress突然主题全都加载不了了，只剩下一堆白底黑字，看着真心丑，却又不知原因所在，焦急万分。恰逢最近想换个主机，100M的空间着实不够用啊！</p>
+<p>于是，迅速在淘宝上找了个合适的主机，年费108人民币，还算便宜，至少比原先的好很多。具体信息如下：</p>
+<a id="more"></a>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAAIFCAIAAACh4vTrAAAgAElEQVR4nO2dQYu63t/3fRTToxgiWtxP4IL/Y5hFmxZua3MtklbfYYiBStrMfdNCCCFaREQgyC2zupiNRC0ckKC2MnsfgNfi6OmoR3OaLK33iy8/So9H08/Lz+cc+03Cer12AQBhBIgBQByIAQAHiAEAB4gBAAeIAQAHiAEAB4gBAAeIAQAHiFEs5q+Nxuv81kcBIMaV2NYEn95sm9zs0Hh+npsH/jpz/vzcCK/jd7ud9YLFNe7ODub8SRAEQXhiOuy91OAkBWJcgUPj+YnE3MGcPwlPvwl9gi/AU2gtv1v29fy18cTrsPdSIyLRF8m7flAgRu4czPkTc+dOuTGn11GR2E3qdv7aqL30gsXbGsfDY16ie6SGAALEyJ3trMfetsOBy5JWR7kxMZK6DYt3aDw/xSM+kjGQLuJAjNzJKEakWZwLihEZYxA96MgkwdvHAmLkTkYxTo59LygGr1uar05v8ghcXIyNJPpI/QlZNOnTZaIoigNFc11XUwbkhb/ZakLb060mqw19G2lfIrKNMbiDgWg/FxpjhAjKqmNLjDfcy4qxN7WW2NLMPXk76Usk1sMhvpHElmbuH0eMLLNSJ+solzNxdP6sFK9PZIwQlxQjFrv7z9XnPhbi5O25YuwHnRbJPMHaY44KOvSXSP2PQeffxnV5W12ZE88xTt2kj5uHxwBnPscICA336cADYwz3omLsB50WN+wumDFos72pdToDYh3jg7RhlmxWEzFYEnS1D1QpFNvaiQgG1+aSGSMSyuzyS40x9qbWCiUHfxUd12wCPUivkihtmHRx06SRyHbWw026aORaSvnJgStMxIS4GJHe2LeBHn7nwYZEA64YHTryASAL1x98s41pBO8HnVZkbL1ZTVqdQRDOG0kUJ6sN4w8Jd5MGPVs4xUspRp7WlSVZg4KR5apdeLqWljqR6Vpu9bJZTcRYYxamRjrWTrQwY6KfDrWJJHTw3Q+yxy0H35c9w+CP3EaMQkEH6Lfljs9wGXlcMZix/rWrJi73d4ZLzeOKUTRwhgsFxCgKOMOFAmIUBZzhQgExigLOcKGAGEUBZ7hQQIyigDNcKCBGUcAZLhQQoyjgDBcKiFEUcIYLBcQoCrl+Hw6cQZarBjEA4AAxAOAAMQDgADEA4AAxAOAAMQDgINxy2gyAoiKs12sPABAGYgDAAWIAwAFiAMABYgDAAWIAwAFiAMABYgDAAWIAwAFiFAvtvdl81259FABiXIldPfjxr+Fyl9zsp1mtat8/0aXfWkVgqZMudsuhkNwt2YpZfjyGemPI7Zx1ctioR3YXYdios+219yZpyR5VZF8lAmJcgZ9mtUJi6OdbqwiVeOj77b61arUZX/fzrVU40bmrB3G/Ww6FcLc03KkYw0Y9iNFd/ejAsRP2tfberARHwr5mYcXQ3ptUgN1yyLRn+y8TECN3ImEdudGyJNVRSWIsw9kgnBwq2vd3s1qhC5fLJd2SSpJ0bOxBJuz92CZsQuTt8aZQLiBG7kTihr25huHXUV60lOLEaDgRUUl+WDHCOzoG67BRJ9mGFYDskRxnkslk+W45jBxSLGMkZsgiAzFyJ6MYkWZJDBv1WDM20FkZ+GJESqPdclipVivRMcZPs1qpVqvpY4z/NBqV8MjEi40xBIgBuGQUI6XEYokXNszgwWNH2BS228gNPtzbUTD2YOI5ge5XEOr/Ex3icyqrJLWKzDliTOXuSDXYJYY6aksj53KHlb73qW6zu44cTNHINsbIWnLEQzl52ieaMejE0XGvfGkjG/KPjR1jsGkhlvpKWU2dKYYkSTQ6HctoiyLESOb0rFR6HaW9/zfdhMkPJ8e1ofjmTi6Fp3SPs1VswRbXiR4JOyvFTiI/bsYYq+qbPCVvDXUky3Ight31f/+ubViO5zkjSVLVcbDki6wNQpnTWJbfRLEty29BG2ckSYblsHvnijGV/c5inUeXdOXxSHqz/c7bpA3bZw6ceI4xbNRT5jTZqp3GXOzhRvyJQXS8EWkefxgSGWP86jkGHcTHxhjls8I7W4yprnfFbhBbb7o+bUsjJxTE9pu/pN2Vp57nGepIFLu2n2G6tueMpDYJR1ufisESEsSOZUjSyGFehPceFYNpZpMDY+q96JJgd2xXTqDKTdjVyxk9d8zZYtjkv45lvMlT2xfjeJMO8oDFRn/XTzIkUu1ALS9IC8fGNFHEK6WEjEGzwZRdFRxJZHfk9TFdXCVpJLJbDkv6ePiOOV8MEuj0dSBGNxxczrlikIhfROooLzaoCL/19SDeJu+OihHtHADC+WJ4nt0V25IkGZZjH0upYy0Ur5fCkcovpZjbtv0mSVJsTB/sywu6Eknioi2ncneqf9GgZwuneCnFHFI7J0mu+DdfQCayXLW/iOFN5S6JUSZY4+PpJDHSGtMdcWecmBqJDqyPC8lebH0avB0HktByS2YGSLkPvs84wyA/chTjWuR1F48P6HOlwGf4ESm3GOTZCDuS/jt0PlfMrWriUswz/LCUW4x7Ame4UECMooAzXCggRlHAGS4UEKMo4AwXCohRFHCGCwXEKAo4w4UCYhQFnOFCATGKAs5woYAYRQFnuFBAjKKQ6/fhwBlkuWoQAwAOEAMADhADAA4QAwAOEAMADhADAA7CLafNACgqwnq9dgEAYSAGABwgBgAcIAYAHCAGABwgBgAcIAYAHCAGABwgBgAcIEaxmL82Gq/zWx8FgBhXYlsLfnirN9smNzs0np/n5oG/zpw/PzfC6zJ2C34NxLgCh8bzE8kDB3P+JDz9JvQJvgBPobVZuwVnADFy52DOn4QavZ/3XmpJxVJ6HRXRJnu34AwgRu5sZz32Tj9/bdReeryGaXWUGxMjc7fgHCBG7mSM4EizOBDjmkCM3MkYwSdrIYhxTX4hxmY1EcNMVhtuw3+dwT5bn3tTa4W6lLg9lppsg4Ft7dToGWOMa/I7MaT+5GSzval1fiMG21hTBll2UTZOTx+drKNczpwVZqVy5K9ibFYTqd+XRFEUxVZnsHf3g06LvP4MVkn9vhSkgkgnETHIW9PUOp1//zqtVmewd92J3704UDTShxR6e0xlLb8r/xhoTos1cDVl4Gco/2D8PkWxpZkZpf4VJx449F5qqQ8ijpsLgsCUTHiOkRd/KaVamrnfrCZBMO0HndZktaGxvllNaGk06UskRukLAjdj7E2tFQQok0M2kihOVhtNGQwUzXU3RDa2h81qMlA06l6waj/odEhvZO+snJoyYPrMmhUvzbbGFEWgCFwgY9DbMAk7VowWE7JSf0KjmcIdY+xNrRUzynVdEr4RtSK6tjoDM+iTppQg5/h90nRBkwbtJGHUlC/bWQ/j5qJxJTGIEqtYD9wByW/F4N7jA+WOpRHRQ+pPaH6If5Z7nQAAv+VqYria8tHptCK35JNiJJdSfoEUr7uY4yRtTFpKkVWRGm+gaIwq0Zz2d674N19AJrJctT9N15Igi4hBIpgMvlvhgXUrFnMnxXA5g29/bE0tjY+tI5swBVu0mmIUCo3XL0j2MwyuwOXF+CN3OhV7GohRKIolxqQv5TYTWnQgRqEolhiPDM5woYAYRQFnuFBAjKKAM1woIEZRwBkuFBCjKOAMFwqIURRwhgsFxCgKOMOFAmIUBZzhQgExigLOcKGAGEUh1+/DgTPIctUgBgAcIAYAHCAGABwgBgAcIAYAHCAGAByEW06bAVBUhPV67QEAwkAMADhADAA4QAwAOEAMADhADAA4QAwAOEAMADhADAA4QIw7Z7cc1hvDWx9F+YAY1+DnW6sEvwnWfNcia3fLoSBUtO+flM2r1WZ49a6e3CHLsFEfLncJK3d1oR5ZN2z4HbM6MccfOk7tvekvjR4e21toF8NGnXZCN8/yQa4MxLgCu7ogBNHJvvY834powEW2jUXeT7NaSeowtnk09GkPJP7Ztdp7M9jRT7NaCSL1uIvdckg3YV8PG3VuXho26tVqlUZ8INhRDLrVz7dWSb07XBmIkTs/31qFib9hox4OlPrO29V/kzHYiPTC4RXhVB0V0Yb1zdsth0QS+iLShvdBogwb9f9+f68w/vyn0ajwxDhl+LWBGNeA1g9sADH3yF+LUUl+G9lvaqhFxAgdBj3UiHiBDyGLkj4COYDgMHZ1of4/TGaIZQxucrsNEOMa7JbDStWvXZj6hEbS78SI3FyTxMgQalcSgxyh8t5svms/YTGEEKUV40vXHc/zPG8qvxmWE1lrqOP4QgZnJL3ZvBWnNiTbSqSNYxlj1Qits76+Yps7lrHQ/b3Z+rQrT08eRk6EA9Sv3dnhOCXp7h4ffEc259ZLKSVWwJXECIY0NGdySyl2hHN7TojhWEY7+MW9kWoEQWmr4dA01FH41/nabKBblhW8tPUgWGk0O5bleM5YHn/p06ROWBloxB/78uyuyGEUbGLr0ylt6zmquvA8byp3p34/vjZ2+ABG4c94NpE7Oi9ef5sxQiTUS5HA5R/aFcYYpDH91CliFKqaypIxiAbOSGonR97CsBzPs9+kkeN5hqoyt2Q2aruy3GXe+OHIDcGFqlK3prJsx6K/K8uBGkdR6VZUBseyiHKyLIc3nwbGEi113f8UnhdOOH+E3N3ZSaTYvGRIDO29GSkqUsRIustmC7LonFUes1IROe8kY3ih260zlseO53meLQeVyVTm3qz92LMDSdhixrGMtti1o/0f4560pCHuWEZbbBuWE8lLbWkUmMPPGEFCWKjqOJ4xmITjL7TzEcM7zskmzdaniHF8XsGWTLQ6TyqWtPdm6mMBOl0bnQu++HOMdDHYSrI4VnhZxAjCsftlGQv9ayS96frCsCxa9Hv+Hf2oUDhjeIY6Ykp8gt0N3KBiENlo1UTFWKjqQlXtYCgShCxbzqVkDL9Im+pfQcZrq+o4SF7+MZC6LlJKTS8nxtX5aVarxXkmUEZOikEi2FHVxUJVLcsYq4au65Ginx0NT+Uucy/3bH36JsvRIowJu3jGGDFikLWGL0YoY7ApaJxcSnlhSRw/Y9DsF9qKdBURu3Skj0lAFk6IYaiqqqq256jqeCzLbbFre46hjkXmft+WYoMPJmpZwoPgyMLEjOEdU5Cj619swUNwLONNkpJKKWYXoWFScITOSGqzji0CD8Ejk6WUImIsPM9WVVXXbc9zVHVMSnTLsoKYJvWMrapGUoGeLgY3YzDHQF6MJGkU6YKd7c2QMQj+SMMLJxzSFeth+snJwhX/5gvIRJarlnWM0ZZGpNCfyjKZvWEeZVxEjChcMUhyCKejY4h7p8TgZYzjtBg15OJiyJ6Q8u/vuwDZuaAYfpSo6rgrimPV0PXFm9Qeq+pCt1NnpThTSaHV0sjhiUEenrDRb6iqGvjpMA8cRqoRqax0XQ8EOD4GiWeMqdxl+ycd0qER7Z8dLJ0NxCgUFxMD/BGIUSggRlGAGIUCYhQFiFEoIEZRgBiFAmIUBYhRKCBGUYAYhQJiFAWIUSggRlGAGIUCYhQFiFEoIEZRgBiFAmIUhVy/DwfOIMtVgxgAcIAYAHCAGABwgBgAcIAYAHCAGABwEG45bQZAURHW67ULAAgDMQDgADEA4AAxAOAAMQDgADEA4AAxAOAAMQDgADEA4AAx7pztrFd76d36KMoHxMidgzl/Cv8669Nz4+C6ruv2XmrBsto2uYPGs99B43UeLNzSLZmFHHovtd4sqe9tLbZfekisTsxHeJqbB7p8/tqIfKLkA47sVwjruq0dOzluHt/j1YAY12b+2iDhMn9t0HhiX4c5NJ6fYuF1aDw/BeG+rQnCr0Kf9hAXkjkMdr/HXWxnPboJ+7r3UqOBzrxOOrZtTXh6fn6mEU8EY3dNt0o+M/kCMa7MMVJ7LzUa8Qdz/sSL4PlrI14IsRGZ1Ia2TK2jItqEInI765GIpC8ibRKOf1tj7vEJx7atCbXX46ptTXh6efkvrhiRD3s1IMZVoenCDeoTEhxskLH0XmrPz8+RoiIcqdG3kc2Tk4kbEyMU0zTWI8EdHGoofOm2EcMTjo3s1987sTeSrNiMcZMxEsS4HrG0cGg8PwVxn1jwUGGYe2eoREkSIykLMdxWDNLV/208P8/NQ0QMdkhWYjH2pvahaK676fcnrrv51xnsea0GndZktfnLjiZ9aaBo/EMw2X1uVn/bUR5E0gL7NqFgiAef70NkQM8NnQz32huLQT4FaZCUMRJGWblzMTFmq43rbpRAj81qEjiwX60+jw2D8NWUD83k6eOvHXAFmPT7CfG+ifxsq9SfsL2xb28CN13EAyuyVdilxDa8einSP5dbjjG24d6SxbhNNfVXMfam1uL9vp7Un6xWK9d1N6sJs7jV6fjNB8rMTBAjyQo3JMZGEluMWiRZHY9qFs4Ym9Ukqc/rEB9F9F5q7KwUzRjsazaTcOdnkiZtMtRRbnzO6oqzUtFju8OMYZomW8fEapoJTxxRFMWEsoqkHcp+0OGrF944mjHinafnqFxJqCjYYjo0yxR7y22TVn+zo3weoTqePbZrPcc4IQY7xri+Fe6lMsYxEYRe09jdm+beNE3/Vai4isLUYNFdffQ/Pvr9z1g2INulZ4zUnu+PQ4N5SgDO4O9imHvXJVUTvdnH65ZJX+p0OlSbFn907rrJ4Uvu96SU4o00QnmGKwZ34V1yMOfPt3godk9cZvA96UcKmWglM1OUvetqymCy2kTu7hGCCa4Q1LRAicgAgzPUKVQpBUrHZcQgcc9mDJ4YpBb6p5mfKWK4rqspCrvxZjWR+lHzBsps0GnRvLRZzSKexJJDmo25csW/+QIykeWqXVyM2aDTEsO3cwK5YQct3b35+Zl4/95IokiCfm9q/5iATpiu3SvKLPQ+LIamDGKD9etxkTMMLsVVxQiITCi5LjMrFdRCEnPX//X8aVyMvam1wvO2kihyzbwVEKNQ3EQMwAFnuFBAjKKAM1woIEZRwBkuFBCjKOAMFwqIURRwhgsFxCgKOMOFAmIUBZzhQgExigLOcKGAGEUBZ7hQQIyigDNcKCBGUcj1+3DgDLJcNYgBAAeIAQAHiAEAB4gBAAeIAQAHiAEAB+GW02YAFBVhvV57AIAwEAMADhADAA4QAwAOEAMADhADAA4QAwAOEAMADhwxHMt4k6fZNnd0/Yt9b+vTkWqktB9JkmE5pG1X7Nrh1VP5jaw11NFUt+PbA3Ad+GIseEFp69PYzxq1ZXlsh9osgrh3RlLbbySNnKDnsWoESthyTL+FqpKWhqra/otRqml/4udbq1abPzn1DsrMUQxDHfF+0St6Uw9wVHURem8ZbWazqf41lscOE+Ke501l2T6K54thWVZk85FqkK1O5Z8kdvXgV6rqjWFKO+292XzXYot/mtVK0EFF+4Y4j8hRDHqzZzIG56bu+UHcDjLDceFCt0knhjo2LGssjx3GH7qVoaqy3KUKSdLIDpLJQlUty1jotqGqX7+o6EIMG/XAh11dEHihT/hpVqvxuP/51v4T6LRbDgWhvjvjIEDJYcWIV0pi1w/NY10Uh1RKXDEs6+sr8GehqgtVtY/DkpB1MTFGQQEWHcacZLlc0teMJFGy1VG7OpLGQ3JmxhgzFY5jWU60lGrTjDGS3khRNNVtQ1Vtv/mxczLOZsUYy7Iodr/8DqPDmN/w06xWkjJGQh0VbYOM8ZhcQAy6kFdKhRobqvplfb2Fk89INSzLipdSdmwY81u092YlMSecSAW75RBjjEcmffDdtT1P1/XINn8Rg7n3R0opy/G8hTqWmSE7yTPnfbD04cFuOUx25sjPt1aBGw/J6enauBieZ6s8Mdqi2JXHI6kdlFLym9Rm57VSxCCw07Vk8D2Vu2dMTJ0sgYaN+sk6yvM8UowNlyimHg7uk2+7G8sbAf4oPMON3CEZg+U3YtDBtzeVu7/KG6kVFCGtjtoth9SZ3XKIauoxub+vhLBPIfyHGZEb/m45TH2+cXwMAiselvsT4zTDRh3VEUjnAcXY1TEDC07xgGIAcJpcxLjhd2Ov+AdWQCZuEgZ/J6eMwZmSug7r9dr7f/8H/25x7jlADAL9SlV7oS/azDeprgbEgBgX4cJixBIF/0sl+QExIMZFgBh3+q8YQAwC59vpVx6FQwyIcREuKwbnO1RXBmJAjItwSTGY/+H7ZkAMiHERLijGtYcTXCAGxLgIlxLD/z/1bg7EgBgX4d6+EgIxIMZFgBh3+q8YlDe6IMad/isG5Y2uOxQDFIpbR8SZ3JsYAFwEiAEAB4gBAAeIAQAHiAEAB4gBAAfhljN5ABQVYb1euwCAMBADAA4QAwAOEAMADhADAA4QAwAOEAMADhADAA4QAwAODy3GwZw/PzcOtz4MUEDuUoxtLfilsNpLL6Xd/LXReJ0nrSI9PMGch+QOxei91AIftjVBSAp91z00np/nJifs568N+PDg3KEYs9mMvmYkiZJURx3M+ZNQ2+Z2eKAU3KEYDIfG81NKscRdtZ31np6fn4JiLDnhgHvmnsVIrYi2NeEpQx21rQlCb4b88XBcWIzP1WofvN6b2oeiuczbTudfv/+x5255abaznpBcEW1nvSRn5q8NtvpKKcbAHfMXMTaSGOVfvz9bbcjqvan960/Y9oqiRWzJiflrI8UK13V7L7WkGiniTEpLcMdcLGNoirIJLyEOaMogpo84WW34vVyCDHNKiXVUsNYvnw7m/CmtJbhbLiLGftBpDcJ5gPGhpZn7vfn5aX4qirY3zZxLqUPjOHL2H2ZEUsd21kuvjg7mnHaBAcZjcqYY3DzAmuAexxj7QacliuJAURRF05TBIP9SKp3eSw3hDtK5TMb4CA2p/axAxVCU2d7UZqtPRVE+rjX4TmZbw2MKcIo8xAiWBmJM+v9ancHedSd96ebpAoAs5CXGpC+1OoOZMmCUmA06rclqQ1NKHlzxD6yATOR0ofPmMrNSM0VJivSZMmiJ4mT1Oeh0NHM/6f9TFEXLU4wvT7j5v5w+Xel4XDHIKFwKPa/gtmkFMuyJIX/ZaQoQo1A8rhhFA2IUivJGF8SAGDlS3uiCGBAjR8obXRADYuRIeaMLYkCMHClvdEEMiJEj5Y0uiAExcqS80QUxIEaOlDe6IAbEyJHyRhfEgBg5Ut7oukMxQKG4dUScyb2JAcBFgBgAcIAYAHCAGABwgBgAcIAYAHAQbjmTB0BREdbrtQcACAMxAOAAMQDgADEA4AAxAOAAMQDgADEA4AAxAOAAMQDg8NBi/Hxr1Wrz59aHAQrIfYoxbNTJD4XVG8OUZtp7s/muxRb/NKuV4JfGKto3xHlE7lAM7b1Z8fPAT7Na4YU+4adZrcbj/udb+0+g0245FIT6Lr9jBUXl/sT4aVYrw6UfzLvlsJJQLGWro3Z1JI2H5P7ECIXyz7dWSbjlJ9RR0TbIGI/Jw4pxIhXslkOMMR6ZdDHsrti1w0vepJETvDHU0Ug1yHJZnnK216fdYLmhjqa6HVnLLrH1aVeWuf38hkxipJRYLD/fWgVuPCRJYtjd0E93d1V1RF58WVYghjOWx2O5G/ud76NLX7pOLZrKsmFZoX3o08Arz/M8xzIWuh2x5fdkGmMMG/WTdVS8N/A4pGQMZyyPLcsYq4bneYY6NizHY27zJI49z7P1heHLwuYTZyS1qSpfltGOmUO6mnLUahvUvt+TYVYqrY7aLYd0k91yiGrqMUkUw7G+dH3RFkVJkpiMIXblqWVZnucZ6oiUSbY+PYb8sRByxvLY8TzPs1XVWKhqEOm2qhqe51Ef2tLbl+XYuv5lGQvddqw/OBGQ/hxjtxymPt/Y1QUBzzEenEQxjMCEkWp4nqOqC8/zDFUNqhx7LMtjphCKcRRjLMuquviyHM/znCAFecfk45dtY1Vd6PZU7v6tlDrNsFFHdQTSSRLD0fUv71jtvJHaxgoGCeQGP1aN5ELoWEoRtUaSZFgOVwxVNWx9YVhfqqr+efB9kl0dM7DgFGmzUo5lvMnTqdyd6l9BlB8H1o5ljNWFZVnMWEIURTG434dKKc/zbF23EzLGSJK68pS4lHe6ACALJ8QIF0s01jlr6eg81tgXI7yVM5LaXXk6lbuMEnpXbBuW85dhxhX/wArIxLlX8sacEKMdKZKYhxjZxWCro9hsrDOV30SxbVhfXbFre85IelOPI5lfU94rcZeU93JcJGOQ4UTkUeBxjEGnd9thtShTuctsHn+q+AvKeyXukvJejnv7SsidfZyyU97LATFAjpT3ckAMkCPlvRwQA+RIeS8HxAA5Ut7LATFAjpT3ckAMkCPlvRwQA+RIeS8HxAA5Ut7LATFAjpT3ctyhGKBQ3DoizuTexADgIkAMADhADAA4QAwAOEAMADhADAA4CLecyQOgqAjr9doFAISBGABwgBgAcIAYAHCAGABwgBgAcIAYAHCAGABwgBgAcHhoMQ7m/Pm5cbj1YYACcrdibGe92ksvvc38tdF4nccWHxrPT8FPjT3NTYjziNyhGAdzTuL6lBiHxvNzPO4P5vy/gg23s54g1Lb5HCcoMncoBuFkxshWR21rSBoPyeOKkVBHRdsgYzwmDyvGiVSwnfUwxnhkfi2GaZqu62rKh2buXXf/0f/YH1duJFHaJG4aabwfdDr9fl8z94lb/IF0Mbaz3lOG+aiDOX+CGw9JdjE2kiiKotjqDPbuXlFmruu6xxd+m35/ktzDftD5x2ozU5R91JaLkS5G76V2so5yXZfMUPVmKKYejl+IoSjaZjXTzP1mNZmsSIQfDRl0WsyvWLY081MK3gwUjbT56H+Ypsa2I0hpOp1JqhhpddR21qPObGc9VFOPye/EWK1WrutO+tJktZJCGpCbPskYJAlsFEVzXXdvarPVZs/4MFA0192vVp8kY5iXLqXodC0hnhkyDD8EPMd4cH6dMRTlo9//CEzgllIcMUhjUjVpyoCUZIqimKbW6QxyGWQk03upoToC6fxODGLCZjXTTHPQaQ2UWUQM2kfVobQAAArlSURBVMZNE0PZuHtFmWmKoigfOQ2+k9nWMAMLTnG2GJyMEYw9TojxuZq0xBYZq7Suni4AyMJvZ6VIQPPFmCnK3nWDgiokxmY1EcXWbDVjlZgpAzLsJlPAF+GKf2AFZOJSV/bK/DZjuK7rcsXYm9pster3J0He2NDReTCF5W/b6bSk/kRTBgNF26wmA0WhPf+d9Xr95Qk3/3epj1N2Hk2MySSYaGKnYveuu1lNSBLYm9qHnzGiY4jwhi4x5CIfxoUYBeMRxCgHEKNQlDe6IAbEyJHyRhfEgBg5Ut7oghgQI0fKG10QA2LkSHmjC2JAjBwpb3RBDIiRI+WNLogBMXKkvNEFMSBGjpQ3uiAGxMiR8kbXHYoBCsWtI+JM7k0MAC4CxACAA8QAgAPEAIADxACAA8QAgINwy5k8AIqKsF6vPQBAGIgBAAeIAQAHiAEAB4gBAAeIAQAHiAEAB4gBAAeIAQCHhxbj51urVps/tz4MUEDuVozdclhvDNPbaO/N5rsWW/zTrFaCnxqraN8Q5xG5QzF+vjUS16fE+GlWq/G4//nW/hNsuFsOBaG+y+c4QZG5QzEIJzNGtjpqV0fSeEgeV4yEOiraBhnjMXlYMU6kgt1yiDHGI5O3GPabNHI8z/OckfRmJ7cz1NFUT1n/a9LF2C2HlQzzUT/fWgVuPCR8MaZyV2RoS29vUlsMM1INQx2xS7ryNNaTraqG53me56jqgrwYSZJhObGWzlgex5eeTboYw0b9ZB3leR6ZoRouUUw9HIlicO/fjmVIfgbwPM8z1NHIj3vP85yR1Ga3YrRpG5ZFxJjKb2ErnJGvXHuhL/xXzC7OJlWMtDpqtxxSZ3bLIaqpx+SCYsTfjg3rS1UNQ1Vtz1HVBa9eiicKW+Zknl9Ap2sJ8cyQYfgh4DnGg5OllGrTe/wvM0ZIjJHUJo0d6+vrmDQuL8ZJho06qiOQzl8zRsoYgxVDlrtdeUrat6W3sT/e8JhS6shlR+ExdnXMwIJTXLKUihAvpRzLWES7paNzAApEjmJYluV59liWx6pBZ6Wmssz2a+sL3gzV+VzxD6yATFzw4l6THMXwPC8yXWuoo6mud4+DlssPJ9bF+H2My36o8nJvYlyOoxh08O15dlfs2qce+Z0HxCgUEKMoQIxCUd7oghgQI0fKG10QA2LkSHmjC2JAjBwpb3RBDIiRI+WNLogBMXKkvNEFMSBGjpQ3uiAGxMiR8kYXxIAYOVLe6IIYECNHyhtddygGKBS3jogzuTcxALgIEAMADhADAA4QAwAOEAMADhADAA7CLWfyACgqwnq9dgEAYSAGABwgBgAcIAYAHCAGABwgBgAcIAYAHCAGABwgBgAcHlqMgzl/fm4cbn0YoIDcpRjbWvBLYbWXXkq7+Wuj8TpPWHloPD/PzUN4yRPp9gk63Tt3KEbvpRb4sK0Jwm9C/9gDiX927fy1EfhwaDw/pSsHys4dijGbzehrRpIop+qoqDb/fzajbxhJwH1yh2IwHBrPT0kZI7WOclPyiZvqG7gP7lmM1Pv6thaulGIkirGd9QShtr3MMYKCcnkx9qb2rz8hrzVlMFC0yNoPRXPd/Wr1SRd+rlb7WD/xbX9FevhuZ71TtRBfjIM5fzphFLgHiBj7QacV/JhwSzNplG4kurQz2B8XSht+b/tBp6OZn4qiTfrSQNEm/X6k5d7UZqtNeI/sTo97jDBZJeyTx/y1kX5T773UUusolyvGdtYTYMVjIKzXa/bevDe1liht/BdHSTRlIPo+pIhB2CiKMlOU2Wql+N3uP/of+6D/2WrV73/QJa7rMv5s+kG2iUhlmmbGj5RhZHyyjnLjYqCCeiiE9Xo96Uvx+zG55UeWTFabFDE0ZUAzwL/+x0f/X8dPC63Z6nN/zBLSp/n5j8kYzN43/X6flzTSVWQ5Pm2gDzMi0byd9dKHzsF0bWjz8MLoZC64M0gpRQsYGn+kKApV/poykPqT9IwxU5S9u1GU2aT/oZnmarVi04XruntTUxTlX/9DUWau625WM83cBwMPl2YMslxTBr+qoDLSe6n1Zrj1gzRCg++9qbX84QRfjIGipYhBUspmNSHNVqvN52q1Z6ojpv/NoNM5jjA6g0+/UiKN90QbTfnQzD357+U+8raGigicIj4r5SvBlFL+DNLJUoq0aXUGs2BAslnNFOUjuOtv/nUGpqnNVhuSN2arTZAZFDrGUBTNdfea8kG1GSgzdgoLgCsgrNfrQafFVCz7QedfMPgm1b8/NggmptLEIOkimHriNCarNEXZuBtJFKX+x6DTorNSe/NztZq1RA4Za6or/oEVkInz4vLmRMYYidO1A0WRgiooPDiOSqIpg1Zn8NH/p5n7Sb//yTzWcINZKUXRguTguswEVOSBBltEZZyVWq/Xsif85d8ZJxEkUXYxLsOkL4miOFA0mmTIbX6zmhB/yJxvv9+nGSls11EVwhmjC4hRKCBGUYAYhaK80QUxIEaOlDe6IAbEyJHyRhfEgBg5Ut7oghgQI0fKG10QA2LkSHmjC2JAjBwpb3RBDIiRI+WNLogBMXKkvNEFMSBGjpQ3uu5QDFAobh0RZ3JvYgBwESAGABwgBgAcIAYAHCAGABwgBgAchFvO5AFQVIT1eu0BAMJADAA4QAwAOEAMADhADAA4QAwAOEAMADhADAA4QAwAODy0GD/fWrXa/Ln1YYACcp9iDBt18nNg9cYwpZn23my+a/HlP99axf89sYr2DXEekTsUQ3tvVvw88NOsVrih7/lrq7y439UFYbjceZ63Ww4Fob7L8WBBQbk/MX6a1QoJa8/zdsthJaFYSqqjwpuEegOPw/2Jsasz9c/Pt1ZJuOUn1VHae5MtwIaNenLOAXfLw4oRasYCMYB3Uoyp/GZYTvJ6uyt2bc/zPM+xDEkapTSlm7zFmtn6dKQapzfNRCYxUkosiAG8k2IsVJUEsWMZ7eB3wWgQ2/p0qttECcsyxqHgtrvhX5cMtrJleRrZC+mH7GckSakqniTTGCMl3DHGAF6KGIY6YqK6++XHvaOqi6CJM5bHjufZ+sKwHCdoYDFh7TC2OJbxJk8ZMaLmiKIoim3Dsqw/iZFlViqxjgrWYlbq0UkRQ7X9jOGM5TFJCI5lLPxbu2frU1Hs2p63UMdvEk0n7Td5TON6KtPg79qerarGyYzBiHc+6c8xdsth+vMNPMcAvxPjS9eDoHdUdbFQVcezdd32wskhwHcgiPuQGIwzsayRaaxyPsNGHdURSCdTKdUOhhBBOeQZ6tiwnIWq0rqHikHH61NZ1vXpSDWmsmx7npeQMRzLGKsLkihsfdqN5ZNLs6ujOgKn+F3G8AIlSJuFqlrMoJww1b8sywmyhPOlL8iGgTkhMehclq0vVHWcvxUAZOKvYtCah1dKeXSA7vHEmMrdtiS9+W+dkfRm//nzXPEPrIBM/PmS3oYTpdRYVdtBKSXLclsU2Zv6KTG4c69EDGcktcnAQ5anQd6wu+H+z6C8V+IuKe/lyPrkm5sQUsSw9akotsNWOCOpLYpiMAHlb9UOj7bpZNd5lPdK3CXlvRz39pWQO/s4Zae8lwNigBwp7+WAGCBHyns5IAbIkfJeDogBcqS8lwNigBwp7+WAGCBHyns5IAbIkfJeDogBcqS8lwNigBwp7+W4QzFAobh1RJzJvYkBwEWAGABwgBgAcIAYAHCAGABwgBgAcBBuOZMHQFER1uu1CwAI87+zxJCC1N0rrQAAAABJRU5ErkJggg==" alt=""></p>
+<p>装上wordpress，并换上了这个主题，是我喜欢的清爽风格。然后又装上了原先自己改编的那个主题，发现没任何问题。这就奇怪了，为什么以前那个会崩掉呢？这个问题还是在后面给网站加favcion图标的时候发现的，问题出在这个文件  /wp-content/themes/diary/header.php（一般出问题都在这儿）：</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAR0AAABgCAIAAACvwzGHAAATPUlEQVR4nO2de1BTWZ7Hqa3tHWZ7p0X7H6dq/3Bru6b8093M7tLjdDdNamqdqq4eBqwsPbNqplttVp0qsk2blN0u64s07SS0Qsee1ibyMiZqR2FD8AnYxoAJBNCQMahRMEQeyc0DyAOSs3/cm5ObkEAgJwnB863vH1Q499xz8H48v3PuyfllgXBptdry8nLrNMh0azSatLcB+6V1FuYKGxu5MVfY2OiNucLGRm/MFTY2eiPgaswVMIx75XqnXO+U9Nsbeu31vY76HvtZrbVRZ5cNOC7ed8gfOFsNrluPp8dcAacH2N1J7xjmCjuNRsCVyTZ73eis7Bi/eN8BuWroJRp7Jht7iQadrUFna+gl6jRE7b2JlkGHYcw75goku2OYK+w0GgFXDyweqc4qUk2OOvyTU2BiCkxMAdt0YNrrt7r8I3bfU8L7cNzX/dSteGA9cs1cpyEGRn3J7hjmCjuNRsBVn9ndpJ042221OP2jDv9zwv+c8FscfvtMwD4TmPL6Z7x+pztgnQqMOXxdT5yHrj5vNTiT3THMFXYajYAr7fB0XdcLWc+kw+M32fyD4/7Bcf/DCf8zm99s9486/KMO/5groHvmOSgbHXfNnlVbOodWEFdSIZfBYDAYLDW6uws4LI5QkYJ/v8FuRT7SlmMjcaJcnamTfLDjo/eL2e//xx/y3t0lvab/9FDj/sONOvOs6iHxq19zWjoMNWea2B/t/mD7zrz3drydt+sPwutKvS3ZHYubK30RgyGQ6RO/42C3Ip/BlHabU/nvh7lamU6Uq9Kyyp/n/b7kkOgA/5u/ffWXJyXqwu0VW3fw1c+8bbrxnHXM7y517y/nsz/cVVlTx2Qf/ZvsX3xWo+x95kp2x5bCFRoYMFfY0IlytfPjyn/69/1ftg5d6xnJWZsvbFIXbKso3FbR+djbrB1bszZfJO3674P8oxWVmieO3x679aNX3zn3vcpin012x+LjSl/EoMQRKujBm1omyi/kDgZ/OMhhwWKwAPlJEUcUXhVT2m2mVyUIXktWaI1dZzAijR6UCjgsjrC6KLwAydXx4IXBxpg5hcyDwur88Ptip8wIuPqHf/7ow6OXvj579SevvS1sUhfvrPh1Ied0s7qq8frfvfZO9Tl16Wf8fX/85Iy0c/Pub1/58S+b27Qp6NgyxqtYXDGCgaJaJmJQhWH0GAoj6eMVrEoq5MLHWsBhLVAnfeSRCrlBQkIWcFjBu4eqHexW5AfJJH8WyPQkV5A9AYc1vzbspBoBV3/11//245+88/rrzDVr809KNXt5Ff/yr2++nZf/5uZ3X3nl5yRXP/vZL3LWvvujV99ety6/9WZfCjqGlCs4elCFwz+kHI0rM6eQSZu8Rb2c+pBOSFSH40G/Cgaf8HZmTiETVoVjxdQbAVd/z9i9t+bm0+fWlp6xa3+ZKtxR8f7v/rdFN9bUbnwt512Sq/8pP3xD8/g3h5p1xvEXyQ8CrUi5osVRITDmB1fRuIqYvEW9PFSGRCsiOIQOX2OkcwWZCeMK8oy5Sr0RcPWPuXs+r++a8vp/eOK59chTsK2iYFvFrUceuWZszdp8kquDR/jt+rHtghvPJr2p6ViyuUpwvIrKFTQt4Ax9GHu8is4VHq/SaARcvZG75/P6LttMQGXydj72FkbjinvwiLJnZE/NrWFr0ndakF4GV7S5kJlTyFyAK9q0KvQEL2l+tTCrUUmIPb+KzhWeX6XRCXFlm/YfEcre233y+KWBUUfgqsF71eA5UNX6+YnWW488rQPE70uqZB2Pay+01Z67LFc94p7pHFnBXAUfRwaDwTwuPLYgV6GYjfZb6nKBTB/PeuD8OmnrgfCVWsRwSq0HwssX4AquB2KoUu+EuDJbp8WtfWXfdJy4MnjXOHXqFvHnDqL2jr1ebW/qJpq6Cek9++U+l27Y2/eYOHdDf7he9dy20rjKGC9lD0dE/ImdaifEleqBeX+1svCAdG/N7cOyR5/WGz+pM5bWDu09bfz4m4c7RYadIsN/nTE13LVfG5j4tmVAINOYiVQsWlgxV5irtDohri616ysbVefbjcNW33NibsQ2N2KbG7bNjRKzYw6fmZg1E7Onb4wreh03+158/b32W/m9UQKPV8s05iqDnBBXSvXQFw13hDJN273h2wMW7ZB1cNjxZML9wulzzfimvX5iBgyMePWjPmWP+UvJXcm1/hTstCC9+rjCziAnxNXDYWtTWx+/rvN4453K+h/49bf5dZ1Hz3YeEbcfq71ZWddZ2XDn+Dn1iQva8u86D5y6pup/Ou6cS03HMFfYaXRi64FTs31DYy0qo/TGg7rWvm8va2sudAvO3a2ou32ktuOYuLOy4U7V+S6RvOeUXNt0deDpC9fkVNK/KUwac4WdRuNzY7Cx0RtzhY2N3pgrbGz0xlxhY6M35gobG72jcwUyXxqNJt1NwHp5hbnCwkIvzBUWFnphrrCw0AtzhYWFXpgrLCz0elm4IgjQ3h7dBkO62oi1arWaudLpAI8HNm0CWVmLODsbFBcDuRwQRLrbjbUqtAq5slhAaSn46U89dHI2bgR5eSAvDxQUgPLykHk8kJcXxlhODsjLA6WloKoKqNXp7gxWZmoVcgUHqNxcUFUVV5hHEEAsBmw2yM6OHMr4/OS3GGvVabVxVVUFsrJAXh5oa+tb6rXt7VFCxI0bAY8HlErgdiejvVirU6uNqw0bQFYW0OmWsx7odkfGhzk5YYxt2gRKSoBYDEymZTZPpwutl1RVhW63ZQsVpkKXlFC/4vOp8jgozSAh4Mo9G3hi8yofOpUPnXK9/cJ9u2zAIe23n++zXrxvbzY4Wv7iUD503hxyqYenff7AXAAEAsg6QJdORz39AN06u8EATp0CxcUUsRGOgCGqI+BM3NnZVM1sNsUeCR4eUVeOEHA17pq9bnR+2TneYnDQuIqSt1usmbg55DBOeF2epIBFBnIFBQAk5/2VyQTEYlBSErnUEafh2gm5LgIHK7k8+gsAPp8qwGZTV0Vlm+4NG6iFGYxZeoWAK5PVI9VZT6kmZ3x+3xzwzJIOy9s9NOHTDofydj+a9CHrAU1yOcjKAmw2AKl6L2yxxHwtRjpJC/cmE1W/WBxib/4bhdxcPDlMjxBwNTTubtJO1N+zun3+cVf0vN2+uYBvLpS3u+OxE1kPaBKLQVYWKC0F4CXeb0HO3IqLwfr1YYxt2RLv6ihW4kLAleHFdF3XC1nvpCt23m6HO/DoRShvt+ZpUrji80FWFiCbHydX+isi5lauGVkTzNytTNEVPZK6RGUsbrUikRrg5JA+x9uwAfB4y196wYpHiXIlkUj+k7143u4Pd+7exg7l7b5ttKHsRFDl5ZirmFKrQWkp2LgxLEoUi/EWk6QoUa54vLjydu/atevEn0N5ux9aXCg7EdSpU5irxWUwAB4vtASSkwPKyzFdiJUoV/v2xZW3+4vKyvvDVN7ui1dUU+5ZlJ0ISqkEWVmguBiAJXJ1rIxKpUN7jvWsYMoc2odm7lYmTKUD+dFfoXJ4s8qO0bgKFWaViciSimruzrIyJoPBYLAgfOZ+BZPBqq7mRtxOVMbiVlcHm8FU9JvnNzgRhtVqwGaH6KqqwssbyISAq6Xm7W5v16LsAU0mE8jOBtnZwGJZAlfw6dRfEQUfXzN3KzP4fOtZwQKiMhYkRFTGIgc6c7+CGXzoFdVcRpTCodoU1VxICJS5X8EMsRd2O4gfvB3ZYLI2+q0T+aMVFITeBOC3z0iEgKsl5e1+/fX8O3eWvMMofpWWUmtfKlVPPOX1V0S0oUPPYjAV/WZyANHTykCc6BeSD7qimkv7LaSCqor81Nyv2BosPD/sjMADVkjHGN4uvMHIYkWdDmzZQtHF4+GBK1Eh4Cr+vN0Fh5ufDI/7fEkJAkkRBPUa58037fE8HOHzKwoGGNdBwTL0X0XjippfkUNQuFj6yMLBa8IxpnMFmaFzRScT7RxMLKZWDjdtwjOuhISAq/jzdrOFNxzTXpTNjyaIFrnxYmHF5oo1b+Ji5m5l0gFbjKsoEVpsrqKPV1G5SsZ4BWWxULtJMFqJCAFXb+TuKW/o8swG7j5dJG/3vq9vuWaSstMiQgQBNmxww70XCygqV+HzKxiPhWY+5M+0+RV9hhZlMgbDv9hcRZ9fxeAK5fxqvtxuKibEaC1bCXHlm/Pzv5K9t/ukUD5AzASuLZa3m/dd55Q7FVwBAJqbB8il5OLihWYLMbgC9PVA+iQHftZJe6Zh1BdrPRDegs4V/DliPRAu8S0QBwbXA9FDRQqiRW5ewVqqEuJqnFha3u4jDarpVHGl0WhMJuotzYYNQCwGFktq7rxkRcyvFhbqF24x5XaD9eupxVWspSohru4NmvdXK4s+k/7x69tHZI/2Nxg/rTdyxEP7zkTP2111QTPtSeKiBV3kOrvJFLb3fONGUFoKlMrUNCFerUyuAAA8HsjKAmJxSm62upQQV1c69ZWNKvkPRteMb9oz53JTJqaj5+0+ffme25O68Qr+3N4OSkrCvmSxfj3g8VbKJtQVyxW5j7mkJCU3W11KiKsb94a+aLjz1QXNjZ7huw8sfU+sQ2bHsNU94fK5ZnwzPv+sH+jNobzd0uv9Hm9Kx6sImUzUPlS8Ry4ekVwtuvaDNV8JcfX4+SJ5u7+S3BFIQnm77w489c3OIe5BDC2838JiAXx+2AhGflVJLk9N6zJDmKtlKyGuPN5Zg2nserfxcscD6bW+uv/Tnr7cXSO7K2y6/WV9x58aOr+S3Dl1sau2pae2RXvp5sCY1eX3J+cr+PMU5z4mpRIUFIR9VSk3Fw9flHAcuGyttnNjoJb6vUaDAYjFIDeXmn1JJHgvT9j3A7CWJMxVmNzu0BZvcv2wpOTlDQ7J77PhExSXIcxVFJFfoKAfF5GTA9jsl+6gafIv0N6e7nZkoDBXC4k8Bxd+jYJ+vNmWLdSBLUrl6oRNIqG2MmEtQ5iruAQPmo51HmBuLuDzgU6H8J7plMVCdRMPVssT5mqZIo8ZIw8Yoy8nrl8P2GwgkWTwIEYQ1CYVvDlw2cJcoZFOB/h8ajkRuqAAVFVl2BGZ7e3U2TKbNmVSs1eaMFeIRRBAIomSmoRM/0Oeuk6OdStKZKAL/18oLs7g8XYlCHOVLLndVKBYXLzQudPk4dIwKxd5pnRqDpnQ6YBSCcrLw5qXm7vi9iVnojBXqRN56DSZRoQ8b33hw9azaCkO8vIAjxc60p0ML+M3POqdzF1CP0WQPi3Eh8agUnSurNMg063RaNLehjjdoQbNbeD0WbD/ANh/AGx+C2x+C6xZszh1iXjNGrD5LVD6CfjTCdClS/8fYZUZc7XSrRsEzW2guQ00nKfAg2b+ioJwYdMvOVYJmtvAk9H092t1G3OFjY3emCtsbPTGXGFjozfmChsbvTFX2NjojYCrMVfAMO6V651yvVPSb2/otdf3Oup77Ge11kadXTbguHjfIX/gbDW4bj2eHnMFnB5gdye9Y5gr7DQaAVcm2+x1o7OyY/zifQfkqqE3St7u2nsTLYMOw5h3zBVIdscwV9hpNAKuHlg8Up1VpJocdfgnp8DEFJiYArbpsLzdD8d93U9DebsHRn3J7hjmCjuNRsBVn9ndpJ042221OP2jjuh5u53ugHUqlLe71eBMdscwV9hpNAKutMPTdV0vZD2Tjth5u8dcAd2zUN7uzqGVwpVaJsov5A7GV6eAw+IIFWjbmYw6sdPuRLk6Uyf5YMfiebvZH+3+YHsob7dSb0t2x5IxXmGusON0olyVlsWVt5v94a7KmlDe7t5nrmR3DHOFnUYnytXOj+PK2320olLzhMrbfe57lcU+m+yOLTUOlAq5RZxjnEIqs45ApicLDHYr8hkMBoORX8g9SGNAwKHy+ATDSDOnkAlDSqmQy2Cw1GH30hcxmMeFx8irijgiWA9HWF0UTAEp7TYHb8o6LqQy92DwMs4IuFpq3u7mNm0KOrYMruBjTaNCXxRkTC0TwUdcKuRChAQcVhASM6eQyREqBrsV+cGqaNYXhUNIViXgsCCBAg6LLEDCHKw21AbsTDECrpaUt3vduvzWm30p6NgyuIKokMOFOnJVA8Jg5hQyaQ+6vigIBhzcoo0wYXjAmmlYhj6MIFMq5MIy2BlhBFzFn7f7N4eadcbxF8kPAq3LjAOpZzcGV3AupA+GbaEU3pABOObMu5e+iFaMzhWEMJyrUBiJuco4I+Aq/rzd2wU3nk16U9OxZHMVNTBTy0QMBvO3wRgv3DHHqxhc4fEqg42Aqzdy93xe32WbCahMi+Tt3lNza9ia9J0WpJFwRcJAPvdkjDd/fqWWiSImY0udX8XgCs+vMtgJcWWb9h8Ryt7bffL4pYFRR+DqYnm7uWc6RzKMKwCjvljrgXSoYA1w5YM24oWtB9LriRUHwvVADFXGOSGuzNal5e0+XK96bltZXKXQYfOrhR0xv8LOOCfEleqBeX+1svCAdG/N7cOyR5/WGz+pM5bWDu09HT1vt0CmMROpWLSwYq6w0+qEuLrUrq9sVJ1vNw5bfc+JuRHb3Ihtbtg2N0pEz9v9rfzeKIHHq8ULY64y3f8PBzZDr4iv4SUAAAAASUVORK5CYII=" alt=""><!--more--></p>
+<p>在我向其中添加这句代码时，发现再次访问主页时出现了与先前一样的情况，即主题没加载上，只剩一堆html的原始框架。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--favicon图标--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"shortcut icon"</span> <span class="attribute">href</span>=<span class="value">"<span class="php"><span class="preprocessor">&lt;?php</span> bloginfo(<span class="string">'stylesheet_directory'</span>);<span class="preprocessor">?&gt;</span></span>/favicon.ico"</span> <span class="attribute">type</span>=<span class="value">"image/x-icon"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<p>又看了看代码，好吧！原来粗心的我居然犯了个最最低级的错误， “ 和 “  这两个符号，大家懂得。所以，又查了一下先前崩溃的主题,果然是因为其中一处“&lt;?php  ” 前面多了一个莫名其妙的空格，导致代码无法正确运行。这个问题算是告一段落。</p>
+<p>另外，在重新安装wordpress还遇到好几次问题。诸如：</p>
+<pre><code><span class="string">Warning:</span> Cannot modify header information - headers already sent by (output started at <span class="regexp">/home/</span>xxx<span class="regexp">/public_html/</span>wp-config.<span class="string">php:</span><span class="number">1</span>) <span class="keyword">in</span> <span class="regexp">/home/</span>xxx<span class="regexp">/public_html/</span>wp-includes/pluggable.php on line <span class="number">770</span>
+</code></pre><p>google一下说是字符编码的问题，就是说文件开头被我们的编辑器加了一个看不见的字符，也就是UTF-8的标志，导致文件无法识别。更改字符编码为UTF 8 no BOM 后正常。下面引用一段关于BOM的文字：</p>
+<blockquote>
+<p>何谓BOM？ “EF BB BF” 这三个字节就叫BOM，BOM的全称叫做”Byte Order Mard”。在utf－8文件中常用BOM来表明这个文件是UTF-8文件,而BOM的本意实在utf16中用来表示高低字节序列的。在字节流之前有BOM表示采用低字节序列（低字节在前面），而utf8不用考虑字节序列，所以其实有无BOM都可以。</p>
+<p>微软的记事本 Word 等只能正确打开含BOM的UTF8文件，然后UltraEdit却恰恰相反，回把BOMutf8文件 误认为ascii编码。UTF-8的BOM是 EFBBBF，因为UE载入UTF-8文件会转成Utf16，上 述的EFBBBF 在Utf16中是FFFE（Unicode-LE的BOM），UltraEdit不认识BOM又加多 一個BOM，所以有2个FFFE。<br>文件就被它破坏了。</p>
+</blockquote>
+<p>除了这些问题，再跟大家分享一下wordpress三个强大的代码高亮插件及其对比：<br><a href="http://www.wpcourse.com/wodpress-code-highlighting-plugins.html" target="_blank" rel="external">http://www.wpcourse.com/wodpress-code-highlighting-plugins.html</a></p>
+<p>主机算是成功搬家了，最近也该多看看paper了。好在十一假期就在眼前，很多之前落下的零零散散的事也可以做个了断。回家好休整一下，下周还要做个关于web测试方面的报告，要给力啊！</p>
+<p>最后，要吐槽一下，费彝民楼离食堂要不要这么远，每次吃个饭横穿整个学校！地铁鼓楼到珠江路整整一站路啊！</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<hr>
+<p>categories: 学习思考<br>title: 主机搬家<br>tags:</p>
+<pre><code>-<span class="ruby"> blog
+</span>-<span class="ruby"> wordpress</span>
+</code></pre><hr>
+<p>昨天不知怎么搞得，原本一切正常的wordpress突然主题全都加载不了了，只剩下一堆白底黑字，看着真心丑，却又不知原因所在，焦急万分。恰逢最近想换个主机，100M的空间着实不够用啊！</p>
+<p>于是，迅速在淘宝上找了个合适的主机，年费108人民币，还算便宜，至少比原先的好很多。具体信息如下：</p>]]>
+    
+    </summary>
+    
+  </entry>
+  
+</feed>
