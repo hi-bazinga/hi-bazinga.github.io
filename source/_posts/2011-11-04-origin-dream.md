@@ -1,4 +1,3 @@
----
 title: "最初的梦想"
 comments: true
 category: 心情随笔

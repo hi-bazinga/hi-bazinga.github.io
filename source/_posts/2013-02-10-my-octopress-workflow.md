@@ -1,5 +1,3 @@
----
-layout: post
 title: "my octopress workflow"
 comments: true
 categories: 学习思考

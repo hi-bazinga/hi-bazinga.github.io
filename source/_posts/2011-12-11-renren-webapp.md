@@ -1,4 +1,3 @@
---- 
 title: 人人应用初体验
 categories: 学习思考
 tags: 

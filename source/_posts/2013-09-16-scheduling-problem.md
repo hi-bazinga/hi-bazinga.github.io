@@ -1,4 +1,3 @@
----
 title: 用贪心算法解决Scheduling问题
 date: 2013-09-16 22:16:11
 categories: Algorithms

@@ -1,4 +1,3 @@
----
 title: 正式进军Octopress
 categories: 学习笔记
 tags: 

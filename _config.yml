@@ -7,8 +7,8 @@ title: Z.X.C
 subtitle: Little strokes fell great oaks
 description:
 author: Jason Zhao
-language:
-timezone:
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -67,9 +67,9 @@ theme: light
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:git
-  repo:https://github.com/hi-bazinga/hi-bazinga.github.io.git
-  branch:master
+  type: git
+  repo: https://github.com/hi-bazinga/hi-bazinga.github.io.git
+  branch: master
 
 feed:
   type:atom

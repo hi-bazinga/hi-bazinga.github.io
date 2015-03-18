@@ -1,4 +1,3 @@
----
 title : Octopress改头换面
 categories : 学习思考
 tags : 

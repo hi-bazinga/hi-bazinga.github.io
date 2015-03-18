@@ -1,7 +1,6 @@
---- 
 title: GRE作文练习v1.0
 categories: 学习思考
-tags: 
+tags:
 	- webapp
 ---
 
