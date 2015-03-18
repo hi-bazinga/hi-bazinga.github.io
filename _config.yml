@@ -69,4 +69,11 @@ theme: light
 deploy:
   type:git
   repo:https://github.com/hi-bazinga/hi-bazinga.github.io.git
-  branch:source
+  branch:master
+
+plugins:
+- hexo-generator-feed
+- hexo-generator-sitemap
+
+# Disqus
+disqus_shortname: zxczone
