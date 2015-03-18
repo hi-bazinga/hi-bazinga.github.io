@@ -1,0 +1,33 @@
+menu:
+  Home: /
+  Archives: /archives
+  About Me: /about
+  RSS: /atom.xml
+
+widgets:
+- search
+- category
+- tagcloud
+- recent_posts 
+
+excerpt_link: Read More
+
+#twitter:
+#  username:
+#  show_replies: false
+# tweet_count: 5
+
+addthis:
+  enable: true
+  pubid:
+#  facebook: true
+#  twitter: true
+#  google: true
+#  pinterest: true
+
+fancybox: true
+
+#google_analytics:
+#rss:
+
+#comment_provider: facebook
