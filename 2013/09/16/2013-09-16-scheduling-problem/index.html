@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>用贪心算法解决Scheduling问题 | Z.X.C</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="There is no silver bullet in algorithm design.
+
+没有一种算法能普适于所有的计算问题。常见的算法有：
+
+divide and comquer（归并排序等）
+randomized algorithms（基于随机pivot的快速排序、Randomized Selection算法、Hash函数的设计等）
+greedy algorithms（Dijkstra">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用贪心算法解决Scheduling问题">
+<meta property="og:url" content="http://yoursite.com/2013/09/16/2013-09-16-scheduling-problem/index.html">
+<meta property="og:site_name" content="Z.X.C">
+<meta property="og:description" content="There is no silver bullet in algorithm design.
+
+没有一种算法能普适于所有的计算问题。常见的算法有：
+
+divide and comquer（归并排序等）
+randomized algorithms（基于随机pivot的快速排序、Randomized Selection算法、Hash函数的设计等）
+greedy algorithms（Dijkstra">
+<meta property="og:updated_time" content="2015-03-18T15:14:37.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="用贪心算法解决Scheduling问题">
+<meta name="twitter:description" content="There is no silver bullet in algorithm design.
+
+没有一种算法能普适于所有的计算问题。常见的算法有：
+
+divide and comquer（归并排序等）
+randomized algorithms（基于随机pivot的快速排序、Randomized Selection算法、Hash函数的设计等）
+greedy algorithms（Dijkstra">
+  
+    <link rel="alternative" href="/atom.xml" title="Z.X.C" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="//favicon.png">
+  
+  <script src="/style.js"></script>
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="null" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Jason Zhao</a></h1>
+		</hgroup>
+
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss">rss</a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">Jason Zhao</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="null" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Jason Zhao</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-2013-09-16-scheduling-problem" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      用贪心算法解决Scheduling问题
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>There is no silver bullet in algorithm design.</p>
+</blockquote>
+<p>没有一种算法能普适于所有的计算问题。常见的算法有：</p>
+<ul>
+<li><strong>divide and comquer</strong>（归并排序等）</li>
+<li><strong>randomized algorithms</strong>（基于随机pivot的快速排序、Randomized Selection算法、Hash函数的设计等）</li>
+<li><strong>greedy algorithms</strong>（Dijkstra算法等）</li>
+<li><strong>dynamic programming</strong>（Sequence Alignment问题、背包问题、Floyd-Warshall、最长递增子序列LIS等）</li>
+</ul>
+<h2 id="贪心算法"><a href="#贪心算法" class="headerlink" title="贪心算法"></a>贪心算法</h2><p>什么是贪心算法？简单地说，就是在算法执行的每一步都“目光短浅”地选择当下最好的方案，而不考虑整体效果的优劣。<br>贪心算法与分治算法相比有以下一些特点：</p>
+<a id="more"></a>
+<ul>
+<li>算法易于构造和实现</li>
+<li>易于计算时间复杂度（不同于分治法的Master Method）</li>
+<li>难以证明其正确性，大多数情况下贪心算法并不正确（分治法可以用归纳法证明）</li>
+</ul>
+<p>证明贪心算法的正确性，一般有两种方式：</p>
+<ol>
+<li><strong>greedy stays ahead</strong>（类似归纳法，即证明贪心算法的每一步完成后当前解决方案是最佳的）</li>
+<li><strong>exchange argument</strong>（下面证明Scheduling问题的最优解将会用到这种方法）</li>
+</ol>
+<h2 id="Scheduling问题"><a href="#Scheduling问题" class="headerlink" title="Scheduling问题"></a>Scheduling问题</h2><p>假设一台单核计算机要完成若干个任务，每个任务有两个属性，一个是完成任务所需要的时间t，另一个是任务的权重w（优先级），时间与权重都用正整数定义。现在要求设计计算一种完成任务的先后顺序，使得所有任务的带权完成时间之和最小。<code>注：任务的带权完成时间 = 任务权重w * 任务完成时的时间（包含之前的等待时间）</code></p>
+<pre><code>举个例子：
+          权重   任务时间
+ T1       2        5
+ T2       1        3
+
+两种顺序方案的加权完成时间之和：
+① T1,T2： 5*2+(5+3)*1=18
+② T2,T1： 3*1+(3+5)*2=19
+所以选择方案①
+</code></pre><h3 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a><strong>问题分析</strong></h3><p>如果所有任务只有一个时间属性，没有权重的区分，那么显而易见，按任务时间t从小到大排序可以使<strong><em>完成时间</em></strong>之和最小。然后，现在要考虑带权重的情况，不能再简单地按优先级或任务时间进行排序，而要寻找一种兼顾权重和任务时间的排序条件。</p>
+<p>我们现在来考虑这两种排序条件：</p>
+<ol>
+<li>w - t (权重与任务时间的差值)</li>
+<li>w / t (权重与任务时间的比值)</li>
+</ol>
+<h3 id="使用w-t排序的正确性证明"><a href="#使用w-t排序的正确性证明" class="headerlink" title="使用w/t排序的正确性证明"></a><strong>使用w/t排序的正确性证明</strong></h3><p>设任务序列 <code>Seq=T1,T2,T3...Tn</code> 按照w/t的比值大小从高到低排序，此时加权完成时间之和为C-sum。<br>假设存在某种与序列Seq不同的排序方式 Seq* ，使得C-sum* &lt; C-sum。<br>因为<code>W1/t1 &gt; w2/t2 &gt; w3/t3 ... &gt; wn/tn</code>,所以 Seq* 中必然存在某两个相邻的任务Ti、Tj使得<strong>wi / ti &lt; wj / tj</strong>：<br><code>T1,T2,T3...Ti-1,Ti,Tj,Tj+1...Tn-1,Tn</code><br>此时我们运用<strong>exchange</strong>思想，将Ti与Tj交换位置，<strong>可以发现<code>T1...Ti-1</code>以及<code>Tj+1...Tn</code>的加权完成时间之和不变</strong>，所以，我们只要考察Ti和Tj这两个任务加权完成时间在交换前后的变化情况即可。<code>Ti,Tj</code>变成<code>Tj,Ti</code>后，Ti的加权完成时间增加了tj*wi，而Tj的加权完成时间减少了ti*wj,所以总的加权完成时间C-sum* = C-sum + tj * wi - ti * wj。又因为wi / ti &lt; wj / tj,即tj * wi &lt; ti * wj，即C-sum* &gt; C-sum ，与假设矛盾！</p>
+<h2 id="练习"><a href="#练习" class="headerlink" title="练习"></a><strong>练习</strong></h2><p><a href="https://class.coursera.org/algo2-002/lecture/index" target="_blank" rel="external">Algorithms: Design and Analysis, Part 2</a> 这门课给了一个小练习：</p>
+<p>In this programming problem and the next you’ll code up the greedy algorithms from lecture for minimizing the weighted sum of completion times.. Download the text file <a href="http://spark-public.s3.amazonaws.com/algo2/datasets/jobs.txt" target="_blank" rel="external">here</a>. This file describes a set of jobs with positive and integral weights and lengths. It has the format<br>[number_of_jobs]<br>[job_1_weight] [job_1_length]<br>[job_2_weight] [job_2_length]<br>…<br>For example, the third line of the file is “74 59”, indicating that the second job has weight 74 and length 59. You should NOT assume that edge weights or lengths are distinct.</p>
+<p>Q1. Your task in this problem is to run the greedy algorithm that schedules jobs in decreasing order of the difference (weight - length). Recall from lecture that this algorithm is not always optimal. IMPORTANT: if two jobs have equal difference (weight - length), you should schedule the job with higher weight first. Beware: if you break ties in a different way, you are likely to get the wrong answer. You should report the sum of weighted completion times of the resulting schedule — a positive integer — in the box below.</p>
+<p>Q2. For this problem, use the same data set as in the previous problem. Your task now is to run the greedy algorithm that schedules jobs (optimally) in decreasing order of the ratio (weight/length). In this algorithm, it does not matter how you break ties. You should report the sum of weighted completion times of the resulting schedule — a positive integer — in the box below.</p>
+<p>Python实现：</p>
+<figure class="highlight plain"><figcaption><span>Scheduling.py</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">def diff_compare(j1,j2):</div><div class="line">    return (j1[0] - j1[1]) &gt; (j2[0] - j2[1]) or \</div><div class="line">        ((j1[0] - j1[1]) == (j2[0] - j2[1]) and j1[0] &gt; j2[0])</div><div class="line"></div><div class="line">def ratio_compare(j1,j2):</div><div class="line">    return j1[0] * j2[1] &gt; j1[1] * j2[0]</div><div class="line"></div><div class="line">def quickSort(jobs):</div><div class="line">    if len(jobs) &lt;= 1:</div><div class="line">        return jobs</div><div class="line">    i = 1</div><div class="line">    for j in range(1,len(jobs)):</div><div class="line">        if diff_compare(jobs[j],jobs[0]):   #use ratio_compare() to solve Q2</div><div class="line">            jobs[j],jobs[i] = jobs[i],jobs[j]</div><div class="line">            i += 1               </div><div class="line">    jobs[i-1],jobs[0] = jobs[0],jobs[i-1]</div><div class="line">    return quickSort(jobs[0:i-1]) + [jobs[i-1]] + quickSort(jobs[i:])</div><div class="line"></div><div class="line">f = open(&apos;jobs.txt&apos;)</div><div class="line">num_of_jobs = int(f.readline())</div><div class="line"></div><div class="line">jobs = []</div><div class="line">for line in f:</div><div class="line">    jobs.append(map(int,line.split(&apos; &apos;)))</div><div class="line"></div><div class="line">jobs = quickSort(jobs)</div><div class="line"></div><div class="line">sum_time = 0L</div><div class="line">time = 0L</div><div class="line">for i in range(0,num_of_jobs):</div><div class="line">    time += jobs[i][1]</div><div class="line">    sum_time += jobs[i][0] * time</div><div class="line"></div><div class="line">print sum_time</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2013/09/16/2013-09-16-scheduling-problem/" class="archive-article-date">
+  	<time datetime="2013-09-16T14:16:11.000Z" itemprop="datePublished"><i class="icon-clock"></i>2013-09-16</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithms/">Algorithms</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<i class="icon-price-tags"></i>
+	<a class="article-category-link" href="/categories/Algorithms/">Algorithms</a>
+	</div>
+
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2014/01/18/2014-01-18-front-end-notes-css/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Web前端笔记 - CSS篇
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2013/03/11/2013-03-11-gre-webapp-2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">GRE 作文练习v1.1</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Jason Zhao
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/"
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				<a href="/tags/Algorithms/" style="font-size: 10px;">Algorithms</a> <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/EMC/" style="font-size: 10px;">EMC</a> <a href="/tags/Octopress/" style="font-size: 20px;">Octopress</a> <a href="/tags/Web/" style="font-size: 15px;">Web</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/trick/" style="font-size: 10px;">trick</a> <a href="/tags/webapp/" style="font-size: 10px;">webapp</a> <a href="/tags/wordpress/" style="font-size: 10px;">wordpress</a> <a href="/tags/实习/" style="font-size: 10px;">实习</a> <a href="/tags/折腾/" style="font-size: 10px;">折腾</a> <a href="/tags/随笔/" style="font-size: 15px;">随笔</a> <a href="/tags/面试/" style="font-size: 10px;">面试</a>
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接1</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接2</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接3</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接4</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接5</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接6</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>

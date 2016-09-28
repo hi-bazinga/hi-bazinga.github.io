@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>异或交换的陷阱 | Z.X.C</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="今天在写快排算法时需要交换数组中两个位置的值，准备写一个swap方法，刚准备敲下int tmp = ...，突然想到可以用一种更cool的方法来做，很快敲下三行代码：
+list[a] = list[a] ^ list[b];
+list[b] = list[a] ^ list[b];
+list[a] = list[a] ^ list[b];
+信心满满地Run，结果输出结果大跌眼镜：
+...
+0
+0">
+<meta property="og:type" content="article">
+<meta property="og:title" content="异或交换的陷阱">
+<meta property="og:url" content="http://yoursite.com/2014/01/20/2014-01-20-xor-swap-is-not-always-true/index.html">
+<meta property="og:site_name" content="Z.X.C">
+<meta property="og:description" content="今天在写快排算法时需要交换数组中两个位置的值，准备写一个swap方法，刚准备敲下int tmp = ...，突然想到可以用一种更cool的方法来做，很快敲下三行代码：
+list[a] = list[a] ^ list[b];
+list[b] = list[a] ^ list[b];
+list[a] = list[a] ^ list[b];
+信心满满地Run，结果输出结果大跌眼镜：
+...
+0
+0">
+<meta property="og:updated_time" content="2014-01-27T13:48:02.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="异或交换的陷阱">
+<meta name="twitter:description" content="今天在写快排算法时需要交换数组中两个位置的值，准备写一个swap方法，刚准备敲下int tmp = ...，突然想到可以用一种更cool的方法来做，很快敲下三行代码：
+list[a] = list[a] ^ list[b];
+list[b] = list[a] ^ list[b];
+list[a] = list[a] ^ list[b];
+信心满满地Run，结果输出结果大跌眼镜：
+...
+0
+0">
+  
+    <link rel="alternative" href="/atom.xml" title="Z.X.C" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="//favicon.png">
+  
+  <script src="/style.js"></script>
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="null" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Jason Zhao</a></h1>
+		</hgroup>
+
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss">rss</a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">Jason Zhao</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="null" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Jason Zhao</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-2014-01-20-xor-swap-is-not-always-true" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      异或交换的陷阱
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天在写快排算法时需要交换数组中两个位置的值，准备写一个swap方法，刚准备敲下<code>int tmp = ...</code>，突然想到可以用一种更cool的方法来做，很快敲下三行代码：</p>
+<pre><code>list[a] = list[a] ^ list[b];
+list[b] = list[a] ^ list[b];
+list[a] = list[a] ^ list[b];
+</code></pre><p>信心满满地Run，结果输出结果大跌眼镜：</p>
+<pre><code>...
+0
+0
+9975
+9977
+0
+9982
+0
+...
+</code></pre><p>list的很多元素值变为0，纠结了半天，一开始以为是quicksort方法里出了错，后来单独测试swap时终于发现了问题的关键所在！这里有个很隐蔽的陷阱，注意，这里交换的数组中的元素，而不是简单的两个变量。当<code>list[a]</code>和<code>list[b]</code>中的a和b相等时，问题就来了：</p>
+<a id="more"></a>
+<pre><code>// 若a = b
+list[a] = list[a] ^ list[b];    //list[a] 和 list[b] 值相等，异或后为0，即 list[a] = 0
+list[b] = list[a] ^ list[b];    //因为a = b，此时等号右边的list[b] 就是 list[a]，它的值已经被赋值为0了！
+list[a] = list[a] ^ list[b];    //三条语句执行完，list[a]被赋值为0，这就是最终结果
+</code></pre><p>如果不是交换数组元素，而是普通的int变量，过程应该是这样的：</p>
+<pre><code>// 若a = b
+a = a ^ b    //a和b相等，异或后为0，即a = 0
+b = a ^ b    //此时b还是原来那个b，而a = 0，b = 0 ^ b，此时b不变，保持原值
+a = a ^ b    //a = 0 ^ b，a被赋值为b，此时a和b的值与原来相同，因为a = b，也相当于a和b交换
+</code></pre><p>既然交换数组元素在下标相等的情况下不能用异或，那加减行不行呢？答案同样是否定的，原理同异或。当然，如果一定要用这种不引进临时变量的交换方式，加个<code>if (a != b)</code>的判断就可以了。</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2014/01/20/2014-01-20-xor-swap-is-not-always-true/" class="archive-article-date">
+  	<time datetime="2014-01-20T09:04:35.000Z" itemprop="datePublished"><i class="icon-clock"></i>2014-01-20</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/trick/">trick</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<i class="icon-price-tags"></i>
+	<a class="article-category-link" href="/categories/学习笔记/">学习笔记</a>
+	</div>
+
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2014/01/20/2011-11-04-origin-dream/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          最初的梦想
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/01/18/2014-01-18-front-end-notes-css/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Web前端笔记 - CSS篇</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Jason Zhao
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/"
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				<a href="/tags/Algorithms/" style="font-size: 10px;">Algorithms</a> <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/EMC/" style="font-size: 10px;">EMC</a> <a href="/tags/Octopress/" style="font-size: 20px;">Octopress</a> <a href="/tags/Web/" style="font-size: 15px;">Web</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/trick/" style="font-size: 10px;">trick</a> <a href="/tags/webapp/" style="font-size: 10px;">webapp</a> <a href="/tags/wordpress/" style="font-size: 10px;">wordpress</a> <a href="/tags/实习/" style="font-size: 10px;">实习</a> <a href="/tags/折腾/" style="font-size: 10px;">折腾</a> <a href="/tags/随笔/" style="font-size: 15px;">随笔</a> <a href="/tags/面试/" style="font-size: 10px;">面试</a>
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接1</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接2</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接3</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接4</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接5</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接6</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>

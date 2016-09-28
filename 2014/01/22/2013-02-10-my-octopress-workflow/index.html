@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>my octopress workflow | Z.X.C</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="以前用wordpress的时候，总是觉得写一篇博客挺麻烦，要登录后台在线写文章，还要提防着浏览器突然崩溃导致辛辛苦苦码的字全部付之东流的危险。当然也可以先用在本地写好文章再copy上去，但又觉得这种方式实在是缺乏美感，写博客的欲望也大大降低。换成Octopress以来，前面的问题似乎都解决了。不过，如果能进一步减少码字之前的准备工作，一键完成rake new_post[]，并用喜欢的编辑器 Sub">
+<meta property="og:type" content="article">
+<meta property="og:title" content="my octopress workflow">
+<meta property="og:url" content="http://yoursite.com/2014/01/22/2013-02-10-my-octopress-workflow/index.html">
+<meta property="og:site_name" content="Z.X.C">
+<meta property="og:description" content="以前用wordpress的时候，总是觉得写一篇博客挺麻烦，要登录后台在线写文章，还要提防着浏览器突然崩溃导致辛辛苦苦码的字全部付之东流的危险。当然也可以先用在本地写好文章再copy上去，但又觉得这种方式实在是缺乏美感，写博客的欲望也大大降低。换成Octopress以来，前面的问题似乎都解决了。不过，如果能进一步减少码字之前的准备工作，一键完成rake new_post[]，并用喜欢的编辑器 Sub">
+<meta property="og:updated_time" content="2015-03-18T15:15:04.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="my octopress workflow">
+<meta name="twitter:description" content="以前用wordpress的时候，总是觉得写一篇博客挺麻烦，要登录后台在线写文章，还要提防着浏览器突然崩溃导致辛辛苦苦码的字全部付之东流的危险。当然也可以先用在本地写好文章再copy上去，但又觉得这种方式实在是缺乏美感，写博客的欲望也大大降低。换成Octopress以来，前面的问题似乎都解决了。不过，如果能进一步减少码字之前的准备工作，一键完成rake new_post[]，并用喜欢的编辑器 Sub">
+  
+    <link rel="alternative" href="/atom.xml" title="Z.X.C" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="//favicon.png">
+  
+  <script src="/style.js"></script>
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="null" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Jason Zhao</a></h1>
+		</hgroup>
+
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss">rss</a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">Jason Zhao</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="null" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Jason Zhao</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-2013-02-10-my-octopress-workflow" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      my octopress workflow
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>以前用wordpress的时候，总是觉得写一篇博客挺麻烦，要登录后台在线写文章，还要提防着浏览器突然崩溃导致辛辛苦苦码的字全部付之东流的危险。当然也可以先用在本地写好文章再copy上去，但又觉得这种方式实在是缺乏美感，写博客的欲望也大大降低。换成Octopress以来，前面的问题似乎都解决了。不过，如果能进一步减少码字之前的准备工作，一键完成<code>rake new_post[]</code>，并用喜欢的编辑器 <a href="http://www.sublimetext.com" target="_blank" rel="external">Sublime Text 2</a> 直接开始编辑，那就更好了。于是自己把git shell里的命令集写成一个批处理，很简单的几行，这样就不用每次打开shell手动切换目录并rake了。</p>
+<p>下面是操作流程，网速比较慢，所以只传了个分辨率低的。<br><a id="more"></a></p>
+<div class="video-container"><br>  <embed src="http://player.youku.com/player.php/sid/XNTEzNzcwNDI0/v.swf" allowfullscreen="true" quality="high" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash"><br></div>
+
+
+<figure class="highlight sh"><figcaption><span>new.bat</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">@<span class="built_in">echo</span> off</div><div class="line"><span class="built_in">cd</span> /d E:/Github/blog</div><div class="line">rake new_post[]</div></pre></td></tr></table></figure>
+<p>那怎样自动使用sublime打开新创建的post文件呢？也很简单，找到octopress根目录下的<code>Rakefile</code>文件，找到新建post的task，在末尾加上一句代码即可：</p>
+<figure class="highlight ruby"><figcaption><span>Rakefile</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">...</div><div class="line">...</div><div class="line"></div><div class="line"><span class="comment"># usage rake new_post[my-new-post] or rake new_post['my new post'] or rake new_post (defaults to "new-post")</span></div><div class="line">desc <span class="string">"Begin a new post in <span class="subst">#&#123;source_dir&#125;</span>/<span class="subst">#&#123;posts_dir&#125;</span>"</span></div><div class="line">task <span class="symbol">:new_post</span>, <span class="symbol">:title</span> <span class="keyword">do</span> <span class="params">|t, args|</span></div><div class="line">  <span class="keyword">if</span> args.title</div><div class="line">    title = args.title</div><div class="line">  <span class="keyword">else</span></div><div class="line">    title = get_stdin(<span class="string">"Enter a title for your post: "</span>)</div><div class="line">  <span class="keyword">end</span></div><div class="line">  raise <span class="string">"### You haven't set anything up yet. First run `rake install` to set up an Octopress theme."</span> <span class="keyword">unless</span> File.directory?(source_dir)</div><div class="line">  mkdir_p <span class="string">"<span class="subst">#&#123;source_dir&#125;</span>/<span class="subst">#&#123;posts_dir&#125;</span>"</span></div><div class="line">  filename = <span class="string">"<span class="subst">#&#123;source_dir&#125;</span>/<span class="subst">#&#123;posts_dir&#125;</span>/<span class="subst">#&#123;Time.now.strftime(<span class="string">'%Y-%m-%d'</span>)&#125;</span>-<span class="subst">#&#123;title.to_url&#125;</span>.<span class="subst">#&#123;new_post_ext&#125;</span>"</span></div><div class="line">  <span class="keyword">if</span> File.exist?(filename)</div><div class="line">    abort(<span class="string">"rake aborted!"</span>) <span class="keyword">if</span> ask(<span class="string">"<span class="subst">#&#123;filename&#125;</span> already exists. Do you want to overwrite?"</span>, [<span class="string">'y'</span>, <span class="string">'n'</span>]) == <span class="string">'n'</span></div><div class="line">  <span class="keyword">end</span></div><div class="line">  puts <span class="string">"Creating new post: <span class="subst">#&#123;filename&#125;</span>"</span></div><div class="line">  open(filename, <span class="string">'w'</span>) <span class="keyword">do</span> <span class="params">|post|</span></div><div class="line">    post.puts <span class="string">"---"</span></div><div class="line">    post.puts <span class="string">"layout: post"</span></div><div class="line">    post.puts <span class="string">"title: \"<span class="subst">#&#123;title.gsub(<span class="regexp">/&amp;/</span>,<span class="string">'&amp;amp;'</span>)&#125;</span>\""</span></div><div class="line">    post.puts <span class="string">"date: <span class="subst">#&#123;Time.now.strftime(<span class="string">'%Y-%m-%d %H:%M'</span>)&#125;</span>"</span></div><div class="line">    post.puts <span class="string">"comments: true"</span></div><div class="line">    post.puts <span class="string">"categories: "</span></div><div class="line">    post.puts <span class="string">"---"</span></div><div class="line">  <span class="keyword">end</span></div><div class="line">   system <span class="string">"start \"D:\Sublime Text 2\sublime_text.exe\" <span class="subst">#&#123;filename&#125;</span>"</span>		<span class="comment">#调用sublime打开新建的post，别忘了路径中含有空格要用`“”`</span></div><div class="line"><span class="keyword">end</span></div><div class="line"></div><div class="line">...</div><div class="line">...</div></pre></td></tr></table></figure>
+<p>修改完Rakefile后，双击运行<code>new.bat</code>，按照提示输入文章title，sublime就能自动打开新创建的文件，这时就捋起袖子开始写文章吧！当然如果你写完文章后也不想每次都打开shell进行<code>rake　generate</code> 或 <code>rake preview</code> 甚至是 <code>rake deploy</code>,都可以用批处理一键实现。别忘了给bat文件在桌面创建快捷方式，再配上生动的图标~</p>
+<p>(p.s. 推荐一个下载图标的网站 <a href="http://sc.chinaz.com/tubiao/" target="_blank" rel="external">http://sc.chinaz.com/tubiao/</a>)</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2014/01/22/2013-02-10-my-octopress-workflow/" class="archive-article-date">
+  	<time datetime="2014-01-22T04:05:42.000Z" itemprop="datePublished"><i class="icon-clock"></i>2014-01-22</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Octopress/">Octopress</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<i class="icon-price-tags"></i>
+	<a class="article-category-link" href="/categories/学习思考/">学习思考</a>
+	</div>
+
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2014/01/22/2013-03-02-plum-blossom/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          春游梅花山
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/01/20/2011-12-11-renren-webapp/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">人人应用初体验</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Jason Zhao
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/"
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				<a href="/tags/Algorithms/" style="font-size: 10px;">Algorithms</a> <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/EMC/" style="font-size: 10px;">EMC</a> <a href="/tags/Octopress/" style="font-size: 20px;">Octopress</a> <a href="/tags/Web/" style="font-size: 15px;">Web</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/trick/" style="font-size: 10px;">trick</a> <a href="/tags/webapp/" style="font-size: 10px;">webapp</a> <a href="/tags/wordpress/" style="font-size: 10px;">wordpress</a> <a href="/tags/实习/" style="font-size: 10px;">实习</a> <a href="/tags/折腾/" style="font-size: 10px;">折腾</a> <a href="/tags/随笔/" style="font-size: 15px;">随笔</a> <a href="/tags/面试/" style="font-size: 10px;">面试</a>
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接1</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接2</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接3</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接4</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接5</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接6</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>
