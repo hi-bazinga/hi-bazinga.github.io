@@ -1,0 +1,653 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Frontend,JavaScript,React,Webpack,Babel," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="Prerequisite: npm installed
+Initializing projectFirstly we need to create a new folder and initialize the project by npm.
+123mkdir react-appcd react-appnpm init
+After configurating several properties">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Building a React project from scratch">
+<meta property="og:url" content="http://yoursite.com/2016/09/10/Building a React project from scratch/index.html">
+<meta property="og:site_name" content="Z.X.C">
+<meta property="og:description" content="Prerequisite: npm installed
+Initializing projectFirstly we need to create a new folder and initialize the project by npm.
+123mkdir react-appcd react-appnpm init
+After configurating several properties">
+<meta property="og:updated_time" content="2016-09-30T01:40:06.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Building a React project from scratch">
+<meta name="twitter:description" content="Prerequisite: npm installed
+Initializing projectFirstly we need to create a new folder and initialize the project by npm.
+123mkdir react-appcd react-appnpm init
+After configurating several properties">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/09/10/Building a React project from scratch/"/>
+
+  <title> Building a React project from scratch | Z.X.C </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Z.X.C</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Building a React project from scratch
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-09-10T20:19:31+08:00" content="2016-09-10">
+              2016-09-10
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">in</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/学习积累/" itemprop="url" rel="index">
+                    <span itemprop="name">学习积累</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Prerequisite: <code>npm</code> installed</p>
+<h4 id="Initializing-project"><a href="#Initializing-project" class="headerlink" title="Initializing project"></a>Initializing project</h4><p>Firstly we need to create a new folder and initialize the project by <code>npm</code>.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">mkdir react-app</div><div class="line">cd react-app</div><div class="line">npm init</div></pre></td></tr></table></figure>
+<p>After configurating several properties in the command line, <code>package.json</code> will be generated in current folder. This file contains the dependencies and some configurations of this project, just as the <code>pom.xml</code> in a maven project. Instead of using <code>npm init</code>, you can also create the file <code>package.json</code> and edit it manually.</p>
+<h4 id="Installing-webpack"><a href="#Installing-webpack" class="headerlink" title="Installing webpack"></a>Installing webpack</h4><p>We use <a href="https://webpack.github.io/" target="_blank" rel="external">webpack</a> to organize our code and related resources, so let’s install it.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install webpack -D</div></pre></td></tr></table></figure></p>
+<p>In the <code>package.json</code>, we will find that <code>webpack</code> has already been added in the <code>devDependencies</code> section (<a href="http://stackoverflow.com/questions/18875674/whats-the-difference-between-dependencies-devdependencies-and-peerdependencies" target="_blank" rel="external">Difference between devDependencies and dependencies</a>). Then we need to create another file <code>webpack.config.js</code> and add the configurations as following:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">var webpack = require(&apos;webpack&apos;);</div><div class="line">var path = require(&apos;path&apos;); </div><div class="line">var BUILD_DIR = path.resolve(__dirname, &apos;build&apos;);</div><div class="line">var SRC_DIR = path.resolve(__dirname, &apos;src&apos;);</div><div class="line"></div><div class="line">var config = &#123;</div><div class="line">  entry: SRC_DIR + &apos;/index.js&apos;,</div><div class="line">  output: &#123;</div><div class="line">    path: BUILD_DIR,</div><div class="line">    filename: &apos;bundle.js&apos;</div><div class="line">  &#125;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">module.exports = config;</div></pre></td></tr></table></figure></p>
+<p>More details about the webpack configuration: </p>
+<ul>
+<li><a href="https://github.com/webpack/docs/wiki/Configuration" target="_blank" rel="external">webpack configuration</a></li>
+<li><a href="https://nodejs.org/api/path.html" target="_blank" rel="external">Node.js Path module</a></li>
+</ul>
+<p>Next, create the <code>index.html</code> file in the project root directory, and add the following content:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;html&gt;</div><div class="line">  &lt;head&gt;</div><div class="line">    &lt;meta charset=&quot;utf-8&quot;&gt;</div><div class="line">    &lt;title&gt;React&lt;/title&gt;</div><div class="line">  &lt;/head&gt;</div><div class="line">  &lt;body&gt;</div><div class="line">    &lt;div id=&quot;app&quot; /&gt;</div><div class="line">    &lt;script src=&quot;build/bundle.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</div><div class="line">  &lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<p>Create the source code directory <code>src</code> and an entry file <code>index.js</code> in it, then add some testing code:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">console.log(&apos;Hello World!&apos;);</div></pre></td></tr></table></figure>
+<p>In the root directory of the project, execute <code>webpack</code> to build bundle file. Now the file structure looks like:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">react-app</div><div class="line">  |-- build/</div><div class="line">    |-- bundle.js</div><div class="line">  |-- index.html</div><div class="line">  |-- node_modules/</div><div class="line">    |-- ...</div><div class="line">  |-- package.json</div><div class="line">  |-- src/</div><div class="line">    |-- index.js</div><div class="line">  |-- webpack.config.js</div></pre></td></tr></table></figure></p>
+<p>Open the <code>index.html</code> in a browser, you will see “Hello World!” in console.</p>
+<h4 id="Installing-React"><a href="#Installing-React" class="headerlink" title="Installing React"></a>Installing React</h4><p>Next, let’s install <code>react</code> and <code>react-dom</code>.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install react react-dom -S</div></pre></td></tr></table></figure>
+<p>Replace the content in <code>index.js</code> with the following code:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">import React from &apos;react&apos;;</div><div class="line">import &#123;render&#125; from &apos;react-dom&apos;;</div><div class="line"></div><div class="line">class App extends React.Component &#123;</div><div class="line">  render () &#123;</div><div class="line">    return &lt;p&gt;Hello World!&lt;/p&gt;;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">render(&lt;App/&gt;, document.getElementById(&apos;app&apos;));</div></pre></td></tr></table></figure>
+<p>Build the new bundle file:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">webpack</div></pre></td></tr></table></figure>
+<p>Oh, errors occur! Not every browser supports the JSX syntax and ES6, so we have to translate the code into a proper format. So, we need <a href="https://babeljs.io/" target="_blank" rel="external">Babel</a>!</p>
+<p>Let’s install <code>Babel</code>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install babel-loader babel-preset-es2015 babel-preset-react -D</div></pre></td></tr></table></figure>
+<p>Then create the configuration file <code>.babelrc</code> and add content:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;presets&quot; : [&quot;es2015&quot;, &quot;react&quot;]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><a href="https://babeljs.io/docs/usage/babelrc/" target="_blank" rel="external">Babel Usage</a></p>
+<p>Add <code>module</code> section in <code>webpack.config.js</code> as following</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">var path = require(&apos;path&apos;); </div><div class="line"></div><div class="line">var BUILD_DIR = path.resolve(__dirname, &apos;build&apos;);</div><div class="line">var SRC_DIR = path.resolve(__dirname, &apos;src&apos;);</div><div class="line"></div><div class="line">var config = &#123;</div><div class="line">  entry: SRC_DIR + &apos;/index.js&apos;,</div><div class="line">  output: &#123;</div><div class="line">    path: BUILD_DIR,</div><div class="line">    filename: &apos;bundle.js&apos;</div><div class="line">  &#125;,</div><div class="line">  module: &#123;</div><div class="line">    loaders: [</div><div class="line">      &#123;</div><div class="line">        test: /\.js?/,</div><div class="line">        exclude: /node_modules/,</div><div class="line">        loader: &apos;babel&apos;</div><div class="line">      &#125;</div><div class="line">    ]</div><div class="line">  &#125;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">module.exports = config;</div></pre></td></tr></table></figure>
+<p>Now everything is ready! Execute <code>webpack</code> to build the new <code>bundle.js</code>, open <code>index.html</code> in browser, see? Hello World!</p>
+<h4 id="Configuring-webpack-dev-server"><a href="#Configuring-webpack-dev-server" class="headerlink" title="Configuring webpack-dev-server"></a>Configuring webpack-dev-server</h4><p>So far, we’ve created a very simple React application by using <code>npm</code>, <code>webpack</code> and <code>Babel</code>. But it may be very troublesome that we have to rebuild the bundle every time when new changes come, especially during the rapid development process. </p>
+<p>A simple solution is “watch mode” in webpack. In this mode, webpack will watch all dependencies and recomplie on change. Just add <code>--watch</code> when executing <code>webpack</code>:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">webpack --watch</div></pre></td></tr></table></figure></p>
+<p>Now every change you do will trigger a recompilation, and we can see the changes after refreshing the page.</p>
+<p>Another solution is <code>webpack-dev-server</code> and it’s more powerful. Let’s install it at first:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install webpack-dev-server -D</div></pre></td></tr></table></figure></p>
+<p>Then modify <code>webpack.config.js</code> as following:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">var path = require(&apos;path&apos;); </div><div class="line">var webpack = require(&apos;webpack&apos;);  // Import webpack module</div><div class="line"></div><div class="line">var BUILD_DIR = path.resolve(__dirname, &apos;build&apos;);</div><div class="line">var SRC_DIR = path.resolve(__dirname, &apos;src&apos;);</div><div class="line"></div><div class="line">var config = &#123;</div><div class="line">  entry: [</div><div class="line">    &apos;webpack-dev-server/client?http://localhost:8080&apos;,  // Add new entry</div><div class="line">    SRC_DIR + &apos;/index.js&apos;,</div><div class="line">  ], </div><div class="line">  output: &#123;</div><div class="line">    ...</div><div class="line">    publicPath: &apos;/build/&apos;,  // Configurate publicPath</div><div class="line">  &#125;,</div><div class="line">  ...</div><div class="line">&#125;;</div><div class="line">module.exports = config;</div></pre></td></tr></table></figure></p>
+<p>Execute following command in project root directory:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">webpack-dev-server</div></pre></td></tr></table></figure></p>
+<p>Now visit <code>http://localhost:8080/</code>, and change the text “Hello World” in <code>index.js</code>, then the page is refreshed automatically and the new text displays. </p>
+<p>However, refreshing page brings another problem that we will lose all the data in <code>state</code>! To make it more obvious, let’s add some dynamic content in <code>App</code> component like this:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">class App extends React.Component &#123;</div><div class="line">    constructor(props) &#123;</div><div class="line">        super(props);</div><div class="line">        this.state = &#123;</div><div class="line">            time: new Date().toTimeString()</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    render () &#123;</div><div class="line">        return &lt;p className=&quot;text&quot;&gt;Hello World! &#123;this.state.time&#125;&lt;/p&gt;;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>Now every time new change comes, the page will be refreshed and the <code>time</code> value in <code>state</code> will be different as well. </p>
+<p>Actually in most occasions we only want to make a partial change and keep the <code>state</code> instead of reloading the whole page. So, here come the Hot Module Replacement (HMR) and React Hot Loader.</p>
+<h4 id="Hot-Module-Replacement-amp-React-Hot-Loader"><a href="#Hot-Module-Replacement-amp-React-Hot-Loader" class="headerlink" title="Hot Module Replacement &amp; React Hot Loader"></a>Hot Module Replacement &amp; React Hot Loader</h4><p>Let’s install <code>react-hot-loader</code>:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install react-hot-loader@1.3.0 -D</div></pre></td></tr></table></figure></p>
+<p>Then we need to update the <code>webpack.config.js</code>:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">var config = &#123;</div><div class="line">  ...</div><div class="line">  module: &#123;</div><div class="line">    loaders: [</div><div class="line">      &#123;</div><div class="line">        test: /\.js?/,</div><div class="line">        exclude: /node_modules/,</div><div class="line">        loaders: [&apos;react-hot&apos;, &apos;babel&apos;]  // Add react-hot as a new loader</div><div class="line">      &#125;</div><div class="line">    ]</div><div class="line">  &#125;,</div><div class="line">  // Configure devServer and plugin</div><div class="line">  devServer: &#123;</div><div class="line">    historyApiFallback: true,</div><div class="line">    hot: true,</div><div class="line">    inline: true,</div><div class="line">    host: &apos;localhost&apos;,</div><div class="line">    port: 8080</div><div class="line">  &#125;,</div><div class="line">  plugins: [</div><div class="line">    new webpack.HotModuleReplacementPlugin()</div><div class="line">  ]</div><div class="line">  ...</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>Now, let’s execute <code>webpack-dev-server</code> and visit <code>http://localhost:8080/</code>, change the words to see the hot replacement. Unfortunately, it doesn’t work! Here is the <a href="https://github.com/gaearon/react-hot-loader/blob/master/docs/Troubleshooting.md#the-following-modules-couldnt-be-hot-updated-they-would-need-a-full-reload" target="_blank" rel="external">answer</a>.</p>
+<p>So, we need to put our root component in a separated file. Create a new file <code>App.js</code> in the <code>src</code> folder and move the <code>App</code> class here.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">// App.js</div><div class="line">import React from &apos;react&apos;</div><div class="line"></div><div class="line">class App extends React.Component &#123;</div><div class="line">  constructor(props) &#123;</div><div class="line">    super(props);</div><div class="line">    this.state = &#123;</div><div class="line">      time: new Date().toTimeString()</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">  render () &#123;</div><div class="line">    return &lt;p className=&quot;text&quot;&gt;Hello World! &#123;this.state.time&#125;&lt;/p&gt;;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">export default App;</div></pre></td></tr></table></figure></p>
+<p>Then change <code>index.js</code> as following:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">import React from &apos;react&apos;;</div><div class="line">import &#123;render&#125; from &apos;react-dom&apos;;</div><div class="line">import App from &apos;./App.js&apos;</div><div class="line"></div><div class="line">render(&lt;App /&gt;, document.getElementById(&apos;app&apos;));</div></pre></td></tr></table></figure></p>
+<p>Now everything is ready, test it again! I bet that the result won’t let you down, the <code>state</code> will be kept unchanged and the content will be <strong>hot loaded</strong> when you do some modification.</p>
+<h4 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h4><p>By now, we have completed the environment settings of a React application. <a href="https://github.com/hi-bazinga/react-scaffolding/tree/master/react-app" target="_blank" rel="external">Source Code</a></p>
+<p>Next we may add various components to make it more powerful. Usually we would prefer reducing our workload on frontend styles by leveraging some existed framework, such as <a href="http://getbootstrap.com/" target="_blank" rel="external">Twitter Bootstrap</a>. For React, there is a library called <code>react-bootstrap</code>, which is rebuilt based on origin Bootstrap.<br>I wrote a simple comment box with it, source code can be found <a href="https://github.com/hi-bazinga/react-scaffolding/tree/master/react-comment-box" target="_blank" rel="external">here</a>. </p>
+<p><strong>References:</strong></p>
+<ul>
+<li><a href="https://medium.com/@rajaraodv/webpacks-hmr-react-hot-loader-the-missing-manual-232336dc0d96#.vc3jshty5" target="_blank" rel="external">Automatic Browser Refresh</a></li>
+<li><a href="https://medium.com/@rajaraodv/webpacks-hmr-react-hot-loader-the-missing-manual-232336dc0d96" target="_blank" rel="external">Webpack’s HMR &amp; React-Hot-Loader — The Missing Manual</a></li>
+<li><a href="http://gaearon.github.io/react-hot-loader/getstarted/" target="_blank" rel="external">React Hot Loader</a></li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Frontend/" rel="tag">#Frontend</a>
+          
+            <a href="/tags/JavaScript/" rel="tag">#JavaScript</a>
+          
+            <a href="/tags/React/" rel="tag">#React</a>
+          
+            <a href="/tags/Webpack/" rel="tag">#Webpack</a>
+          
+            <a href="/tags/Babel/" rel="tag">#Babel</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2014/01/25/emc-intership-interview/" rel="next" title="EMC Intern面试经历">
+                <i class="fa fa-chevron-left"></i> EMC Intern面试经历
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Jason Zhao" />
+          <p class="site-author-name" itemprop="name">Jason Zhao</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">15</span>
+              <span class="site-state-item-name">Artikel</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">Kategorien</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-name">Tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Initializing-project"><span class="nav-number">1.</span> <span class="nav-text">Initializing project</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Installing-webpack"><span class="nav-number">2.</span> <span class="nav-text">Installing webpack</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Installing-React"><span class="nav-number">3.</span> <span class="nav-text">Installing React</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Configuring-webpack-dev-server"><span class="nav-number">4.</span> <span class="nav-text">Configuring webpack-dev-server</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Hot-Module-Replacement-amp-React-Hot-Loader"><span class="nav-number">5.</span> <span class="nav-text">Hot Module Replacement & React Hot Loader</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Summary"><span class="nav-number">6.</span> <span class="nav-text">Summary</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jason Zhao</span>
+</div>
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
